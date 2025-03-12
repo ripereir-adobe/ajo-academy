@@ -11,8 +11,9 @@ Acquiring New Customer Data
 In the first browser tab opened in **incognito mode (sometimes called private browsing)**, copy the Luma demo website address:
 <a href="https://dsn.adobe.com/web/ajo-academy/" target="_blank">https://dsn.adobe.com/web/ajo-academy/</a>
 
-Use your usual login ID and your password. Make sure to select the right organisation 
+Use your usual login ID and your password. Make sure to select the right organisation called **AEP Partner Training Sandbox** and the sandbox named **AJO Academy France - A**
 
+![image](https://github.com/user-attachments/assets/0328a06c-3e8d-4c9b-9f00-91db1bb5f5c9)
 
 
 ## Browsing as a Guest
@@ -57,7 +58,7 @@ Still in the Real Time Customer Profile panel, click Utilities and View Profile 
 
 ![image](https://user-images.githubusercontent.com/40355195/216591012-0e43132d-5124-40f4-a31d-6cf46d576f69.png)
 
-The profile sheet opens in a new tab. Observe:
+The profile view opens in a new tab. Observe:
 - the events captured in the _Events_ tab
 - the profile attributes collected in the _Attributes_ tab
 - the segments associated with our contact in the _Segment Membership_ tab
@@ -72,8 +73,8 @@ Click on Show Identity Graph to view Identities collected and assigned to the re
 
 ## Receiving the email in the webmail
 
-Log in to the demo webmail (<a href="https://campaign.adobedemo.com/webmail/" target="_blank">https://campaign.adobedemo.com/webmail/</a>) using the username **demo** and the password provided to you. Open the registration confirmation email that was sent to you (the subject is personalized with the first name entered in the registration form)
+Log in to your email account using your adobeid username and the password provided to you. 
 
 ![image](https://user-images.githubusercontent.com/40355195/216592663-965dbd72-841a-4683-97a7-12988e7075c1.png)
 
-Congratulations! You have completed the first chapter of the 👍 ✨, go to the [next step](ca-lab1-conversion.md) or return to the [home](README.md)
+Congratulations! You have completed the first chapter of the 👍 ✨, go to the [next step](conversion.md) or return to the [home](README.md)
