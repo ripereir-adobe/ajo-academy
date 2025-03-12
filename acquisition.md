@@ -45,15 +45,22 @@ Click the _Sign-in_ button in the top right corner, then click the _Create an ac
 <img width="804" alt="image" src="https://github.com/user-attachments/assets/e5e916cb-8a38-4186-8f1f-4695703d64a7" />
 
 
-Enter your information to create your account. Please use an email address where you have access to the mailbox.  
+Enter your information to create your account. Please use an email address where you have access to the mailbox (remeber the email address, you'll need it to check your emails and lookup your profile details in AEP)
 - Toggle on **I want to join loyalty program** and 
 - Set Communication Preferences to **Email**
 - Add your preferences (shoe size / shirt size and favorite color)-
-- Click the Register button.
+- Click the **Submit** button.
 
 A few seconds later, if you refresh the Real Time Customer Profile panel, the profile information will be updated.
 
-![image](https://user-images.githubusercontent.com/40355195/217298747-9858ea07-eebe-4774-ba19-e14b3ca837bc.png)
+There you'll see the information collected by AEP, such as the profile details from the form as well as the identities collected, either cross device ids such as email address, phone number and also device id (Experience Cloud Id) set by the web sdk. Derived values, either calculated by AJO or coming from an external datasource enrich your profile (eg: Churn Prediction Score)
+
+Scrolling down, you can also see the audience membership AEP automatically calclated for your profile : 
+- based on from behavioral data collected in real time, such as product category interest
+- based on user inputs (eg: _I want to join the Loyaly Program_  input onboards you to **Luma - Blue+ Memberbers audience**)
+
+<img width="366" alt="image" src="https://github.com/user-attachments/assets/d9ea4589-4f59-4174-8aa0-b25939742e11" />
+
 
 ---
 
@@ -68,18 +75,22 @@ The profile view opens in a new tab. Observe:
 - the profile attributes collected in the _Attributes_ tab
 - the segments associated with our contact in the _Segment Membership_ tab
 
-![image](https://user-images.githubusercontent.com/40355195/217299524-7164c022-64b1-45cb-b6ab-96f9a52199cf.png)
+![image](https://github.com/user-attachments/assets/c5c81d2f-f876-4661-87df-21e75a16f045)
+
 
 Click on Show Identity Graph to view Identities collected and assigned to the real-time profile over time
 
-![image](https://user-images.githubusercontent.com/40355195/216592295-d7f647b8-e55d-49f5-8d9b-8e64baaf358b.png)
+<img width="1165" alt="image" src="https://github.com/user-attachments/assets/7b4c8508-8664-4fae-a34c-d60d16898564" />
+
 
 ---
 
 ## Receiving the email in the webmail
 
-Log in to your email account using your adobeid username and the password provided to you. 
+Log in to your mailbox using the same email address you used to create the your account on Luma website. 
+If you do not see the email in your inbox folder, please check  the spam / junk folder (yes it is a demo instance where deliverability setup isn't 100% complete)
 
-![image](https://user-images.githubusercontent.com/40355195/216592663-965dbd72-841a-4683-97a7-12988e7075c1.png)
+<img width="1394" alt="image" src="https://github.com/user-attachments/assets/ba06e671-9ad3-4174-99a2-db9b5ccba628" />
+
 
 Congratulations! You have completed the first chapter of the 👍 ✨, go to the [next step](conversion.md) or return to the [home](README.md)
