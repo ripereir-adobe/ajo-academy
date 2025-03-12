@@ -8,12 +8,12 @@
 Acquiring New Customer Data
 ==========================================
 
-In the first browser tab opened in **incognito mode (sometimes called private browsing)**, copy the Luma demo website address:
+First, let's open a new tab in an **incognito mode (sometimes called private browsing)** browser session, copy the Luma demo website address:
 <a href="https://dsn.adobe.com/web/ajo-academy/" target="_blank">https://dsn.adobe.com/web/ajo-academy/</a>
 
-Use your usual login ID and your password. Make sure to select the right organisation called **AEP Partner Training Sandbox** and the sandbox named **AJO Academy France - A**
+This the Luma website powered by Adobe web SDK to collect in real time customer behaviors. Before that, you need to give your consent by clicking the **Allow All** button displayed in the cookie notice banner 
+<img width="630" alt="image" src="https://github.com/user-attachments/assets/1f529fa1-9146-44d4-89c8-0c12b2c12094" />
 
-![image](https://github.com/user-attachments/assets/0328a06c-3e8d-4c9b-9f00-91db1bb5f5c9)
 
 
 ## Browsing as a Guest
@@ -30,7 +30,7 @@ If you have visited three product pages in the same category (men or women), you
 
 ![image](https://user-images.githubusercontent.com/40355195/216581233-eb81a4d6-c50d-4fc1-898c-f3eed9f00537.png)
 
-This segment, calculated in real time from the collected data, is used to personalize the website banner. web
+This segment, calculated in real time from the collected data, is used to personalize the website banner. 
 
 ![image](https://user-images.githubusercontent.com/40355195/217661580-2993dad5-4107-45dd-aa40-304b62096f2e.png)
 
