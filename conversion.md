@@ -39,6 +39,17 @@ A second event, called _LumaPurchaseEvent_, is triggered when the customer compl
 
 We can also take advantage of the non-receipt of an event to retarget our contacts who have entered the journey with appropriate communication. Indeed, the lower path of the _LumaPurchaseEvent_ event will automatically trigger after a given period of inactivity (set to 10 seconds for this lab), allowing us to route our customers to an alternative path.
 
+-- 
+
+## Building the Journey
+
+Add a condition to filter in only profiles that corresponds to your email. This is required in order to let in your journey only your profile and leave your classmates profiles to their respective journeys. 
+
+![image](https://github.com/user-attachments/assets/271dc2c1-d95f-41fb-ac54-63996dacca45)
+
+Make sure the email address you put in corresponds to the one set in the login form of the Luma website when you registered in the previous exercice. 
+
+
 ---
 
 ## The Abandoned Cart Email
