@@ -54,11 +54,11 @@ During this lab, we will use a fictitious sports equipment brand - called **Luma
 
 ## Exercices
 
-[Acquisition](./ca-lab1-acquisition.md): Navigate the demo website and generate data to then visualize it in Adobe Experience Platform.
+[Acquisition](./acquisition.md): Navigate the demo website and generate data to then visualize it in Adobe Experience Platform.
 
-[Conversion](./ca-lab1-conversion.md): Configure the purchasing journey and its different stages, from checkout to payment, including retargeting abandonners.
+[Conversion](./conversion.md): Configure the purchasing journey and its different stages, from checkout to payment, including retargeting abandonners.
 
-[Cross Sell](./ca-lab1-cross-sell.md): Create an audience targeting your visitors interested in the Fall collection and target them through your website via a personalized banner.
+[Batch Campaign](./campaign.md): Create an batch campaign to target your visitors on the website, based on their browsing interest and display a banner on the home page of Luma website to promote the fall outdoor gear  collection. We'll use advanced marketing techniques to experiment what content works best and apply presure rules to ensure we're not oversoliicitating our customers with too many messages. 
 
 
 
