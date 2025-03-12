@@ -21,14 +21,16 @@ Hands-on guide for partners enablement
 
 # AJO Academy Lab - Drive all your customer experiences with real-time journeys and batch campaigns
 
-Adobe Journey Optimizer is an app built on top of Adobe Experience Platform (AEP) to help you manage in the most efficient manner end user communications. You'll then be able to : 
+Adobe Journey Optimizer (AJO) lets you orchestrate and deliver personalised customer engagement across all channels — including email, web, app, mobile and in-person — in the moments that matter to the customer.
+AJO is an app built on top of Adobe Experience Platform (AEP), it leverages Adobe Real Time Customer Profile to power digital experiences.  With AEP and AJO,  you'll then be able to : 
 - Collect data in real time through Adobe Experience SDKs and APIs and articulate those touchpoints altogether to build powerful customer journeys.
 - Decide which customer behaviors should be heard  and react accordingly and determine the best route for your contacts.
-- Build complex customer journeys with a graphical orchestrator and deliver  personalized, just in time messages 
+- Build complex customer journeys with a graphical orchestrator and deliver  personalized, just in time messages
+- Create campaigns to deliver personalized communications across your own inbound and outbound channels and ensure a true consistent experience to your customers.
 
 ---
 
-During this lab, we will use a fictitious sports equipment brand - called **Luma** - to illustrate these features through a customer journey composed of 3 chapters:
+During this lab, we will use a fictitious sports equipment brand - called **Luma** - to illustrate these these aspects through a customer journey composed of 3 chapters:
 
 - **Acquisition of new customer data** from the Luma website. Thanks to real-time collection, we will collect visitor interactions, even anonymous ones, and personalize the website in real time based on their browsing behavior. When a user creates their account, their behavior as an anonymous visitor will be automatically linked to their known profile and will complete the 360° view in Adobe Experience Platform.
 
@@ -48,11 +50,13 @@ During this lab, we will use a fictitious sports equipment brand - called **Luma
 
 ## Prerequisites
 - A web browser **open in incognito mode**, this is to avoid mixing with potential browser extension that may alter the lab experience
-- Your Adobe ID, the same than the one you use to connect to your partner organisation. This time we'll use organisation named **AEP Partner Shared Training Sandbox** and sandbox **AJO Academy France - A**
+- Your Adobe ID email address, the same than the one you use to connect to your Adobe partner organisation. This time we'll use organisation named **AEP Partner Shared Training Sandbox** and sandbox **AJO Academy France - A**
+- An access to your mailbox, the one corresponding to your Adobe ID account. 
 
 
 
 ## Exercices
+Let's jump in the different exercices
 
 [Acquisition](./acquisition.md): Navigate the demo website and generate data to then visualize it in Adobe Experience Platform.
 
