@@ -42,9 +42,14 @@ Click the _Sign-in_ button in the top right corner, then click the _Create an ac
 
 ![image](https://user-images.githubusercontent.com/40355195/216589661-4cd1745d-64fa-4932-94b8-3c83ed15d7b6.png)
 
-Enter your information to create your account. Be sure to use the email address assigned to you in the email field; the other fields are empty. Click the Register button.
+<img width="804" alt="image" src="https://github.com/user-attachments/assets/e5e916cb-8a38-4186-8f1f-4695703d64a7" />
 
-![image](https://user-images.githubusercontent.com/40355195/217300664-d9131aca-5617-438f-b601-38fbfd16b12a.png)
+
+Enter your information to create your account. Please use an email address where you have access to the mailbox.  
+- Toggle on **I want to join loyalty program** and 
+- Set Communication Preferences to **Email**
+- Add your preferences (shoe size / shirt size and favorite color)-
+- Click the Register button.
 
 A few seconds later, if you refresh the Real Time Customer Profile panel, the profile information will be updated.
 
