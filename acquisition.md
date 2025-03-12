@@ -46,18 +46,18 @@ Click the _Sign-in_ button in the top right corner, then click the _Create an ac
 
 
 Enter your information to create your account. Please use an email address where you have access to the mailbox (remeber the email address, you'll need it to check your emails and lookup your profile details in AEP)
-- Toggle on **I want to join loyalty program** and 
-- Set Communication Preferences to **Email**
-- Add your preferences (shoe size / shirt size and favorite color)-
-- Click the **Submit** button.
+- Toggle on _I want to join loyalty program_ and 
+- Set Communication Preferences to _Email_
+- Add your preferences (shoe size / shirt size and favorite color)
+- Click the _Submit_ button.
 
-A few seconds later, if you refresh the Real Time Customer Profile panel, the profile information will be updated.
+A few seconds later, if you refresh the Real Time Customer Profile panel, the profile information are updated.
 
-There you'll see the information collected by AEP, such as the profile details from the form as well as the identities collected, either cross device ids such as email address, phone number and also device id (Experience Cloud Id) set by the web sdk. Derived values, either calculated by AJO or coming from an external datasource enrich your profile (eg: Churn Prediction Score)
+There you see the information collected by AEP, such as the profile details from the form as well as the identities collected, either cross device ids such as email address, phone number and also device id (Experience Cloud Id) set by the web sdk. Derived values, either calculated by AJO or coming from an external datasource enrich your profile (eg: Churn Prediction Score)
 
-Scrolling down, you can also see the audience membership AEP automatically calclated for your profile : 
+Scrolling down, you can also see the audience memberships AEP automatically calculated for you:
 - based on from behavioral data collected in real time, such as product category interest
-- based on user inputs (eg: _I want to join the Loyaly Program_  input onboards you to **Luma - Blue+ Memberbers audience**)
+- based on user inputs (eg: _I want to join the Loyaly Program_  input onboards you to _Luma - Blue+ Memberbers audience_)
 
 <img width="366" alt="image" src="https://github.com/user-attachments/assets/d9ea4589-4f59-4174-8aa0-b25939742e11" />
 
@@ -66,9 +66,10 @@ Scrolling down, you can also see the audience membership AEP automatically calcl
 
 ## Viewing the profile in Adobe Experience Platform
 
-Still in the Real Time Customer Profile panel, click Utilities and View Profile in AEP_
+Still in the Real Time Customer Profile panel, click Utilities and _View Profile in AJO_
 
-![image](https://user-images.githubusercontent.com/40355195/216591012-0e43132d-5124-40f4-a31d-6cf46d576f69.png)
+![image](https://github.com/user-attachments/assets/a13cad8d-02b9-4533-b6a5-ecf3afddd81b)
+
 
 The profile view opens in a new tab. Observe:
 - the events captured in the _Events_ tab
