@@ -72,10 +72,10 @@ The first event we are going to use to start the journey is triggered by the che
   - Make sure the email address you put in corresponds to the one set in the login form of the Luma website when you registered in the previous exercice.
     ![image](https://github.com/user-attachments/assets/45dcf93a-eafe-4e37-a66c-11d535b70274)
 - Select the  _LumaPurchaseEvent_Email_ from the _EVENTS_ menu and drag and drop it to the canva
-- Select the PromoCode from the _ACTIONS_ menu and drag and drop it to the canva
-  - Now let's configure the Request Parameters of our custom action that will be  retrieve a promo code based on the purchase value. We have to send to the PromoCode service the customerId as well as the order value: 
-    - In the _customerId_ input, select the attribute _@event{LumaCheckoutEvent_Email._aeppartner1.identification.core.email}_
-    - In the _priceTotal_ input, select the attribute _@event{LumaCheckoutEvent_Email.productListItems.at(0).priceTotal}_
+- Select the _LoyaltyService_ from the _ACTIONS_ menu and drag and drop it to the canva
+  - Now let's configure the request parameters of our custom action that will retrieve a promo code based on the purchase value. We have to send to the LoyaltyService API the customerId as well as the order value: 
+    - In the _customerId_ input, select the attribute _@event{LumaPurchaseEvent_Email._aeppartner1.identification.core.email}_
+    - In the _priceTotal_ input, select the attribute _@event{LumaPurchaseEvent_Email.productListItems.at(0).priceTotal}_
     - Click the _Save_ button
 - Select the _Email_ activity from the _ACTIONS_ menu and drag and drop it to the canva
     - Label the email _Order Confirmation Email_. It gives a name to your email delivery and will help you track its performance in the report
