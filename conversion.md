@@ -17,16 +17,13 @@ The objective of our customer journey is twofold:
 Let's begin first with a quick tour of the AJO user interface
 
 ---
-
 # The Journey Optimizer User Interface
 
-Click on the 9 dots in the top right corner of the interface and on the _Journey Optimizer_ link in the drop-down menu.
 
+Click on the 9 dots in the top right corner of the interface and on the _Journey Optimizer_ link in the drop-down menu.
 <img width="604" alt="image" src="https://github.com/user-attachments/assets/b9155589-15f1-4c4f-aed8-ff08f203c26b" />
 
-
 You are now in AJO. You are going to build your own Purchase Journey. In the _Browse_ tab, click _Create Journey_
-
 <img width="630" alt="image" src="https://github.com/user-attachments/assets/34ce1ee8-b83a-48cc-97ca-c8648dea12e8" />
 
 - Name your journey _Purchase Journey_, please prefix it with the email address you used when creating your account on Luma website, like: `delaland+p1@adobetest.com - Purchase Journey`
@@ -135,22 +132,66 @@ We'd also like to retarget profiles who started the checkout process, but did no
 - Send a Push Notification through the mobile app to invite profile to resume his purchase or
 - Send an Email with the content of the pending cart
 
-
+Let's enhance the journey so it looks like this: 
 ![image](https://github.com/user-attachments/assets/35ae7e6f-f3e9-421e-8896-36f1ccd7bf07)
 
+The first thing to do is to detech when a customer dropped in the conversion process. AJO has a very neat way of managing profiles who did not move forward in the journey after a certain time. This is done through the _Timeout_ setting of the Event. You can define how long you want to wait for the event to occur, and if nothing happens you can direct your profiles to an alternate path, called the _timeout path_
+- Click on the  _LumaPurchaseEvent_Email_, set a timeout for let's say, 1 minute (of course, it would be much longer outside of this lab) and click _Set a timeout path_
+  ![image](https://github.com/user-attachments/assets/6d71935c-71f2-4ffb-97d8-0a0d6530aea4)
+- Select the _Condition_ activity from the _ORCHESTRATION_ menu and drag and drop it to the canva
+  - Label the activity _Filter Profile_ This is required in order to let in your journey only your profile and leave your classmates profiles to their respective journeys. This activity would not be necessary outside the context of the lab.
+
+
+event we are going to use to start the journey is triggered by the checkout page from the website. The event has been configured by the martech team and basically carries the information from the website datalayer. You'll find in this event a json object representing the cart content as well as the profile details. 
+- Select the  _LumaCheckoutEvent_Email_ from the _EVENTS_ menu and drag and drop it to the canva
+- Select the _Condition_ activity from the _ORCHESTRATION_ menu and drag and drop it to the canva 
+  - Label the activity _Preferred Channel_ and select Type _Data source condition_
+  - The first path will be for Luma users who have consented to receive Mobile Push. Click on the ![image](https://github.com/user-attachments/assets/9c9237c5-9846-42f4-b6ab-799aa62e1864) icon to edit the expression. Here let's select unders _Audiences_  _Luma - Mobile App Users_
+  - Label this Path _Push_
+  - Select the Show path for other cases than the one(s) above and label it _Others_ for profiles who want to be targeted throuh other channels
+    ![image](https://github.com/user-attachments/assets/76161593-67c8-47cc-8637-2eb780a60c3d)
+
+## Content Templates are your friend
+   
+Content Template is a nice addition in AJO, it makes it easy for marketers and content managers to build highly-reusable content, outside of any campaign or journeys. It offers powerful features such as the ability to lock certain area of the template to prevent unintentional edits or deletions, giving you greater control over template customization, and improving the efficiency and reliability of your email campaigns.
+
+- Select the _Push_ activity from the _ACTIONS_ menu and drag and drop it to the canva and connect it to the _Push_ transition of your condition activity
+  - Label the push _Abandoned Cart Push_. It gives a name to your email delivery and will help you track its performance in the report
+  - Under Push Configuration, select DXDemoApp
+  Click **Edit content** button
+  - Let's use a predefined Push template that has been configured previously: Click Apply content template from the Content Template button
+    - Select _Luma - Abandoned Push_ content template and click _Confirm_
+    - Notice how the iOS and Android content get automtically applied from the template. You can still edit them to match your specific purpose. 
+      
+- Lets go back to the journey and Select the _Email_ activity from the _ACTIONS_ menu and drag and drop it to the canva and onnect it to the _Others_ transition of your condition activity
+    - Label the email _Abandoned Cart Email_. It gives a name to your email delivery and will help you track its performance in the report
+    - Under Email Configuration, select the _EmailMarketing_ value.
+    - Click Edit content
+    - Let's use a predefined Email template that has been configured previously: Click Apply content template from the Content Template button
+    - Select _Luma - Cart Abandoned Email_ content template and click _Confirm_
+
+
+**Automated Translations**
+- We'd like this email to be automatically translated based on the preferred language of the profile. We are going to use Microsfot automatic translation service to provide Spanish and French version of the email content. 
+  - Click Add languages, select _Luma_Language_Settings_, then click _Select_
+  - Notice 3 locales loaded
+  - Click Send to translation, the translation is in progress. It usually takes a couple of minutes to complete. You can monitor the translation process in the Translation project tab ![image](https://github.com/user-attachments/assets/616c4415-85e0-409d-a853-273a9afcc28b). Feel free to reload the browser tab to refresh the variant. 
+
+
+**Apply Frequency Capping**
+Email retargeting can be quickly overwhelming for customers. To avoid sursollicitating our Luma customers with too many communications, we should apply business rules that limit the number of communication to send over a specific period of time.  In our case, it is a cross channel rule that apply on email and push to limit to 3 retargeting message per week :
+![image](https://github.com/user-attachments/assets/0307c3ee-207a-4e35-915c-79a83e7006ce)
+  - Click _Business Rule_, select _Luma Marketing  - Outgoing messages_ Rue Set, then click _Save_
+
+
 ---
-
-## The Abandoned Cart Email
-
-To re-engage our customers who haven't completed the purchasing process, we'll use an action activity. This will allow us to instantly communicate with Adobe Campaign's transactional component to send a message inviting the customer to return to the website.
-
-- Select the _CampaignCartAbandonment_ activity from the Activities menu
-- Drag and drop it into the bottom path of the customer journey so that it is linked to the previous event
-- In the _Email_ field, click the pencil icon and select _LumaCheckoutEvent -> demosystem4 -> identification -> core -> Email_ and click _OK_
-- In the _Name_ field, click the pencil icon and type _first_ to filter the attributes and select the first attribute _firstName_ and click _OK_
-- Link the _LumaPurchaseEvent1_ event to the activity transition _CampaignCartAbandonment_
-
-![cartAbandonment2](https://user-images.githubusercontent.com/40355195/223142393-a7c526f5-41dd-4c1d-80b5-8b3988bd67e2.gif)
+# Finalze the Journey
+We're almost done with the journey, just a couple of steps more to tie the abandoned branch back to the order confirmation branch. Once our profile receive the retargeting message, he is invited to resume its purchase. When doing so, he will generate a new Purchase Event that AJO is going to listen in order to complete the purchase process
+- Select the _LumaPurchaseEvent_Email_ from the _EVENTS_ menu and drag and drop it to the canva
+- Mov the Push and Email outgoing path to the above event to connect them altogether
+- Link the outgoing path of the _LumaPurchaseEvent_Email1_ to the LoyaltyService action
+Your journey should now look like this:
+![image](https://github.com/user-attachments/assets/15e171c8-181e-4285-9658-1886ac4229fa)
 
 
 ---
@@ -158,7 +199,7 @@ To re-engage our customers who haven't completed the purchasing process, we'll u
 ## Test your journey
 Now it's time to test your journey!
 - In the canvas, activate _test mode_, return to the website, add an item to your cart, and click the _Shopping Cart_ button in the top right corner of the interface. Click the _Checkout_ button, then _Proceed_.
-- Return to Profile Orchestration and view your user's progress through the customer journey. After a given period of inactivity, the user is considered to have abandoned the purchase process, and the email you previously configured is sent with a link to revalidate their cart.
+- Return to Journey Optimizer and view your user's progress through the customer journey. After a given period of inactivity, the user is considered to have abandoned the purchase process, and the email you previously configured is sent with a link to revalidate their cart.
 - Go to your email client and click on the link in the new email received. This will take you back to the cart, where you can complete your purchase online.
 
 <div align="center">
