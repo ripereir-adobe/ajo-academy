@@ -41,22 +41,22 @@ During this lab, we will use a fictitious sports equipment brand - called **Luma
 
 
 ## Learning objectives
-- View the real-time profile and identity graph in Adobe Experience Platform
-- Configure a customer journey with personalized messages, built using artificial intelligence as a co-pilot
-- Create marketing campaigns activating audiences calculated by AEP, ensuring the consistency of communications in a fully omnichannel way, and without over-soliciting your customers
+- Generate behavioral data from the Luma website and appreciate how the contribute to the real-time profile and identity graph in Adobe Experience Platform
+- Prepare a customer journey built using AJO orchestration canva and craft personalized communications with all cool stuff AJO offers (templates, translations, pressure rule and much more)
+- Create marketing campaigns activating audiences calculated by AEP, ensuring the consistency of communications in a fully omnichannel way
 - Track the performance of your marketing actions and your A/B tests through dashboards and broadcast reports
 
 
 
 ## Prerequisites
 - A web browser **open in incognito mode**, this is to avoid mixing with potential browser extension that may alter the lab experience
-- Your Adobe ID email address, the same than the one you use to connect to your Adobe partner organisation. This time we'll use organisation named **AEP Partner Shared Training Sandbox** and sandbox **AJO Academy France - A**
-- An access to your mailbox, the one corresponding to your Adobe ID account. 
+- You are going to use the email address as lab participant identifier. This is the one you share when registering to this event.
+- An access to your mailbox to check your emails 
 
 
 
 ## Exercices
-Let's jump in the different exercices
+We prepared a few exercices to help you grasp all the benefits AJO offers when bringing a customer journey to life. As we have a couple of hours only, we cannot cover them all, but we'll focus on the business persona rathen than the technical role. In those exercices, you'll be int the marketeer shoes and you goal will be to prepare campaign for Luma, our fictitious sport apparel brand. The lab is composed of 3 chapters : 
 
 [Acquisition](./acquisition.md): Navigate the demo website and generate data to then visualize it in Adobe Experience Platform.
 
