@@ -5,11 +5,8 @@
 </p>
 
 
-We will now personalize the Luma conversion path using AEP's customer experience engine, Adobe Journey Optimizer (AJO)
-The objective of our customer journey is twofold:
+Adobe Journey Optimizer (AJO) is your one stop shop for creating seamless, 1:1 omnichannel experiences. By listening to real-time customer interaction or location events you can now orchestrate 1:1 journeys, leveraging the Real-time Customer Profile along with optional 3rd party data sources to deliver the right message within the right channel at the right time.
 
-- Retarget Luma website users who have abandoned the purchase process.
-- Send a confirmation message to users who have confirmed their orders.
 
 Let's begin first with a quick tour of the AJO user interface
 
@@ -35,17 +32,24 @@ The customer journey canvas is the central point for creating a real-time custom
 - Orchestration: Useful to apply filtering condition on the incoming population and to delay steps in a journey. The Read Audience activity lets you target an audience previously built, such as the _Luma - Blue Luma+ Members_ audience your profile automatically qualified previously. 
 - Actions: These are the different activities you can leverage to react and send communication to your customer. AJO comes with native activities to send personalized communications through inbound channels (website, in-app, kiosk, connected tvs) as well as outbound channels (email, sms, push notif). Of course you can build your own action if you have specific needs, like interacting with a proprietary channel (like exotic channels, ATM, call center, CRM systems etc)
 
+
+We will now personalize the Luma conversion path using a journey which will be composed of 2 branches, each one having its own business objective: 
+
+- The Order Confirmation Branch to send a confirmation message to users who have complete their purchase. 
+- The Abandoned Cart Branch to retarget Luma website users who have abandoned the purchase process.
+
+
 ---
 # Create the Order Confirmation Branch
 
-The journey you are going to build is composed of multiple branches and activities. First, we're going to focus on one path only, which is the one customer are going to follow when they made an online purchase. Basically it consists in: 
+First, we're going to focus on one path only, which is the one customer are going to follow when they made an online purchase. Basically it consists in: 
 - Listen to Checkout Event from the Luma website: This is the first page of the checkout process, where we ask Luma customer to validate their payment method and shipping details. 
 - Apply filter on the inbound population: This step is only required in the context of this lab, I'll explain why later. 
 - Listen to Purchase Event from Luma website : This is the second page of the checkout process, where we ask Luma customer to confirm their order.
 - Get Information from Luma Loyalty System: This activity invokes an external API to retrieve offers based on the purchase value of the order
 - Send an order confirmation email: We'll craft the order from scratch leveraging AJO Digital Asset Manager, contextual information (like our promo code), content fragments and conditional content to make it even more relevant.
 
-Let's build the following branch
+Our first branch will then look like this:
 ![image](https://github.com/user-attachments/assets/5fde1f17-8788-4d61-89dd-6345cb9eaa6d)
 
 The first event we are going to use to start the journey is triggered by the checkout page from the website. The event has been configured by the martech team and basically carries the information from the website datalayer. You'll find in this event a json object representing the cart content as well as the profile details. 
@@ -67,32 +71,36 @@ The first event we are going to use to start the journey is triggered by the che
 
 ## Build the Order Confirmation Email 
 - Click _Edit Content_ button. It opens the email editor where you can customize the content of the email
-- Let's configure the subject line with our profile first name as personalisation token. Click the ![image](https://github.com/user-attachments/assets/3ae69ec7-673b-4af9-b131-8dd1ef049189) icon and fetch the first name attribute of the real time customer profile (available at Profile attribute > Person > Full name), then click the ![image](https://github.com/user-attachments/assets/9364edca-5e09-4d3b-a7d9-cadf12213a88) icon to add it to the subject line, and append '_, your order confirmation_'
+
+### Personalize the subject
+Let's configure the subject line with our profile first name as personalisation token. 
+- Click the ![image](https://github.com/user-attachments/assets/3ae69ec7-673b-4af9-b131-8dd1ef049189) icon and fetch the first name attribute of the real time customer profile (available at Profile attribute > Person > Full name), then click the ![image](https://github.com/user-attachments/assets/9364edca-5e09-4d3b-a7d9-cadf12213a88) icon to add it to the subject line, and append '_, your order confirmation_'
 - Click _Save_
 
 ### Email Content 
-Let's author the email body now. In the body section, click _Edit email body_. There are multiple options to build your communications, like using a template or create your own content. Here we are going to start from scractch
+Let's author the email body now. In the body section: 
+- Click _Edit email body_. There are multiple options to build your communications, like using a template or create your own content. Here we are going to start from scractch
 - Select _Build your own_
 - The Email editor opens up, you'll notice on the left rail a menu with sections to select pre-defined components, use AJO Assets, work with fragment and conditional content. There are plenty of helper you can leverage to speed up the email creation process.  
-  - In Components > Structures > Select a 1:1 column
+- In Components > Structures > Select a 1:1 column
     
 ### Use Assets from AJO Digital Assets Manager
-
-Adobe Journey Optimizer's Digital Asset Management (DAM) makes it easy to manage and optimize your content. You can upload images, remove backgrounds, and resize them using Adobe Express—all within the platform. Smart Tagging helps you find assets quickly, while version control keeps everything organized. Tasks streamline collaboration, and Renditions ensure assets are perfectly formatted for every channel. It’s a simple, efficient way to keep your creative work on track.
-  - In Asset Selector > Collection > Select the Luma Collection, and drag'n'drop  the Luma logo in the first structure
-  - Resize to 60% and center-align the picture using the _Styles_ menu from the right hand rail
+Adobe Journey Optimizer's Digital Asset Management (DAM) makes it easy to manage and optimize your content. You can upload images, remove backgrounds, and resize them using Adobe Express—all within the platform. Smart Tagging helps you find assets quickly, while version control keeps everything organized. Tasks streamline collaboration, and Renditions ensure assets are perfectly formatted for every channel. It’s a simple, efficient way to keep your creative work on track. Follow these steps to add the Luma logo : 
+- In Asset Selector > Collection > Select the Luma Collection, and drag'n'drop  the Luma logo in the first structure
+- Resize to 60% and center-align the picture using the _Styles_ menu from the right hand rail
     
 ### Promote Reuse with Fragments
-  - In Fragments, select the _Order Confirmation Text_
-  - In Components > Contents > add a Text content, and type _Here are the details of your order_ and click _Edit Personalization_ to get the content of the order.
-    Under _Helper functions_, select _each_, then click _+_ sign and under Contextual attributes, look for _productListItems_.
-    In the _each_ block, select Fragments  then click on the 3 dots besides _Order Content_ and select _Paste Fragment_
+Fragments are reusable, modular content pieces that can be incorporated into personalized messages. Fragments allow marketers to create content once and then reuse or adapt it across multiple campaigns and journeys without having to rebuild it each time. Let's use some previously created fragments to display the items that have been purchased. The fragment will leverage contextual data coming from the Luma Purchase Event that we added to the journey. 
+- In Fragments, select the _Order Confirmation Text_
+- In Components > Contents > add a Text content, and type _Here are the details of your order_ and click _Edit Personalization_ to get the content of the order.
+- Under _Helper functions_, select _each_, then click _+_ sign and under Contextual attributes, look for _productListItems_.
+- In the _each_ block, select Fragments  then click on the 3 dots besides _Order Content_ and select _Paste Fragment_
 ![image](https://github.com/user-attachments/assets/74be954b-c978-4e4e-aacd-d1331cf6e0dd)
-  - Click _Save_
+- Click _Save_
     
 ### Make it Relevant with Conditional Content
-
-Let's add conditional content in the email. We want to invite customer who haven't the Luma Mobile App installed to do so. For the other, we'd like to promote the Luma+ Loyalty Program. First, let's drag and drop a new container
+Conditional content allows marketers to deliver highly personalized and dynamic messaging based on specific conditions or rules. Here, We want to invite customer who haven't the Luma Mobile App installed to do so. For the other, we'd like to promote the Luma+ Loyalty Program. We are going to leverage previously built platform audiences to manage this logic. 
+- First, let's drag and drop a new container
 - In Asset Selector > Collection > Select the Luma Collection, and choose the _Luma Loyalty +_ banner
 - Add conditional content by clicking the ![image](https://github.com/user-attachments/assets/5de06ca6-7568-4e04-b4e9-66c4c0d0bdf5) icon and create another variant, name it: _Not Mobile App Users_ and edit a new condition by drag and dropping the audience _Luma Mobile App Users_, and switch the operator in the drop down to _does not include the audience_, then validate by clicking _Select_
 ![image](https://github.com/user-attachments/assets/3121d8ef-e349-4597-8eb9-f82ddcc44044)
@@ -100,26 +108,21 @@ Let's add conditional content in the email. We want to invite customer who haven
 
 
 ### Display Dynamic content Add the Promo Code
-
-- We'd like to also incent our customers with an offer from our Loyalty System. It serves personalized Promo Code trough a REST API that we can query directly from the journey and use its response to  to personnalize further the email content based on the customer order value. 
+We'd like to also incent our customers with an offer from our Loyalty System. It serves personalized Promo Code trough a REST API that we can query directly from the journey and use its response to  to personnalize further the email content based on the customer order value. 
 - Add a new container _Text_ container in the email
 - Click Edit Personalization, remove _Please type your text here._ and type instead _We selected this offer for you_, then under  _Contextual Attributes > Journey Orchestration > Actions > Loyalty Service_, select the _LoyaltyOffer_ attribute, then click _Save_.
-
-- ![image](https://github.com/user-attachments/assets/7e1f26a2-c473-4371-bc47-1a0c9dfcd35a)
+![image](https://github.com/user-attachments/assets/7e1f26a2-c473-4371-bc47-1a0c9dfcd35a)
 
 
 ### Import the Footer Fragment
-- Now, let's add the _Luma - Footer Fragment_ to complete our email
-
-- And you're donw with the order condirmation email. Of course, as a marketeer you can do much more, such as simulate content, check spam score, test its renditions, generate variants with genAI, send a proof etc. But so far you should have an email which looks like this, where personalization token will automatically be replaced during the email sendout. 
+Time to finish our email with additional links which are embedded in every footer of Luma email communications. Let's add the _Luma - Footer Fragment_.
+And you're donw with the order condirmation email. Of course, as a marketeer you can do much more, such as simulate content, check spam score, test its renditions, generate variants with genAI, send a proof etc. But so far you should have an email which looks like this, where personalization token automatically replaced during the email sendout. 
 ![image](https://github.com/user-attachments/assets/170efcef-004e-4d8f-913e-22fc1d561efd)
 
-
-What we have so far is the standard checkout process. Now AJO can do much more than that,  let's spice the journey with a bit more intelligence to reengage our cart abandoners.
+What we have so far is great, it covers the standard checkout process. Now AJO can do much more than that, let's spice the journey with a bit more intelligence to seamlessly reengage our cart abandoners if they stopped during the checkout process. 
 
 ---
 # Build the Abandoned Cart Branch
-
 We'd also like to retarget profiles who started the checkout process, but did not complete. Here what we're going to do: 
 - Add a transition in case the Purchase Event did not arrive after a certain time
 - Verify the customer preferred channel of communication
