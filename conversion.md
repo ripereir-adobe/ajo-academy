@@ -196,27 +196,55 @@ Your journey should now look like this:
 
 ---
 
-## Test your journey
-Now it's time to test your journey!
-- In the canvas, activate _test mode_, return to the website, add an item to your cart, and click the _Shopping Cart_ button in the top right corner of the interface. Click the _Checkout_ button, then _Proceed_.
-- Return to Journey Optimizer and view your user's progress through the customer journey. After a given period of inactivity, the user is considered to have abandoned the purchase process, and the email you previously configured is sent with a link to revalidate their cart.
-- Go to your email client and click on the link in the new email received. This will take you back to the cart, where you can complete your purchase online.
+## Test the journey
+Whether you completed the whole journey or not, you can test the end to end customer experience by yourself. There is a published a [_Luma - Purchase Journey_]([url](https://experience.adobe.com/#/@aeppartner1/sname:ajoacademya/journey-optimizer/journeys/journey/6d13f13c-2065-4f7c-9e25-c795bf6d978b)), where you can track the entries. 
+- Return to the Luma website, add an item to your cart, and click the _Shopping Cart_ button in the top right corner of the interface. Click the _Checkout_ button, then _Continue_.
+- Do not confirm the order yet. The journey is configured to send the cart abandonment email after one minute of inactivity. 
+- In the meantime, return to Journey Optimizer and view your user's progress through the customer journey.
 
-<div align="center">
-<br />
-<img src="https://sv-ac-demos.com/shared/delaland/dsn/testConversionBootcamp.gif" />
-<br />
-<br />
-</div>
+The profile abandoned its cart, and AJO routes him to the abandoned cart branch
+![image](https://github.com/user-attachments/assets/a178d0b0-b11b-44d8-9145-25baa9e666d8)
+
+
+After a given period of inactivity, the user is considered to have abandoned the purchase process, and the email you previously configured is sent with a link to revalidate their cart. Go to your email client and click on the link in the new email received. This will take you back to the cart, where you can complete your purchase online.
+
+The Abandoned Cart Email: 
+  ![image](https://github.com/user-attachments/assets/18b1228b-16bb-4397-ad82-efac41600236)
+
+
+The Order Confirmation Email:
+![image](https://github.com/user-attachments/assets/0b915215-bf21-4b26-9cf9-7dc870d2b9c7)
+
+
+
 
 
 ---
 
 ## Journey Reporting
+As a marketeer, we want to keep track of the [_Luma - Purchase Journey_]([url](https://experience.adobe.com/#/@aeppartner1/sname:ajoacademya/journey-optimizer/journeys/journey/6d13f13c-2065-4f7c-9e25-c795bf6d978b)) performance. The AJO reporting UI displays essential metrics associated with your journey. This encompasses details such as the count of entered profiles and instances of failed individual journeys, offering a comprehensive insight into your journey’s effectiveness and level of engagement. Journey report can be accessed directly from your journey with the _View report_ button.
+
+![image](https://github.com/user-attachments/assets/31a06968-0b6c-4982-8083-03ab30a0ace2)
+
 
 ---
 
 ## Package your journey and share it
+Our journey is complete and live, it works so well that we want to reuse it in another context. Rolling out AJO objets (journeys, campaigns, content template, audiences etc) is easy thanks to Packages. 
+You can seamlessly export and import AJO configurations between AEP environments, whether it is across different sandboxes or across different organisation. With packages, you reduce the time to value for the implementation process and move successful configurations in a few clicks.
+
+A package can consist of a single object or multiple objects, for this lab, we are going to package the journey you built so you can reuse it in your own partner organisation. 
+
+- Click on the 3 dots besides your journey, then Add to package
+- Select Create new package, name it  _Purchase Journey Package_, please prefix it with the email address you used when creating your account on Luma website, like: `delaland+p1@adobetest.com - Purchase Journey Package`
+- Click _Add_ button
+- Go to Administration > Sandboxes > Packages and click on your newly created package, click _Publish_ and confirm. The publication process takes a few seconds. 
+- Once published, click on 3 dots beside your package and select the option  _Update to public package_ and _Confirm_ 
+- Click again on the 3 dots beside your package and select _Copy package payload_
+- You can now switch to your partner instance and import the package using this payload !
+
+![image](https://github.com/user-attachments/assets/1f7742e8-7880-4d24-a77a-e49d033ddf54)
+![image](https://github.com/user-attachments/assets/88694969-9ecd-4419-bd34-7b9e15c21b11)
 
 
 ---
