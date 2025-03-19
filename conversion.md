@@ -202,17 +202,21 @@ Whether you completed the whole journey or not, you can test the end to end cust
 - Do not confirm the order yet. The journey is configured to send the cart abandonment email after one minute of inactivity. 
 - In the meantime, return to Journey Optimizer and view your user's progress through the customer journey.
 
-The profile abandoned its cart, and AJO routes him to the abandoned cart branch
+The profile abandoned its cart, and AJO routes him to the abandoned cart branch:
+
 ![image](https://github.com/user-attachments/assets/a178d0b0-b11b-44d8-9145-25baa9e666d8)
 
 
 After a given period of inactivity, the user is considered to have abandoned the purchase process, and the email you previously configured is sent with a link to revalidate their cart. Go to your email client and click on the link in the new email received. This will take you back to the cart, where you can complete your purchase online.
 
-The Abandoned Cart Email: 
-  ![image](https://github.com/user-attachments/assets/18b1228b-16bb-4397-ad82-efac41600236)
+
+The Abandoned Cart Email:
+
+![image](https://github.com/user-attachments/assets/18b1228b-16bb-4397-ad82-efac41600236)
 
 
 The Order Confirmation Email:
+
 ![image](https://github.com/user-attachments/assets/0b915215-bf21-4b26-9cf9-7dc870d2b9c7)
 
 
