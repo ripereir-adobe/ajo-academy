@@ -17,10 +17,12 @@ Let's start with audience creation
   - Under Fields section > _Attributes_, 
     - Look for _propensity_, drag and drop the _propensityScore_ attribute and add condition _is greather_ than  0.7
     - Look for _category_, and click the <img width="34" alt="image" src="https://github.com/user-attachments/assets/73072fda-3b1f-465f-a5ed-b7ad3b6469fa" /> icon to display the value breakdown
+      
       <img width="354" alt="image" src="https://github.com/user-attachments/assets/ac92c5b8-7b0f-425f-9a98-24f22d64dd83" />
      -  drag and drop the _category_ attribute and add select the _equipment_ value
-   - Look for _Direct_ and select Generale Marketing Direct Preference, drag and drop the  _Choice Value_ attribute and add condition _equals to_ Y (opt-in)
+   - Look for _Direct_ and select _General Marketing Direct Preferences_, drag and drop the  _Choice Value_ attribute and add condition _equals to_ Y (opt-in)
    - You should have the following conditions in your segmentation builder
+     
   <img width="800" alt="image" src="https://github.com/user-attachments/assets/f2561b93-0fda-4464-b393-d06f49f6b14a" />
   - If you click on _Refresh Estimate_, you should see the number of profiles that currently qualify to your audience
   - You can also see sample profiles that qualified by clicking the _Show Profile_ button
