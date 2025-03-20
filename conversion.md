@@ -28,7 +28,6 @@ In this chapter, you are going to build your own version of the Luma Purchase Jo
 - Name your journey _Purchase Journey_, please prefix it with the email address you used when creating your account on Luma website, like: `delaland+p1@adobetest.com - Purchase Journey`
 - Click Save
 
----
 
 ## The Journey Canvas
 The customer journey canvas is the central point for creating a real-time customer experience. The interface allows you to drag and drop three types of activities:
@@ -78,13 +77,16 @@ The first event we are going to use to start the journey is triggered by the che
     - Label the email _Order Confirmation Email_. It gives a name to your email delivery and will help you track its performance in the report
     - Under Email Configuration, select the _EmailMarketing_ value. It applies deliverability settings and email metadata (from, headers fields, tracking parameters) to the delivery
 
+
 ## Build the Order Confirmation Email 
 - Click _Edit Content_ button. It opens the email editor where you can customize the content of the email
+
 
 ### Personalize the subject
 Let's configure the subject line with our profile first name as personalisation token. 
 - Click the ![image](https://github.com/user-attachments/assets/3ae69ec7-673b-4af9-b131-8dd1ef049189) icon and fetch the first name attribute of the real time customer profile (available at Profile attribute > Person > Full name), then click the ![image](https://github.com/user-attachments/assets/9364edca-5e09-4d3b-a7d9-cadf12213a88) icon to add it to the subject line, and append '_, your order confirmation_'
 - Click _Save_
+
 
 ### Email Content 
 Let's author the email body now. In the body section: 
@@ -95,6 +97,7 @@ Let's author the email body now. In the body section:
 - The Email editor opens up, you'll notice on the left rail a menu with sections to select pre-defined components, use AJO Assets, work with fragment and conditional content. There are plenty of helper you can leverage to speed up the email creation process.
 
 - In Components > Structures > Select a 1:1 column
+
     
 ### Use Assets from AJO Digital Assets Manager
 Adobe Journey Optimizer's Digital Asset Management (DAM) makes it easy to manage and optimize your content. You can upload images, remove backgrounds, and resize them using Adobe Express—all within the platform. Smart Tagging helps you find assets quickly, while version control keeps everything organized. Tasks streamline collaboration, and Renditions ensure assets are perfectly formatted for every channel. It’s a simple, efficient way to keep your creative work on track.For this lab, we're going to navigate to the DAM to upload a Luma logo, remove its colored background, resize it and add it to our email. 
@@ -116,6 +119,7 @@ Fragments are reusable, modular content pieces that can be incorporated into per
 - In the _each_ block, select Fragments  then click on the 3 dots besides _Order Content_ and select _Paste Fragment_
 ![image](https://github.com/user-attachments/assets/74be954b-c978-4e4e-aacd-d1331cf6e0dd)
 - Click _Save_
+
     
 ### Make it Relevant with Conditional Content
 Conditional content allows marketers to deliver highly personalized and dynamic messaging based on specific conditions or rules. Here, We want to invite customer who haven't the Luma Mobile App installed to do so. For the other, we'd like to promote the Luma+ Loyalty Program. We are going to leverage previously built platform audiences to manage this logic. 
@@ -140,6 +144,7 @@ And you're donw with the order condirmation email. Of course, as a marketeer you
 
 What we have so far is great, it covers the standard checkout process. Now AJO can do much more than that, let's spice the journey with a bit more intelligence to seamlessly reengage our cart abandoners if they stopped during the checkout process. 
 
+
 ---
 # Build the Abandoned Cart Branch
 We'd also like to retarget profiles who started the checkout process, but did not complete. Here what we're going to do: 
@@ -150,6 +155,7 @@ We'd also like to retarget profiles who started the checkout process, but did no
 
 Let's enhance the journey so it looks like this: 
 ![image](https://github.com/user-attachments/assets/35ae7e6f-f3e9-421e-8896-36f1ccd7bf07)
+
 
 ## Manage Event Timeout
 The first thing to do is to detect when a customer dropped in the conversion process. AJO has a very neat way of managing profiles who did not move forward in the journey after a certain time. This is done through the _Timeout_ setting of the Event. You can define how long you want to wait for the event to occur, and if nothing happens you can direct your profiles to an alternate path, called the _timeout path_
@@ -180,17 +186,17 @@ Content Template is a nice addition in AJO, it makes it easy for marketers and c
     - Let's use a predefined Email template that has been configured previously: Click Apply content template from the Content Template button
     - In the _Saved Template_ tab, Select _Luma - Cart Abandoned Email_ content template and click _Confirm_
 
-  <img width="558" alt="image" src="https://github.com/user-attachments/assets/48a3bec6-5bc1-46ce-906f-a06646872bc6" />
+<img width="558" alt="image" src="https://github.com/user-attachments/assets/48a3bec6-5bc1-46ce-906f-a06646872bc6" />
 
  
 
 ## Use Automated Translations in your messages
-- We'd like this email to be automatically translated based on the preferred language of the profile. We are going to use Microsfot automatic translation service to provide Spanish and French version of the email content. 
+We'd like this email to be automatically translated based on the preferred language of the profile. We are going to use Microsfot automatic translation service to provide Spanish and French version of the email content. 
   - Click Add languages, select _Luma_Language_Settings_, then click _Select_
   - Notice 3 locales loaded
   - Click Send to translation, the translation is in progress. It usually takes a couple of minutes to complete. You can monitor the translation process in the Translation project tab ![image](https://github.com/user-attachments/assets/616c4415-85e0-409d-a853-273a9afcc28b). Feel free to reload the browser tab to refresh the variant.
 
-  <img width="266" alt="image" src="https://github.com/user-attachments/assets/07f7348f-4e16-43e5-85ba-3aae9bb65853" />
+<img width="266" alt="image" src="https://github.com/user-attachments/assets/07f7348f-4e16-43e5-85ba-3aae9bb65853" />
 
 
 
@@ -212,8 +218,6 @@ We're almost done with the journey, just a couple of steps more to tie the aband
 Your journey should now look like this:
 ![image](https://github.com/user-attachments/assets/15e171c8-181e-4285-9658-1886ac4229fa)
 
-
----
 
 ## Test the journey
 Whether you completed the whole journey or not, you can test the end to end customer experience by yourself. There is a published a [_Luma - Purchase Journey_]([url](https://experience.adobe.com/#/@aeppartner1/sname:ajoacademya/journey-optimizer/journeys/journey/6d13f13c-2065-4f7c-9e25-c795bf6d978b)), where you can track the entries. 
@@ -239,18 +243,11 @@ The Order Confirmation Email:
 ![image](https://github.com/user-attachments/assets/0b915215-bf21-4b26-9cf9-7dc870d2b9c7)
 
 
-
-
-
----
-
 ## Journey Reporting
 As a marketeer, we want to keep track of the [_Luma - Purchase Journey_]([url](https://experience.adobe.com/#/@aeppartner1/sname:ajoacademya/journey-optimizer/journeys/journey/6d13f13c-2065-4f7c-9e25-c795bf6d978b)) performance. The AJO reporting UI displays essential metrics associated with your journey. This encompasses details such as the count of entered profiles and instances of failed individual journeys, offering a comprehensive insight into your journey’s effectiveness and level of engagement. Journey report can be accessed directly from your journey with the _View report_ button.
 
 ![image](https://github.com/user-attachments/assets/31a06968-0b6c-4982-8083-03ab30a0ace2)
 
-
----
 
 ## Package your journey and share it
 Our journey is complete and live, it works so well that we want to reuse it in another context. Rolling out AJO objets (journeys, campaigns, content template, audiences etc) is easy thanks to Packages. 
