@@ -89,14 +89,24 @@ Let's configure the subject line with our profile first name as personalisation 
 ### Email Content 
 Let's author the email body now. In the body section: 
 - Click _Edit email body_. There are multiple options to build your communications, like using a template or create your own content. Here we are going to start from scractch
-- Select _Build your own_
-- The Email editor opens up, you'll notice on the left rail a menu with sections to select pre-defined components, use AJO Assets, work with fragment and conditional content. There are plenty of helper you can leverage to speed up the email creation process.  
+- Select _Build from scratch_
+<img width="800" alt="image" src="https://github.com/user-attachments/assets/4d959630-f767-4e2d-9482-45ac9649cd35" />
+
+- The Email editor opens up, you'll notice on the left rail a menu with sections to select pre-defined components, use AJO Assets, work with fragment and conditional content. There are plenty of helper you can leverage to speed up the email creation process.
+
 - In Components > Structures > Select a 1:1 column
     
 ### Use Assets from AJO Digital Assets Manager
-Adobe Journey Optimizer's Digital Asset Management (DAM) makes it easy to manage and optimize your content. You can upload images, remove backgrounds, and resize them using Adobe Express—all within the platform. Smart Tagging helps you find assets quickly, while version control keeps everything organized. Tasks streamline collaboration, and Renditions ensure assets are perfectly formatted for every channel. It’s a simple, efficient way to keep your creative work on track. Follow these steps to add the Luma logo : 
+Adobe Journey Optimizer's Digital Asset Management (DAM) makes it easy to manage and optimize your content. You can upload images, remove backgrounds, and resize them using Adobe Express—all within the platform. Smart Tagging helps you find assets quickly, while version control keeps everything organized. Tasks streamline collaboration, and Renditions ensure assets are perfectly formatted for every channel. It’s a simple, efficient way to keep your creative work on track.For this lab, we're going to navigate to the DAM to upload a Luma logo, remove its colored background, resize it and add it to our email. 
+
+- From the DAM menu icon, click on Collection, select the _Luma_ collection
 - In Asset Selector > Collection > Select the Luma Collection, and drag'n'drop  the Luma logo in the first structure
 - Resize to 60% and center-align the picture using the _Styles_ menu from the right hand rail
+
+To play more with DAM feature, you can access it by clicking the 3 dots in the _Asset selector_ menu and select _Manage Assets_.
+<img width="274" alt="image" src="https://github.com/user-attachments/assets/e72de355-4db5-43e9-9421-541ee31c6bb1" />
+
+
     
 ### Reuse with Fragments
 Fragments are reusable, modular content pieces that can be incorporated into personalized messages. Fragments allow marketers to create content once and then reuse or adapt it across multiple campaigns and journeys without having to rebuild it each time. Let's use some previously created fragments to display the items that have been purchased. The fragment will leverage contextual data coming from the Luma Purchase Event that we added to the journey. 
@@ -160,7 +170,7 @@ Content Template is a nice addition in AJO, it makes it easy for marketers and c
   - Under Push Configuration, select DXDemoApp
   Click _Edit content_ button
   - Let's use a predefined Push template that has been configured previously: Click Apply content template from the Content Template button
-    - Select _Luma - Abandoned Push_ content template and click _Confirm_
+    - In the _Saved Template_ tab, Select _Luma - Abandoned Push_ content template and click _Confirm_
     - Notice how the iOS and Android content get automtically applied from the template. You can still edit them to match your specific purpose. 
       
 - Lets go back to the journey and Select the _Email_ activity from the _ACTIONS_ menu and drag and drop it to the canva and onnect it to the _Others_ transition of your condition activity
@@ -168,20 +178,29 @@ Content Template is a nice addition in AJO, it makes it easy for marketers and c
     - Under Email Configuration, select the _EmailMarketing_ value.
     - Click Edit content
     - Let's use a predefined Email template that has been configured previously: Click Apply content template from the Content Template button
-    - Select _Luma - Cart Abandoned Email_ content template and click _Confirm_
+    - In the _Saved Template_ tab, Select _Luma - Cart Abandoned Email_ content template and click _Confirm_
 
+  <img width="558" alt="image" src="https://github.com/user-attachments/assets/48a3bec6-5bc1-46ce-906f-a06646872bc6" />
+
+ 
 
 ## Use Automated Translations in your messages
 - We'd like this email to be automatically translated based on the preferred language of the profile. We are going to use Microsfot automatic translation service to provide Spanish and French version of the email content. 
   - Click Add languages, select _Luma_Language_Settings_, then click _Select_
   - Notice 3 locales loaded
-  - Click Send to translation, the translation is in progress. It usually takes a couple of minutes to complete. You can monitor the translation process in the Translation project tab ![image](https://github.com/user-attachments/assets/616c4415-85e0-409d-a853-273a9afcc28b). Feel free to reload the browser tab to refresh the variant. 
+  - Click Send to translation, the translation is in progress. It usually takes a couple of minutes to complete. You can monitor the translation process in the Translation project tab ![image](https://github.com/user-attachments/assets/616c4415-85e0-409d-a853-273a9afcc28b). Feel free to reload the browser tab to refresh the variant.
+
+  <img width="266" alt="image" src="https://github.com/user-attachments/assets/07f7348f-4e16-43e5-85ba-3aae9bb65853" />
+
 
 
 ## Apply Frequency Capping
-Email retargeting can be quickly overwhelming for customers. To avoid sursollicitating our Luma customers with too many communications, we should apply business rules that limit the number of communication to send over a specific period of time.  In our case, it is a cross channel rule that apply on email and push to limit to 3 retargeting message per week :
+Email retargeting can be quickly overwhelming for customers. To avoid sursollicitating our Luma customers with too many communications, we should apply business rules that limit the number of communication to send over a specific period of time.  In our case, we want to enforce a cross channel rule that limits the number of emails and pushs to 3 retargeting message per week. The rule has already been created as follow. 
+
 ![image](https://github.com/user-attachments/assets/0307c3ee-207a-4e35-915c-79a83e7006ce)
-  - Click _Business Rule_, select _Luma Marketing  - Outgoing messages_ Rue Set, then click _Save_
+
+What you'll have to do is to apply this rule to your message
+- Click _Business Rule_, select _Luma Marketing  - Outgoing messages_ Rue Set, then click _Save_
 
 
 ---
