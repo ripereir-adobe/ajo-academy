@@ -177,7 +177,7 @@ Email retargeting can be quickly overwhelming for customers. To avoid sursollici
 
 
 ---
-# Finalze the Journey
+# Finalize the Journey
 We're almost done with the journey, just a couple of steps more to tie the abandoned branch back to the order confirmation branch. Once our profile receive the retargeting message, he is invited to resume its purchase. When doing so, he will generate a new Purchase Event that AJO is going to listen in order to complete the purchase process
 - Select the _LumaPurchaseEvent_Email_ from the _EVENTS_ menu and drag and drop it to the canva
 - Mov the Push and Email outgoing path to the above event to connect them altogether
