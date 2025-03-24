@@ -57,19 +57,20 @@ First, we're going to focus on the standard path, from checkout to purchase, whi
 Our first branch will then look like this:
 ![image](https://github.com/user-attachments/assets/5ca5a717-4caa-44ef-9f87-5ec2e970b9ba)
 
-The first event we are going to use to start the journey is triggered from the checkout page, when the user clicks on _Continue_ button. The event has been configured by the martech team and basically carries the information from the visitors session. You'll find in this event a json object representing the cart content (product name, price, quantity etc)  as well as the customers details. 
-- Select the  _LumaCheckoutEvent_Email_ from the _EVENTS_ menu and drag and drop it to the canva.
+- The first event we are going to use to start the journey is triggered from the checkout page, when the user clicks on _Continue_ button. The event has been configured by the martech team and basically carries the information from the visitors session. You'll find in this event a json object representing the cart content (product name, price, quantity etc)  as well as the customers details. 
+Select the  _LumaCheckoutEvent_Email_ from the _EVENTS_ menu and drag and drop it to the canva.
 
-
-The second event is triggered by the order summary, when the user clicks on _Confirm Order_ button. The event is also pre configured and ready to use. 
-- Select the  _LumaPurchaseEvent_Email_ from the _EVENTS_ menu and drag and drop it to the canva, right after the first event. 
-- 
-- Select the _LoyaltyService_ from the _ACTIONS_ menu and drag and drop it to the canva
-  - Now let's configure the request parameters of our custom action that will retrieve a promo code based on the purchase value. We have to send to the LoyaltyService API the customerId as well as the order value: 
-    - In the _customerId_ input, select the attribute _@event{LumaPurchaseEvent_Email._aeppartner1.identification.core.email}_
-    - In the _priceTotal_ input, select the attribute _@event{LumaPurchaseEvent_Email.productListItems.at(0).priceTotal}_
+- The second event is triggered by the order summary, when the user clicks on _Confirm Order_ button. The event is also pre configured and ready to use. 
+Select the  _LumaPurchaseEvent_Email_ from the _EVENTS_ menu and drag and drop it to the canva, right after the first event. 
+ 
+- Select the _LoyaltyService_ from the _ACTIONS_ menu and drag and drop it to the canva, right after the second event. Custom action are very powerful in AJO, they let you send any data from your customer journey, wether it is context or profile related data, you can seamlessly share them to send. Of course, you also have the option to use the response from the custom action as condition criteria in your journey and you can also use it to personalize downstream communications.
+  
+  - First, let's configure the request parameters of our custom action that will retrieve a promo code based on the order value. We have to send to the LoyaltyService API the customerId as well as the order value: 
+    - In the _loyaltyId_ input, select the attribute _@event{LumaPurchaseEvent_Email._aeppartner1.identification.core.email}_
+    - In the _orderValue_ input, select the attribute _@event{LumaPurchaseEvent_Email.productListItems.at(0).priceTotal}_
     - Click the _Save_ button
-- Select the _Email_ activity from the _ACTIONS_ menu and drag and drop it to the canva. Notice  Tracking setting (clicks on email, email opens) is automatically enabled to enable feedback events in AEP real time customer profile 
+      
+- Select the _Email_ activity from the _ACTIONS_ menu and drag and drop it to the canva. Notice Tracking setting (clicks on email, email opens) is automatically enabled to enable feedback events in AEP real time customer profile 
     - Label the email _Order Confirmation Email_. It gives a name to your email delivery and will help you track its performance in the report
     - Under Email Configuration, select the _EmailMarketing_ value. It applies deliverability settings and email metadata (from, headers fields, tracking parameters) to the delivery
 
@@ -87,7 +88,7 @@ Let's configure the subject line with our profile first name as personalisation 
 ### Email Content 
 Let's author the email body now. In the body section: 
 - Click _Edit email body_. There are multiple options to build your communications, like using a template or create your own content. Here we are going to start from scractch
-- Select _Build from scratch_
+- Select _Design from scratch_
 <img width="800" alt="image" src="https://github.com/user-attachments/assets/4d959630-f767-4e2d-9482-45ac9649cd35" />
 
 - The Email editor opens up, you'll notice on the left rail a menu with sections to select pre-defined components, use AJO Assets, work with fragment and conditional content. There are plenty of helper you can leverage to speed up the email creation process.
@@ -96,7 +97,7 @@ Let's author the email body now. In the body section:
 
     
 ### Use Assets from AJO Digital Assets Manager
-Adobe Journey Optimizer's Digital Asset Management (DAM) makes it easy to manage and optimize your content. You can upload images, remove backgrounds, and resize them using Adobe Express—all within the platform. Smart Tagging helps you find assets quickly, while version control keeps everything organized. Tasks streamline collaboration, and Renditions ensure assets are perfectly formatted for every channel. It’s a simple, efficient way to keep your creative work on track.For this lab, we're going to navigate to the DAM to upload a Luma logo, remove its colored background, resize it and add it to our email. 
+Adobe Journey Optimizer's Digital Asset Management (DAM) makes it easy to manage and optimize your content. You can upload images, remove backgrounds, and resize them using Adobe Express—all within the platform. Smart Tagging helps you find assets quickly, while version control keeps everything organized. Tasks streamline collaboration, and Renditions ensure assets are perfectly formatted for every channel. It’s a simple, efficient way to keep your creative work on track.
 
 - From the DAM menu icon, click on Collection, select the _Luma_ collection
 - In Asset Selector > Collection > Select the Luma Collection, and drag'n'drop  the Luma logo in the first structure
