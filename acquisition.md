@@ -4,19 +4,20 @@
 <img width="800" src="https://github.com/user-attachments/assets/9c94e953-ab53-4ff6-b4f2-c6e5ea244489" />
 </p>
 
-
-Acquiring New Customer Data
-==========================================
+---
+# Acquiring New Customer Data
 
 First, let's open a new tab in an **incognito mode (sometimes called private browsing)** browser session, copy the Luma demo website address:
-<a href="https://dsn.adobe.com/web/ajo-academy/" target="_blank">https://dsn.adobe.com/web/ajo-academy/</a>
+<a href="https://dsn.adobe.com/web/ajo-academy/" target="_blank">https://dsn.adobe.com/web/ajo-academy/</a>. 
 
-This the Luma website powered by Adobe web SDK to collect in real time customer behaviors. Before that, you need to give your consent by clicking the **Allow All** button displayed in the cookie notice banner 
+You may have to verify your identity if this is your first time login. If so, check your mailbox to enter the one time code you received and complete your profile (don't worry, these information won't be used outside of this lab). 
+
+This the Luma website powered by Adobe web SDK to collect in real time customer behaviors. Before that, you need to give your consent by clicking the **Allow All** button displayed in the cookie notice banner. 
 <img width="630" alt="image" src="https://github.com/user-attachments/assets/1f529fa1-9146-44d4-89c8-0c12b2c12094" />
 
 
-
-## Browsing as a Guest
+---
+# Browsing as a Guest
 
 ![image](https://user-images.githubusercontent.com/40355195/216579845-3ff93b0d-9913-43f2-897b-db5770c2fdaf.png)
 
@@ -26,32 +27,23 @@ View the events collected in the Real Time Customer Profile panel by clicking on
 
 ![image](https://user-images.githubusercontent.com/40355195/216580677-491b28d3-fb54-4f91-8ad4-73d760f462dc.png)
 
-If you have visited three product pages in the same category (men or women), you are automatically qualified for the corresponding segment.
+If you have visited three product pages in the same category (men or women), you are automatically qualified for the corresponding segment. Notice also the status of the audience evaluation, either _Realized_ or _Exited_ based on how long your in the audience. 
 
 ![image](https://user-images.githubusercontent.com/40355195/216581233-eb81a4d6-c50d-4fc1-898c-f3eed9f00537.png)
 
-This segment, calculated in real time from the collected data, is used to personalize the website banner. 
-
-![image](https://user-images.githubusercontent.com/40355195/217661580-2993dad5-4107-45dd-aa40-304b62096f2e.png)
-
 ---
+# Create an account
 
-## Create an account
+Click the  ![image](https://github.com/user-attachments/assets/d85996df-dad1-43f0-a048-3e051a7f4cb1) button in the top right corner, then click the ![image](https://github.com/user-attachments/assets/804ea637-32ab-4835-a0dc-6ea132afa126)
+ link.
 
-Click the _Sign-in_ button in the top right corner, then click the _Create an account_ link.
-
-![image](https://user-images.githubusercontent.com/40355195/216589661-4cd1745d-64fa-4932-94b8-3c83ed15d7b6.png)
-
-<img width="804" alt="image" src="https://github.com/user-attachments/assets/e5e916cb-8a38-4186-8f1f-4695703d64a7" />
-
-
-Enter your information to create your account. Please use an email address where you have access to the mailbox (remeber the email address, you'll need it to check your emails and lookup your profile details in AEP)
+Enter your information to create your account. Rremember the email address, you'll need it to check your emails and lookup your profile details in AEP.
 - Toggle on _I want to join loyalty program_ and 
 - Set Communication Preferences to _Email_
 - Add your preferences (shoe size / shirt size and favorite color)
 - Click the _Submit_ button.
 
-A few seconds later, if you refresh the Real Time Customer Profile panel, the profile information are updated.
+A couple of minutes later, if you refresh the Real Time Customer Profile panel, the profile information are updated.
 
 There you see the information collected by AEP, such as the profile details from the form as well as the identities collected, either cross device ids such as email address, phone number and also device id (Experience Cloud Id) set by the web sdk. Derived values, either calculated by AJO or coming from an external datasource enrich your profile (eg: Churn Prediction Score)
 
@@ -63,8 +55,7 @@ Scrolling down, you can also see the audience memberships AEP automatically calc
 
 
 ---
-
-## Viewing the profile in Adobe Experience Platform
+# Viewing the profile in Adobe Experience Platform
 
 Still in the Real Time Customer Profile panel, click Utilities and _View Profile in AJO_
 
@@ -85,8 +76,7 @@ Click on Show Identity Graph to view Identities collected and assigned to the re
 
 
 ---
-
-## Receiving the email in the webmail
+# Receiving the email in the webmail
 
 Log in to your mailbox using the same email address you used to create the your account on Luma website. 
 If you do not see the email in your inbox folder, please check  the spam / junk folder (yes it is a demo instance where deliverability setup isn't 100% complete)
@@ -94,4 +84,6 @@ If you do not see the email in your inbox folder, please check  the spam / junk 
 <img width="1394" alt="image" src="https://github.com/user-attachments/assets/ba06e671-9ad3-4174-99a2-db9b5ccba628" />
 
 
+
+<br /><br />
 Congratulations! You have completed the first chapter of the 👍 ✨, go to the [next step](conversion.md) or return to the [home](README.md)
