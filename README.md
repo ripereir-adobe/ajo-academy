@@ -12,7 +12,7 @@ Hands-on guide for partners enablement
 <h1 align="center">Lien vers le lab: https://bit.ly/ajo-lab</h1>
 <br /><br />
 <p align="center">
-<img src="https://github.com/user-attachments/assets/7427d91b-14e6-45b1-9620-df15588f6dd7" />
+<img src="https://github.com/user-attachments/assets/5fbb027b-cc3c-43ce-9a09-afad64a23da7" />
 </p>
 </div>
 
