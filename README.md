@@ -3,17 +3,16 @@ Hands-on guide for partners enablement
 
 
 <p align="center">
-<img width="1280" alt="image" src="https://github.com/user-attachments/assets/1bf8639a-755b-4aa3-88e0-5126a064b41b" />
+<img width="800" src="https://github.com/user-attachments/assets/9c94e953-ab53-4ff6-b4f2-c6e5ea244489" />
 </p>
 
 
 <div>
 <br /><br />
-<h1 align="center">Lien vers le lab: [[TODO]]</h1>
+<h1 align="center">Lien vers le lab: https://bit.ly/ajo-lab</h1>
 <br /><br />
 <p align="center">
-  [[
-<img src="https://user-images.githubusercontent.com/40355195/223067996-4e938f6e-5dbf-4c2f-9e61-3e8aa1831fa5.png" />]]
+<img src="https://github.com/user-attachments/assets/7427d91b-14e6-45b1-9620-df15588f6dd7" />
 </p>
 </div>
 
