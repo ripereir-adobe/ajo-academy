@@ -12,7 +12,7 @@ Let's begin first with a quick tour of the AJO user interface
 
 ---
 # The Journey Optimizer User Interface
-You can easily navigatore from AEP to AJO using the 9 dots in the top right corner of the interface and Click on the _Journey Optimizer_ link in the drop-down menu.
+You can easily navigate from AEP to AJO using the 9 dots in the top right corner of the interface and Click on the _Journey Optimizer_ link in the drop-down menu.
 <img width="604" alt="image" src="https://github.com/user-attachments/assets/b9155589-15f1-4c4f-aed8-ff08f203c26b" />
 
 AJO menu gives access to everything you need to power your customer experiences: Marketing Campaigns, User Journeys, Offer Engine, Landing Pages, Audiences and much more. Menu items are configurabled based on access rights, here you can see (almost) all the menu entries. You can also access all the items through the quick search bar
