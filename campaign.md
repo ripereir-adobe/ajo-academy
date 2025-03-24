@@ -6,7 +6,7 @@
 
 In this chapter of the lab, we are going to explore single action campaigns. Journey Optimizer campaigns delivers one-time content to a specific audience as opposed to journeys where actions are executed in sequence. The delivery of the campaign can be performed immediately, based on a specified schedule or triggered through an API call. 
 
-As a Luma marketers, we'd like to build a Campaign to promote the new Luma Fall Collection. This campaign will display a banner on the website to invite visitors to look at the Fall Collection Landing Page. To build a campaign, we'd need first to determine the tatget audience, then the web content to display. We'd like to create 2 variants of our content and test out which one works best to then communicate the most effective variant to our audience.
+As a Luma marketers, we'd like to build a Campaign to promote the new Luma Fall Collection. This campaign will display a banner on the website to invite visitors to look at the Fall Collection Landing Page. To build a campaign, we'd need first to determine the tatget audience, then the web content to display. We'd like to create 2 variants of our content and test out which one works best to then communicate the most effective experimentation to our audience.
 
 
 ## Create the Audience
@@ -14,7 +14,7 @@ First let's target our high value customers who are most likely to buy from this
 
 - Under _Customer_ menu entry, select _Audiences_, then click the <img width="155" alt="image" src="https://github.com/user-attachments/assets/7c065322-7e52-437b-983b-66207e98b85f" /> button on the top right hand corner.
 - Select the _Build Rule_ option, then _Create_
-- Name your audience _High Propensity Equipment Buyers_
+- Name your audience _High Propensity Equipment Buyers_, please prefix it with the email address you used when creating your account on Luma website, like: `delaland+p1@adobetest.com - High Propensity Equipment Buyers`
 - Let's define the elligibility criteria of our audience:
   - Under Fields section > _Attributes_, 
     - Look for _propensity_, drag and drop the _propensityScore_ attribute and add condition _is greather_ than  0.7
@@ -31,25 +31,65 @@ First let's target our high value customers who are most likely to buy from this
   - Publish the Audience by clicking the _Publish_ button
  
 
-Then, let's build a campaign that will display a personalized banner on the website to this specific audience
-## Create the Campaign
-Adobe Content Cards help Luma effectively showcase the Fall'25 Collection in a way that is personalized, visually appealing, and user-friendly, leading to higher engagement and increased sales. Unlike traditional push notifications, Content cards integrate seamlessly into the user interface, offering persistent, non-intrusive updates that enhance user interaction and experience.
 
-This feature enables marketers to present relevant, rich media content to users, driving higher engagement and ensuring important messages are seen without disrupting the user journey.
+## Create the Campaign
+Let's build a campaign that will display a personalized banner on the website to this specific audience
+- Under _Journey Management_, click _Campaigns_ menu entry, select click ![image](https://github.com/user-attachments/assets/0c0cccdc-c45f-432e-8b3a-18005da2fc8e)  button on the top right hand corner.
+- Campaign can be triggered immediately, scheduled or through an API call, select _Scheduled_ and click _Create_
 
 <img width="452" alt="image" src="https://github.com/user-attachments/assets/820b7bd0-f57e-4bbe-81c9-99ea0a7c0106" />
 
-### Create a Content Card
+- Name your campaign _Fall Collection_, please prefix it with the email address you used when creating your account on Luma website, like: `delaland+p1@adobetest.com - Fall Collection`
 
+- Under Audiences, select your _High Propensity Equipment Buyers_ audience, keep _ECID_ as identity type
+
+- Under _Schedule_ > _Campaign Start_, keep the option _When activated manually_
+- Under _Schedule_ > _Campaign End_, select _On a specific data and time_ and stop the campaign at the end of next month midnight.
 
 ### Create an Experimentation
+Experiments allow you to optimize content for the action in your Campaigns. They are a set of randomized trials, which in the context of online testing, means that some randomly selected users are exposed to a given variation of a message and another randomly selected set of users to another treatment. After sending the message, you can then measure the outcome metrics like opens of emails or clicks on banner.
+
+- Under _Content Experiment_ section, click ![image](https://github.com/user-attachments/assets/475e2ef5-963c-4c48-af94-1a11dd846115)
+- Use Unique Clicks as success metrics
+- Use a 10% Holdout group
+- Use 2 treatment, A and B distributed evently
+- Click _Create_ button
+
+![image](https://github.com/user-attachments/assets/47879ee2-6183-4281-9e54-fe782ef5fc15)
 
 
-### Simulate the content
+### Create a Content Card
+Adobe Content Cards help Luma effectively showcase the Fall'25 Collection in a way that is personalized, visually appealing, and user-friendly, leading to higher engagement and increased sales. Unlike traditional push notifications, Content cards integrate seamlessly into the user interface, offering persistent, non-intrusive updates that enhance user interaction and experience.
+This feature enables marketers to present relevant, rich media content to users, driving higher engagement and ensuring important messages are seen without disrupting the user journey.
 
+- Under _Actions_ section, type _Fall Collection_
+- Select ContentCards configuration from the drop down
+- Content card are also available for mobile where you can define additional triggering rules. As we configure it for web now, let's disable the _additional delivery rules_
+- Let's author the card by clicking the ![image](https://github.com/user-attachments/assets/486ba657-48bc-4be7-8957-5e043c986987) button
+  
+- Under Treatment A > Content Card, let's apply the following message
+  - Title: _Fall Collection: Limited Stock, Buy Now!_
+  - Body: _It's cozy and chic_
+  - Media Url: In the Digital Assets, browse the  _Ajo Academy_ folder > _Fall Collection_ folder, select _fall-collection-banner-hiking_
+  - Buttons: Shop Now
+  - Target: https://dsn.adobe.com/web/ajo-academy/fall-collection
+ 
+The experiment should look like this: 
+![image](https://github.com/user-attachments/assets/e4bff3dd-c34c-457d-ba01-e37756ea4ad9)
 
-### Activate the Campaign
+Let's create now the second experiment with the help of generative AI to speed up the content creation process
+- Under Treatment B > Content Card, let's apply the following message
+  - Title: click the ![image](https://github.com/user-attachments/assets/aa503e9b-e8e7-4cdc-b106-4ea933043f21) button, add your prompt (eg: _Luma Outdoor appareil fall collection_), fine tune the communication strategy and tone, then click _Generate_ and select the variation you like the most.
 
+  - Body: Apply the same as above to generate an Exclusive yet Empathetic message based on your prompt (eg: Discover our new camping gears)
+  - Media Url: In the Digital Assets, browse the  _Ajo Academy_ folder > _Fall Collection_ folder, select _fall-collection-banner-camping_
+  - Buttons: Shop Now
+  - Target: https://dsn.adobe.com/web/ajo-academy/fall-collection
+ 
+The experiment should look like this: 
+![image](https://github.com/user-attachments/assets/e1da8764-b8d5-4a53-82d3-ffe58ba5a6de)
+
+That's it, you can review and activate the campaign now !
 
 --
 
