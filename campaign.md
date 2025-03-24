@@ -89,7 +89,7 @@ Let's create now the second experiment with the help of generative AI to speed u
 The experiment should look like this: 
 ![image](https://github.com/user-attachments/assets/e1da8764-b8d5-4a53-82d3-ffe58ba5a6de)
 
-That's it, you can review and activate the campaign now !
+That's it, you can review the campaign now ! if you go back to the Luma website, you shoud see an example of a live campaign promoting Luma Fall Collection activated. 
 
 --
 
