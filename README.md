@@ -45,7 +45,7 @@ During this lab, we will use a fictitious sports equipment brand - called **Luma
 
 
 # Prerequisites
-- A web browser **open in incognito mode**, this is to avoid mixing with potential browser extension that may alter the lab experience.
+- A web browser with internet access **opened in incognito mode**, this is to avoid mixing with potential browser extension that may alter the lab experience.
 - You are going to use your email address as lab participant identifier. This is the one you share when registering to this event.
 - An access to your mailbox to check your emails.
 
