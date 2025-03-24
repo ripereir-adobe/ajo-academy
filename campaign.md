@@ -1,7 +1,7 @@
 [home](README.md)
 
 <p align="center">
-<img width="1280" alt="image" src="https://github.com/user-attachments/assets/1bf8639a-755b-4aa3-88e0-5126a064b41b" />
+<img width="800" src="https://github.com/user-attachments/assets/9c94e953-ab53-4ff6-b4f2-c6e5ea244489" />
 </p>
 
 In this chapter of the lab, we are going to explore single action campaigns. Journey Optimizer campaigns delivers one-time content to a specific audience as opposed to journeys where actions are executed in sequence. The delivery of the campaign can be performed immediately, based on a specified schedule or triggered through an API call. 
