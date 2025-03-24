@@ -12,18 +12,16 @@ Let's begin first with a quick tour of the AJO user interface
 
 ---
 # The Journey Optimizer User Interface
-You can easily navigate from AEP to AJO using the 9 dots in the top right corner of the interface and Click on the _Journey Optimizer_ link in the drop-down menu.
-<img width="604" alt="image" src="https://github.com/user-attachments/assets/b9155589-15f1-4c4f-aed8-ff08f203c26b" />
-
-AJO menu gives access to everything you need to power your customer experiences: Marketing Campaigns, User Journeys, Offer Engine, Landing Pages, Audiences and much more. Menu items are configurabled based on access rights, here you can see (almost) all the menu entries. You can also access all the items through the quick search bar
+AJO menu gives access to everything you need to power your customer experiences: Marketing Campaigns, User Journeys, Offer Engine, Landing Pages, Audiences and much more. Menu items are configurable based on access rights, here you can see (almost) all the menu entries. You can also access all the items through the quick search bar
 <img width="790" alt="image" src="https://github.com/user-attachments/assets/ac78bf46-df10-4616-9d8d-94d8ec661563" />
 
 
-- AJO also comes with a conversational agent called AI Assistant you can use by clicking on the icon in the top right hand corner<img width="46" alt="image" src="https://github.com/user-attachments/assets/c61c2aa7-e83f-4d6f-85b7-228f4df975eb" />. There you can ask ny questions related to the product itself (eg: What are the best practices for testing and publishing a landing page?) or to get insights about your data (eg: identify the most used journey and assess any performance indicators)
+AJO also comes with a conversational agent called AI Assistant you can use by clicking on the icon in the top right hand corner <img width="46" alt="image" src="https://github.com/user-attachments/assets/c61c2aa7-e83f-4d6f-85b7-228f4df975eb" />. There you can ask ny questions related to the product itself (eg: What are the best practices for testing and publishing a landing page?) or to get insights about your data (eg: identify the most used journey and assess any performance indicators)
 <img width="481" alt="image" src="https://github.com/user-attachments/assets/ed5ea43c-a291-4d68-8722-46b56ec44112" />
 
 
-In this chapter, you are going to build your own version of the Luma Purchase Journey. Under _Journey management_ menu, click on _Journeys_ 
+In this chapter, you are going to build your own version of the Luma Purchase Journey where we'll provide the logic to listen and react to Luma customer interactions during the checkout process. 
+- Under _Journey management_ menu, click on _Journeys_ 
 - In the _Browse_ tab, click _Create Journey_
 - Name your journey _Purchase Journey_, please prefix it with the email address you used when creating your account on Luma website, like: `delaland+p1@adobetest.com - Purchase Journey`
 - Click Save
@@ -50,24 +48,22 @@ We will now personalize the Luma conversion path using a journey which will be c
 ---
 # Create the Order Confirmation Branch
 
-First, we're going to focus on one path only, which is the one customer are going to follow when they made an online purchase. Basically it consists in: 
+First, we're going to focus on the standard path, from checkout to purchase, which is the one customer are going to follow when they made an online purchase. Basically it consists in: 
 - Listen to Checkout Event from the Luma website: This is the first page of the checkout process, where we ask Luma customer to validate their payment method and shipping details. 
-- Apply filter on the inbound population: This step is only required in the context of this lab, I'll explain why later. 
-- Listen to Purchase Event from Luma website : This is the second page of the checkout process, where we ask Luma customer to confirm their order.
-- Get Information from Luma Loyalty System: This activity invokes an external API to retrieve offers based on the purchase value of the order
+- Listen to Purchase Event from Luma website: This is the second page of the checkout process, where we ask Luma customers to confirm their order.
+- Get Information from Luma Loyalty System: This activity invokes an external API to retrieve offers based on the purchase value of the order.
 - Send an order confirmation email: We'll craft the order from scratch leveraging AJO Digital Asset Manager, contextual information (like our promo code), content fragments and conditional content to make it even more relevant.
 
 Our first branch will then look like this:
-![image](https://github.com/user-attachments/assets/5fde1f17-8788-4d61-89dd-6345cb9eaa6d)
+![image](https://github.com/user-attachments/assets/5ca5a717-4caa-44ef-9f87-5ec2e970b9ba)
 
-The first event we are going to use to start the journey is triggered by the checkout page from the website. The event has been configured by the martech team and basically carries the information from the website datalayer. You'll find in this event a json object representing the cart content as well as the profile details. 
-- Select the  _LumaCheckoutEvent_Email_ from the _EVENTS_ menu and drag and drop it to the canva
-- Select the _Condition_ activity from the _ORCHESTRATION_ menu and drag and drop it to the canva 
-  - Label the activity _Filter Profile_ This is required in order to let in your journey only your profile and leave your classmates profiles to their respective journeys. This activity would not be necessary outside the context of the lab.
-  - Select the  attribute __aeppartner1.identification.core.email_ from the LumaChekcoutEvent_Email
-  - Make sure the email address you put in corresponds to the one set in the login form of the Luma website when you registered in the previous exercice.
-    ![image](https://github.com/user-attachments/assets/45dcf93a-eafe-4e37-a66c-11d535b70274)
-- Select the  _LumaPurchaseEvent_Email_ from the _EVENTS_ menu and drag and drop it to the canva
+The first event we are going to use to start the journey is triggered from the checkout page, when the user clicks on _Continue_ button. The event has been configured by the martech team and basically carries the information from the visitors session. You'll find in this event a json object representing the cart content (product name, price, quantity etc)  as well as the customers details. 
+- Select the  _LumaCheckoutEvent_Email_ from the _EVENTS_ menu and drag and drop it to the canva.
+
+
+The second event is triggered by the order summary, when the user clicks on _Confirm Order_ button. The event is also pre configured and ready to use. 
+- Select the  _LumaPurchaseEvent_Email_ from the _EVENTS_ menu and drag and drop it to the canva, right after the first event. 
+- 
 - Select the _LoyaltyService_ from the _ACTIONS_ menu and drag and drop it to the canva
   - Now let's configure the request parameters of our custom action that will retrieve a promo code based on the purchase value. We have to send to the LoyaltyService API the customerId as well as the order value: 
     - In the _customerId_ input, select the attribute _@event{LumaPurchaseEvent_Email._aeppartner1.identification.core.email}_
