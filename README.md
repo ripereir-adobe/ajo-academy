@@ -52,7 +52,7 @@ During this lab, we will use a fictitious sports equipment brand - called **Luma
 
 
 # Exercices
-We prepared 3 exercices to help you grasp all the benefits AJO offers when bringing a customer journey to life. As we have a couple of hours only, we cannot cover them all, but we'll focus on the business persona rathen than the technical role. In those exercices, you'll be int the marketeer shoes and you goal will be to prepare campaign for Luma, our fictitious sport apparel brand. The lab is composed of 3 chapters : 
+We prepared 3 exercices to help you grasp all the benefits AJO offers when bringing a customer journey to life. As we have a couple of hours only, we cannot cover them all, but we'll focus on the business persona rather than the technical role. In those exercices, you'll be int the marketeer shoes and you goal will be to prepare campaign for Luma, our fictitious sport apparel brand. The lab is composed of 3 chapters : 
 
 [Acquisition](./acquisition.md): Navigate the demo website and generate data to then visualize it in Adobe Experience Platform.
 
