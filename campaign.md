@@ -6,7 +6,7 @@
 
 In this chapter of the lab, we are going to explore single action campaigns. Journey Optimizer campaigns delivers one-time content to a specific audience as opposed to journeys where actions are executed in sequence. The delivery of the campaign can be performed immediately, based on a specified schedule or triggered through an API call. 
 
-As a Luma marketers, we'd like to build a Campaign to promote the new Luma Fall Collection. This campaign will display a banner on the website to invite visitors to look at the Fall Collection Landing Page. To build a campaign, we'd need first to determine the tatget audience, then the web content to display. We'd like to create 2 variants of our content and test out which one works best to then communicate the most effective experimentation to our audience.
+As a Luma marketers, we'd like to build a Campaign to promote the new Luma Fall Collection. This campaign will display a banner on the website to invite visitors to look at the Fall Collection Landing Page. To build a campaign, we'd need first to determine the target audience, then the web content to display. We'd like to create 2 variants of our content and test out which one works best to then communicate the most effective experimentation to our audience.
 
 
 ## Create the Audience
