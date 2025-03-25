@@ -120,8 +120,9 @@ Fragments are reusable, modular content pieces that can be incorporated into per
 - Double click on the default text and replace it with _Here are the details of your order_ and click _Add Personalization_ icon (![image](https://github.com/user-attachments/assets/b838765d-99af-4ed4-967e-85ca70084234)). In the _Edit Personalization_ screen, you'll be able to set placeholders like variables that will represent the purchased items. We are going to use AJO Helper functions to help you loop through the collections of purchased items. 
 - Under _Helper functions_ (![image](https://github.com/user-attachments/assets/e4357041-9b17-45a2-a208-a155be5769b2)), select _Helpers_ > _each_, then click _+_ sign
 - We are going to use a prebuilt fragment to display the item name, price and purchased quantity. In the _each_ block, select Fragments  then click on the 3 dots besides _Order Content_ and select _Paste Fragment_
-![image](https://github.com/user-attachments/assets/74be954b-c978-4e4e-aacd-d1331cf6e0dd)
 - Click _Save_
+  
+![ajo-lab-fragment_1](https://github.com/user-attachments/assets/9acc8df5-8a3f-4031-be46-1882d9919c7f)
 
     
 ### Make it Relevant with Conditional Content
