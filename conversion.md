@@ -188,7 +188,7 @@ Content Template is a nice addition in AJO, it makes it easy for marketers and c
  
 
 ## Use Automated Translations in your messages
-We'd like this email to be automatically translated based on the preferred language of the profile. We are going to use Microsfot automatic translation service to provide Spanish and French version of the email content. 
+We'd like this email to be automatically translated based on the preferred language of the profile. We are going to use Microsoft automatic translation service to provide Spanish and French version of the email content. 
   - Click Add languages, select _Luma_Language_Settings_, then click _Select_
   - Notice 3 locales loaded
   - Click Send to translation, the translation is in progress. It usually takes a couple of minutes to complete. You can monitor the translation process in the Translation project tab ![image](https://github.com/user-attachments/assets/616c4415-85e0-409d-a853-273a9afcc28b). Feel free to reload the browser tab to refresh the variant.
