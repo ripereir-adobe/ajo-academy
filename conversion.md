@@ -65,10 +65,16 @@ Select the  _LumaPurchaseEvent_Email_ from the _EVENTS_ menu and drag and drop i
  
 - Select the _LoyaltyService_ from the _ACTIONS_ menu and drag and drop it to the canva, right after the second event. Custom action are very powerful in AJO, they let you send any data from your customer journey, wether it is context or profile related data, you can seamlessly share them to send. Of course, you also have the option to use the response from the custom action as condition criteria in your journey and you can also use it to personalize downstream communications.
   
-  - First, let's configure the request parameters of our custom action that will retrieve a promo code based on the order value. We have to send to the LoyaltyService API the customerId as well as the order value: 
-    - In the _loyaltyId_ input, select the attribute _@event{LumaPurchaseEvent_Email._aeppartner1.identification.core.email}_
-    - In the _orderValue_ input, select the attribute _@event{LumaPurchaseEvent_Email.productListItems.at(0).priceTotal}_
-    - Click the _Save_ button
+  - Let's configure the request parameters of our custom action that will retrieve a promo code based on the order value. We have to send to the LoyaltyService API the customerId as well as the order value: 
+    - In the _loyaltyId_ input, select the _email_ attribute under Context > LumaPurchaseEvent_Email > _aeppartner1 > identification > core (or juste copy paste
+ `@event{LumaPurchaseEvent_Email._aeppartner1.identification.core.email}`)
+    ![image](https://github.com/user-attachments/assets/0f0c31f0-da0d-48a0-a4c4-2aeaaa7db649)
+
+    - In the _orderValue_ input, click the Advanced mode button then select the _priceTotal_ attribute under Context > LumaPurchaseEvent_Email > productListItems (or juste copy paste
+ `@event{LumaPurchaseEvent_Email.productListItems.at(0).priceTotal}`)
+  ![image](https://github.com/user-attachments/assets/c1de796e-e943-4cf0-b7f1-35f9a87cc8bc)
+
+  - Click the _Save_ button
       
 - Select the _Email_ activity from the _ACTIONS_ menu and drag and drop it to the canva. Notice Tracking setting (clicks on email, email opens) is automatically enabled to enable feedback events in AEP real time customer profile 
     - Label the email _Order Confirmation Email_. It gives a name to your email delivery and will help you track its performance in the report
