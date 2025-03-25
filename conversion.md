@@ -87,7 +87,7 @@ Select the  _LumaPurchaseEvent_Email_ from the _EVENTS_ menu and drag and drop i
 
 ### Personalize the subject
 Let's configure the subject line with our profile first name as personalisation token. 
-- Click the ![image](https://github.com/user-attachments/assets/3ae69ec7-673b-4af9-b131-8dd1ef049189) icon and fetch the first name attribute of the real time customer profile (available at Profile attribute > Person > Full name), then click the ![image](https://github.com/user-attachments/assets/9364edca-5e09-4d3b-a7d9-cadf12213a88) icon to add it to the subject line, and append '_, your order confirmation_'
+- Click the ![image](https://github.com/user-attachments/assets/3ae69ec7-673b-4af9-b131-8dd1ef049189) icon and fetch the first name attribute of the real time customer profile (available at Profile attribute > Person > Full name), then click the ![image](https://github.com/user-attachments/assets/9364edca-5e09-4d3b-a7d9-cadf12213a88) icon to add it to the subject line, and append ` , your order confirmation`
 - Click _Save_
 
 
@@ -97,17 +97,16 @@ Let's author the email body now. In the body section:
 - Select _Design from scratch_
 <img width="800" alt="image" src="https://github.com/user-attachments/assets/4d959630-f767-4e2d-9482-45ac9649cd35" />
 
-- The Email editor opens up, you'll notice on the left rail a menu with sections to select pre-defined components, use AJO Assets, work with fragment and conditional content. There are plenty of helper you can leverage to speed up the email creation process.
+- The Email editor opens up, you'll notice on the left rail a menu with sections to select pre-defined components, use AJO Assets, select fragments and conditional content. There are plenty of helper you can leverage to speed up the email creation process.
 
-- In Components > Structures > Select a 1:1 column
+- From the Components menu icon (![image](https://github.com/user-attachments/assets/7181868f-a2e6-4e0c-aa60-439d66ab32c7)), under _Structures_ > Select a _1:1 column_ and drag'n drop it to the canva.
 
     
 ### Use Assets from AJO Digital Assets Manager
 Adobe Journey Optimizer's Digital Asset Management (DAM) makes it easy to manage and optimize your content. You can upload images, remove backgrounds, and resize them using Adobe Express—all within the platform. Smart Tagging helps you find assets quickly, while version control keeps everything organized. Tasks streamline collaboration, and Renditions ensure assets are perfectly formatted for every channel. It’s a simple, efficient way to keep your creative work on track.
 
-- From the DAM menu icon, click on Collection, select the _Luma_ collection
-- In Asset Selector > Collection > Select the Luma Collection, and drag'n'drop  the Luma logo in the first structure
-- Resize to 60% and center-align the picture using the _Styles_ menu from the right hand rail
+- From the Asset Selector menu icon (![image](https://github.com/user-attachments/assets/eab7767c-9ce2-44e3-85ad-de5398297c0e)) , click on Collection, double click the _Luma_ collection and drag'n'drop  the Luma logo in the 1:1 column component added
+- Click on the image, notice the right rail getting updated with the image properties. There under _Styles_ tab, set the image size to 60% and center-align the picture.
 
 To play more with DAM feature, you can access it by clicking the 3 dots in the _Asset selector_ menu and select _Manage Assets_.
 <img width="274" alt="image" src="https://github.com/user-attachments/assets/e72de355-4db5-43e9-9421-541ee31c6bb1" />
@@ -116,10 +115,11 @@ To play more with DAM feature, you can access it by clicking the 3 dots in the _
     
 ### Reuse with Fragments
 Fragments are reusable, modular content pieces that can be incorporated into personalized messages. Fragments allow marketers to create content once and then reuse or adapt it across multiple campaigns and journeys without having to rebuild it each time. Let's use some previously created fragments to display the items that have been purchased. The fragment will leverage contextual data coming from the Luma Purchase Event that we added to the journey. 
-- In Fragments, select the _Order Confirmation Text_
-- In Components > Contents > add a Text content, and type _Here are the details of your order_ and click _Edit Personalization_ to get the content of the order.
-- Under _Helper functions_, select _each_, then click _+_ sign and under Contextual attributes, look for _productListItems_.
-- In the _each_ block, select Fragments  then click on the 3 dots besides _Order Content_ and select _Paste Fragment_
+- From the Fragment menu icon (![image](https://github.com/user-attachments/assets/7446b568-d87f-4257-a243-864181fa8402)), select the _Order Confirmation Text_ and drag'n drop it below the image. 
+- From the Components menu icon (![image](https://github.com/user-attachments/assets/7181868f-a2e6-4e0c-aa60-439d66ab32c7)), under _Contents_, select the _Text_ content and drag'n drop it to the canva
+- Double click on the default text and replace it with _Here are the details of your order_ and click _Add Personalization_ icon (![image](https://github.com/user-attachments/assets/b838765d-99af-4ed4-967e-85ca70084234)). In the _Edit Personalization_ screen, you'll be able to set placeholders like variables that will represent the purchased items. We are going to use AJO Helper functions to help you loop through the collections of purchased items. 
+- Under _Helper functions_ (![image](https://github.com/user-attachments/assets/e4357041-9b17-45a2-a208-a155be5769b2)), select _Helpers_ > _each_, then click _+_ sign
+- We are going to use a prebuilt fragment to display the item name, price and purchased quantity. In the _each_ block, select Fragments  then click on the 3 dots besides _Order Content_ and select _Paste Fragment_
 ![image](https://github.com/user-attachments/assets/74be954b-c978-4e4e-aacd-d1331cf6e0dd)
 - Click _Save_
 
