@@ -163,7 +163,7 @@ We are going to use the default variant to promote the Luma Loyalty+ Program and
 
 
 ### Import the Footer Fragment
-Time to finish our email with additional links which are embedded in every footer of Luma email communications. Let's add the _Luma - Footer Fragment_. Fragments are very powerful in AJO as they let you reference previously built content with different degree of locking, to allow for  specific styling or structure updates.
+Time to finish our email with additional links which are embedded in every footer of Luma email communications. Let's add the _Luma - Footer Fragment_. Fragments are very powerful in AJO as they let you reference previously built content with different degree of locking, to allow for specific customization or inline updates.
 
 
 - From the Fragment menu icon (![image](https://github.com/user-attachments/assets/7446b568-d87f-4257-a243-864181fa8402)), select the _Luma - Footer Fragment_ and drag'n drop it below the image.
@@ -183,8 +183,8 @@ We'd also like to retarget profiles who started the checkout process, but did no
 - Send a Push Notification through the mobile app to invite profile to resume his purchase or
 - Send an Email with the content of the pending cart
 
-Let's enhance the journey so it looks like this: 
-![image](https://github.com/user-attachments/assets/35ae7e6f-f3e9-421e-8896-36f1ccd7bf07)
+Let's enhance the journey so it looks like this:   
+![image](https://github.com/user-attachments/assets/e02614ae-f832-4d00-99fc-4488c14a70a8)
 
 
 ## Manage Event Timeout
@@ -194,39 +194,47 @@ The first thing to do is to detect when a customer dropped in the conversion pro
   ![image](https://github.com/user-attachments/assets/6d71935c-71f2-4ffb-97d8-0a0d6530aea4)
 - Select the _Condition_ activity from the _ORCHESTRATION_ menu and drag and drop it to the canva
   - Label the activity _Preferred Channel_ and select Type _Data source condition_
-  - The first path will be for Luma users who have consented to receive Mobile Push. Click on the ![image](https://github.com/user-attachments/assets/9c9237c5-9846-42f4-b6ab-799aa62e1864) icon to edit the expression. Here let's select under Audiences _Luma - Mobile App Users_
+  - The first path will be for Luma users who have consented to receive Mobile Push. Click on the ![image](https://github.com/user-attachments/assets/9c9237c5-9846-42f4-b6ab-799aa62e1864) icon to edit the expression. Here let's select under Audiences _Luma - Mobile App Users_ then Click _Ok_.
   - Label this Path _Push_
-  - Select the Show path for other cases than the one(s) above and label it _Others_ for profiles who want to be targeted throuh other channels.
+  - Select the _Show path for other cases than the one(s) above_ and label it _Others_ for profiles who want to be targeted throuh other channels.
     
     ![image](https://github.com/user-attachments/assets/76161593-67c8-47cc-8637-2eb780a60c3d)
 
 ## Be friend with Content Templates 
-Content Template is a nice addition in AJO, it makes it easy for marketers and content managers to build highly-reusable content, outside of any campaign or journeys. It offers powerful features such as the ability to lock certain area of the template to prevent unintentional edits or deletions, giving you greater control over template customization, and improving the efficiency and reliability of your email campaigns.
+Content Template is a nice addition in AJO, it makes it easy for marketers and content managers to build highly-reusable content, outside of any campaign or journeys. It offers neat features such as the ability to lock certain area of the template to prevent unintentional edits or deletions, giving you greater control over template customization, and improving the efficiency and reliability of your email campaigns.
 
 - Select the _Push_ activity from the _ACTIONS_ menu and drag and drop it to the canva and connect it to the _Push_ transition of your condition activity
   - Label the push _Abandoned Cart Push_. It gives a name to your email delivery and will help you track its performance in the report
   - Under Push Configuration, select DXDemoApp
   Click _Edit content_ button
-  - Let's use a predefined Push template that has been configured previously: Click Apply content template from the Content Template button
-    - In the _Saved Template_ tab, Select _Luma - Abandoned Push_ content template and click _Confirm_
-    - Notice how the iOS and Android content get automtically applied from the template. You can still edit them to match your specific purpose. 
-      
-- Lets go back to the journey and Select the _Email_ activity from the _ACTIONS_ menu and drag and drop it to the canva and onnect it to the _Others_ transition of your condition activity
-    - Label the email _Abandoned Cart Email_. It gives a name to your email delivery and will help you track its performance in the report
-    - Under Email Configuration, select the _EmailMarketing_ value.
-    - Click Edit content
-    - Let's use a predefined Email template that has been configured previously: Click Apply content template from the Content Template button
-    - In the _Saved Template_ tab, Select _Luma - Cart Abandoned Email_ content template and click _Confirm_
+  - Let's use a predefined Push template that has been configured previously: Click _Apply content template_ from the <img width="155" alt="image" src="https://github.com/user-attachments/assets/32fe9a00-679d-4aaf-9bf2-893b1cc07ae1" /> button
+    - In the _Content Template_ window, Select _Luma - Abandoned Push_ content template and click _Confirm_
+    - Notice how the iOS and Android content get automtically applied from the template. You can still edit them to match your specific purpose.
+   
+  <img width="330" alt="image" src="https://github.com/user-attachments/assets/e563f406-116c-4d9d-bf88-498ab513e579" />
 
-<img width="558" alt="image" src="https://github.com/user-attachments/assets/48a3bec6-5bc1-46ce-906f-a06646872bc6" />
+      
+- Lets go back to the journey by clicking the back arrow next to your journey name (<img width="26" alt="image" src="https://github.com/user-attachments/assets/6fc3f0a5-3115-4f06-8676-f506f2dd4f9b" />) and save your push notification.
+- Select the _Email_ activity from the _ACTIONS_ menu and drag and drop it to the canva and connect it to the _Others_ transition of your condition activity.
+    - Label the email _Abandoned Cart Email_. It gives a name to your email delivery and will help you track its performance in the report.
+    - Under _Email Configuration_, select the _EmailMarketing_ value.
+    - Click _Edit content_ button
+    - Let's use a predefined Email template that has been configured previously: Click _Apply content template_ from the <img width="155" alt="image" src="https://github.com/user-attachments/assets/5cac12d4-88ca-478b-bd54-5d608a0877bd" /> button
+    - In the _Content template_ window, Select _Luma - Cart Abandoned Email_ content template and click _Confirm_. We are not going to edit the email body as it is the same process as for the Order Confirmation Email we've done before.
+
+  <img width="558" alt="image" src="https://github.com/user-attachments/assets/48a3bec6-5bc1-46ce-906f-a06646872bc6" />
 
  
 
 ## Use Automated Translations in your messages
 We'd like this email to be automatically translated based on the preferred language of the profile. We are going to use Microsoft automatic translation service to provide Spanish and French version of the email content. 
-  - Click Add languages, select _Luma_Language_Settings_, then click _Select_
+  - Click <img width="142" alt="image" src="https://github.com/user-attachments/assets/2619c51f-b6b0-4fe7-8161-bdfe73f40058" /> button, select _Luma_Language_Settings_, then click _Select_
   - Notice 3 locales loaded
-  - Click Send to translation, the translation is in progress. It usually takes a couple of minutes to complete. You can monitor the translation process in the Translation project tab ![image](https://github.com/user-attachments/assets/616c4415-85e0-409d-a853-273a9afcc28b). Feel free to reload the browser tab to refresh the variant.
+  - Click <img width="163" alt="image" src="https://github.com/user-attachments/assets/37dea3d7-3a95-4610-8e8b-0b44ceaf2d1a" /> button, the translation is in progress. It usually takes a couple of minutes to complete. You can monitor the translation process in the Translation project tab
+
+ ![image](https://github.com/user-attachments/assets/616c4415-85e0-409d-a853-273a9afcc28b)
+ 
+ Feel free to reload the browser tab to refresh the variant.
 
 <img width="266" alt="image" src="https://github.com/user-attachments/assets/07f7348f-4e16-43e5-85ba-3aae9bb65853" />
 
@@ -237,22 +245,25 @@ Email retargeting can be quickly overwhelming for customers. To avoid sursollici
 
 ![image](https://github.com/user-attachments/assets/0307c3ee-207a-4e35-915c-79a83e7006ce)
 
-What you'll have to do is to apply this rule to your message
-- Click _Business Rule_, select _Luma Marketing  - Outgoing messages_ Rue Set, then click _Save_
+What you'll have to do is to apply this rule to your message. AJO will then fully manage pressure rule based on the ruleset selected above. Under the hood, AJO uses sending logs of the real time customer profile to decide whether the communication should be delivered. When an exclusion occurs, the information is tracking in AJO reporting wich the exclusion reason. 
+- Click <img width="161" alt="image" src="https://github.com/user-attachments/assets/e421fd78-b8b0-42e7-9cd6-b3d05e8b94a9" /> button, select _Luma Marketing  - Outgoing messages_ Rue Set, then click _Save_
 
 
 ---
 # Finalize the Journey
-We're almost done with the journey, just a couple of steps more to tie the abandoned branch back to the order confirmation branch. Once our profile receive the retargeting message, he is invited to resume its purchase. When doing so, he will generate a new Purchase Event that AJO is going to listen in order to complete the purchase process
-- Select the _LumaPurchaseEvent_Email_ from the _EVENTS_ menu and drag and drop it to the canva
-- Mov the Push and Email outgoing path to the above event to connect them altogether
+We're almost done with the journey, just a couple of steps more to tie the abandoned branch back to the order confirmation branch. Once our profile receives the retargeting message, he is invited to resume its purchase. When doing so, he will generate a new Purchase Event that AJO is going to listen in order to complete the purchase process
+- Select the _LumaPurchaseEvent_Email_ from the _EVENTS_ menu and drag and drop it to the canva, right after the Abandoned Cart Push outgoing path.
+- Move the Email outgoing path to the above event to connect them altogether.
 - Link the outgoing path of the _LumaPurchaseEvent_Email1_ to the LoyaltyService action
-Your journey should now look like this:
-![image](https://github.com/user-attachments/assets/15e171c8-181e-4285-9658-1886ac4229fa)
+  
+Your journey should now look like this:  
+
+![image](https://github.com/user-attachments/assets/e02614ae-f832-4d00-99fc-4488c14a70a8)
+
 
 
 ## Test the journey
-Whether you completed the whole journey or not, you can test the end to end customer experience by yourself. There is a published a [_Luma - Purchase Journey_]([url](https://experience.adobe.com/#/@aeppartner1/sname:ajoacademya/journey-optimizer/journeys/journey/6d13f13c-2065-4f7c-9e25-c795bf6d978b)), where you can track the entries. 
+Whether you completed the whole journey or not, you can test the end to end customer experience by yourself. There is a published [Luma - Purchase Journey](https://experience.adobe.com/#/@aeppartner1/sname:ajoacademya/journey-optimizer/journeys/journey/328c5efd-6d24-411c-8a27-c9da2e23d132), where you can track the entries. 
 - Return to the Luma website, add an item to your cart, and click the _Shopping Cart_ button in the top right corner of the interface. Click the _Checkout_ button, then _Continue_.
 - Do not confirm the order yet. The journey is configured to send the cart abandonment email after one minute of inactivity. 
 - In the meantime, return to Journey Optimizer and view your user's progress through the customer journey.
@@ -266,19 +277,26 @@ After a given period of inactivity, the user is considered to have abandoned the
 
 
 The Abandoned Cart Email:
-
 ![image](https://github.com/user-attachments/assets/18b1228b-16bb-4397-ad82-efac41600236)
 
 
 The Order Confirmation Email:
 
-![image](https://github.com/user-attachments/assets/0b915215-bf21-4b26-9cf9-7dc870d2b9c7)
+![image](https://github.com/user-attachments/assets/00c64bde-8ddd-487b-83bb-44c5e8acc494)
+
 
 
 ## Journey Reporting
-As a marketeer, we want to keep track of the [_Luma - Purchase Journey_]([url](https://experience.adobe.com/#/@aeppartner1/sname:ajoacademya/journey-optimizer/journeys/journey/6d13f13c-2065-4f7c-9e25-c795bf6d978b)) performance. The AJO reporting UI displays essential metrics associated with your journey. This encompasses details such as the count of entered profiles and instances of failed individual journeys, offering a comprehensive insight into your journey’s effectiveness and level of engagement. Journey report can be accessed directly from your journey with the _View report_ button.
+As a marketer, we want to keep track of the [Luma - Purchase Journey](https://experience.adobe.com/#/@aeppartner1/sname:ajoacademya/journey-optimizer/journeys/journey/328c5efd-6d24-411c-8a27-c9da2e23d132) performance. The AJO reporting UI displays essential metrics associated with your journey. This encompasses details such as the count of entered profiles and instances of failed individual journeys, offering a comprehensive insight into your journey’s effectiveness and level of engagement. Journey report can be accessed directly from your journey with the <img width="105" alt="image" src="https://github.com/user-attachments/assets/787192c5-8f0a-4879-8d3f-bb1935ebdf45" /> button.
 
-![image](https://github.com/user-attachments/assets/31a06968-0b6c-4982-8083-03ab30a0ace2)
+<img width="1330" alt="image" src="https://github.com/user-attachments/assets/391c2ac7-699f-4cfc-82d2-50bf91351753" />
+
+What's great about AJO reporting is the ability to take actions from insights. For example, if you'd like to create an audience containing profiles who clicks on a specific link of your email delivery, you just have to right click on the corresponding cell of the table. 
+
+<img width="1307" alt="image" src="https://github.com/user-attachments/assets/0a0cae33-9be5-48c8-a88f-0439bfbc62df" />
+
+
+Of course, there's much more you can do given as Customer Journey Analytics dashboard (another AEP module that is embedded for this reporting view) can be fully customized, we'll keep that for another lab :wink:
 
 
 ## Package your journey and share it
