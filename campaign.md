@@ -91,7 +91,7 @@ The experiment should look like this:
 
 That's it, you can review the campaign now ! if you go back to the Luma website, you shoud see an example of a live campaign promoting Luma Fall Collection activated. 
 
---
+## You made it !
 
 Congratulations! You've completed the lab 👍 ✨ 🎉 🚀 🤘 Together, we were able to:
 - Improve our customer knowledge by collecting visitor data on our website
