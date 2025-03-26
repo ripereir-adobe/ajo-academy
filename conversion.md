@@ -132,7 +132,20 @@ Fragments are reusable, modular content pieces that can be incorporated into per
   
 ![ajo-lab-fragment_1](https://github.com/user-attachments/assets/9acc8df5-8a3f-4031-be46-1882d9919c7f)
 
+
     
+### Enhance with with External Data
+AJO custom actions are great to communicate with the outside world, whether it is to query external data sources and use its output to determine what do to next (like a condition in the journey to determine the next best path for our customer) or to contact an external system to push some personalized message (like creating a task to the shipping company). The capabilities are endless. In our Luma Purchase journey, we'd like to also incent our customers with an offer from our Loyalty System. It serves personalized Promo Code trough a REST API that we can query directly from the journey and use its response to personnalize further the email content based on the customer order value. The martech team prepared a content fragment that makes it very easy to consume promo code. The content fragment is preconfigured to accept 2 placeholders from the loyalty service: the offer name and the promo code. 
+- From the Fragment menu icon (![image](https://github.com/user-attachments/assets/7446b568-d87f-4257-a243-864181fa8402)), select the _Promo Code Fragment_ and drag'n drop it in the canva.
+- Click on it in the canva and under the _Settings_ tab:
+  - replace the LoyaltyOffer input with the response from the custom action. To select it click on <img width="50" alt="image" src="https://github.com/user-attachments/assets/c81aa4ce-7d92-4558-9efe-34adb389d08f" /> icon and under `Contextual Attributes > Journey Orchestration > Actions > Loyalty Service`, select the _LoyaltyOffer_ attribute.
+  - replace the default OfferCode input with the response from the custom action. To select it click on <img width="50" alt="image" src="https://github.com/user-attachments/assets/c81aa4ce-7d92-4558-9efe-34adb389d08f" /> icon and under `Contextual Attributes > Journey Orchestration > Actions > Loyalty Service`, select the _PromoCode_ attribute.
+- Click _Save_.
+  
+![offer_1](https://github.com/user-attachments/assets/b27be5ac-60ec-4ed1-898b-2f05daf555af)
+
+
+
 ### Make it Relevant with Conditional Content
 Conditional content allows marketers to deliver highly personalized and dynamic messaging based on specific conditions or rules. Here, We want to invite customer who haven't the Luma Mobile App installed to do so. For the other, we'd like to promote the Luma+ Loyalty Program. We are going to leverage previously built platform audiences to manage this logic. With AJO conditional content, you can create as many variants as needed. 
 We are going to use the default variant to promote the Luma Loyalty+ Program and a second variant to incent Luma customers to install the mobile app.
@@ -143,20 +156,6 @@ We are going to use the default variant to promote the Luma Loyalty+ Program and
 - Select the luma-mobile-app.png banner by clicking the edit image icon <img width="46" alt="image" src="https://github.com/user-attachments/assets/3efac26d-8950-4329-b3d7-3070aa43277e" /> > select an asset.
 
 ![lab-conditional-content-final](https://github.com/user-attachments/assets/64fd1ba8-f11d-4d73-bc6d-0d0e5ec9cf19)
-
-
-
-
-
-### Enhance with with External Data
-AJO custom actions are great to communicate with the outside world, whether it is to query external data sources and use its output to determine what do to next (like a condition in the journey to determine the next best path for our customer) or to contact an external system to push some personalized message (like creating a task to the shipping company). The capabilities are endless. In our Luma Purchase journey, we'd like to also incent our customers with an offer from our Loyalty System. It serves personalized Promo Code trough a REST API that we can query directly from the journey and use its response to personnalize further the email content based on the customer order value. 
-- Add a new container _Text_ container in the email
-- Remove _Please type your text here_
-- Click _Add Personalization_ icon <img width="51" alt="image" src="https://github.com/user-attachments/assets/b3ce7940-3cca-4cd2-a84c-6076e157854d" />, and type instead _We selected this offer for you:_, then under _Contextual Attributes > Journey Orchestration > Actions > Loyalty Service_, select the _LoyaltyOffer_ attribute.
-- Append _with promo code_ and select then  under _Contextual Attributes > Journey Orchestration > Actions > Loyalty Service_, select the _PromoCode_ attribute.
-- Click _Save_.
-  
-![offer_1](https://github.com/user-attachments/assets/b27be5ac-60ec-4ed1-898b-2f05daf555af)
 
 
 
