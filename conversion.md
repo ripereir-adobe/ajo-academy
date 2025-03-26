@@ -143,8 +143,8 @@ AJO custom actions are great to communicate with the outside world, whether it i
   - replace the LoyaltyOffer input with the response from the custom action. To select it click on <img width="50" alt="image" src="https://github.com/user-attachments/assets/c81aa4ce-7d92-4558-9efe-34adb389d08f" /> icon and under `Contextual Attributes > Journey Orchestration > Actions > Loyalty Service`, select the _LoyaltyOffer_ attribute.
   - replace the default OfferCode input with the response from the custom action. To select it click on <img width="50" alt="image" src="https://github.com/user-attachments/assets/c81aa4ce-7d92-4558-9efe-34adb389d08f" /> icon and under `Contextual Attributes > Journey Orchestration > Actions > Loyalty Service`, select the _PromoCode_ attribute.
 - Click _Save_.
-  
-![offer_1](https://github.com/user-attachments/assets/b27be5ac-60ec-4ed1-898b-2f05daf555af)
+
+![promocode](https://github.com/user-attachments/assets/c9d9a47e-a27f-4f15-80f2-d620644e8f24)
 
 
 
@@ -169,7 +169,8 @@ Time to finish our email with additional links which are embedded in every foote
 - From the Fragment menu icon (![image](https://github.com/user-attachments/assets/7446b568-d87f-4257-a243-864181fa8402)), select the _Luma - Footer Fragment_ and drag'n drop it below the image.
 
 And you're done with the Order Confirmation email! Of course, as a marketer you can do much more, such as simulate content, check spam score, test its renditions, generate variants with genAI, send a proof etc. But so far you should have an email which looks like this, where personalization token will automatically be replaced during the email sendout. 
-![image](https://github.com/user-attachments/assets/170efcef-004e-4d8f-913e-22fc1d561efd)
+
+<img width="913" alt="image" src="https://github.com/user-attachments/assets/513173e2-675b-47a1-9c1e-5af6ff817d24" />
 
 What we have so far is great, it covers the standard checkout process. Now AJO can do much more than that, let's spice the journey with a bit more intelligence to seamlessly reengage our cart abandoners if they stopped during the checkout process. 
 
