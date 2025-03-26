@@ -134,24 +134,40 @@ Fragments are reusable, modular content pieces that can be incorporated into per
 
     
 ### Make it Relevant with Conditional Content
-Conditional content allows marketers to deliver highly personalized and dynamic messaging based on specific conditions or rules. Here, We want to invite customer who haven't the Luma Mobile App installed to do so. For the other, we'd like to promote the Luma+ Loyalty Program. We are going to leverage previously built platform audiences to manage this logic. 
-- First, let's drag and drop a new container
+Conditional content allows marketers to deliver highly personalized and dynamic messaging based on specific conditions or rules. Here, We want to invite customer who haven't the Luma Mobile App installed to do so. For the other, we'd like to promote the Luma+ Loyalty Program. We are going to leverage previously built platform audiences to manage this logic. With AJO conditional content, you can create as many variants as needed. 
+We are going to use the default variant to promote the Luma Loyalty+ Program and a second variant to incent Luma customers to install the mobile app.
+- First, let's drag and drop a new container. From the Components menu icon (![image](https://github.com/user-attachments/assets/7181868f-a2e6-4e0c-aa60-439d66ab32c7)), under _Contents_, select the _Container_ content and drag'n drop it to the canva.
 - In Asset Selector > Collection > Select the Luma Collection, and choose the _Luma Loyalty +_ banner
-- Add conditional content by clicking the ![image](https://github.com/user-attachments/assets/5de06ca6-7568-4e04-b4e9-66c4c0d0bdf5) icon and create another variant, name it: _Not Mobile App Users_ and edit a new condition by drag and dropping the audience _Luma Mobile App Users_, and switch the operator in the drop down to _does not include the audience_, then validate by clicking _Select_
-![image](https://github.com/user-attachments/assets/3121d8ef-e349-4597-8eb9-f82ddcc44044)
-- Update the image asset and select the _luma mobile app_ banner fromt the Asset selector.
+- Add conditional content by clicking the ![image](https://github.com/user-attachments/assets/5de06ca6-7568-4e04-b4e9-66c4c0d0bdf5) icon and create another variant
+- Select the _Variant - 1_ and rename it: _Not Mobile App Users_ and click _select condition_ icon <img width="35" alt="image" src="https://github.com/user-attachments/assets/06d83bfd-1ba3-4fc1-993c-84f935306dda" /> to choose the  _Not Luma Mobile App Users_ one, then validate by clicking _Select_
+- Select the luma-mobile-app.png banner by clicking the edit image icon <img width="46" alt="image" src="https://github.com/user-attachments/assets/3efac26d-8950-4329-b3d7-3070aa43277e" /> > select an asset.
+
+![lab-conditional-content-final](https://github.com/user-attachments/assets/64fd1ba8-f11d-4d73-bc6d-0d0e5ec9cf19)
+
+
+
 
 
 ### Enhance with with External Data
 AJO custom actions are great to communicate with the outside world, whether it is to query external data sources and use its output to determine what do to next (like a condition in the journey to determine the next best path for our customer) or to contact an external system to push some personalized message (like creating a task to the shipping company). The capabilities are endless. In our Luma Purchase journey, we'd like to also incent our customers with an offer from our Loyalty System. It serves personalized Promo Code trough a REST API that we can query directly from the journey and use its response to personnalize further the email content based on the customer order value. 
 - Add a new container _Text_ container in the email
-- Click Edit Personalization, remove _Please type your text here._ and type instead _We selected this offer for you_, then under  _Contextual Attributes > Journey Orchestration > Actions > Loyalty Service_, select the _LoyaltyOffer_ attribute, then click _Save_.
-![image](https://github.com/user-attachments/assets/7e1f26a2-c473-4371-bc47-1a0c9dfcd35a)
+- Remove _Please type your text here_
+- Click _Add Personalization_ icon <img width="51" alt="image" src="https://github.com/user-attachments/assets/b3ce7940-3cca-4cd2-a84c-6076e157854d" />, and type instead _We selected this offer for you:_, then under _Contextual Attributes > Journey Orchestration > Actions > Loyalty Service_, select the _LoyaltyOffer_ attribute.
+- Append _with promo code_ and select then  under _Contextual Attributes > Journey Orchestration > Actions > Loyalty Service_, select the _PromoCode_ attribute.
+- Click _Save_.
+  
+![offer_1](https://github.com/user-attachments/assets/b27be5ac-60ec-4ed1-898b-2f05daf555af)
+
+
 
 
 ### Import the Footer Fragment
-Time to finish our email with additional links which are embedded in every footer of Luma email communications. Let's add the _Luma - Footer Fragment_.
-And you're donw with the order condirmation email. Of course, as a marketeer you can do much more, such as simulate content, check spam score, test its renditions, generate variants with genAI, send a proof etc. But so far you should have an email which looks like this, where personalization token automatically replaced during the email sendout. 
+Time to finish our email with additional links which are embedded in every footer of Luma email communications. Let's add the _Luma - Footer Fragment_. Fragments are very powerful in AJO as they let you reference previously built content with different degree of locking, to allow for  specific styling or structure updates.
+
+
+- From the Fragment menu icon (![image](https://github.com/user-attachments/assets/7446b568-d87f-4257-a243-864181fa8402)), select the _Luma - Footer Fragment_ and drag'n drop it below the image.
+
+And you're done with the Order Confirmation email! Of course, as a marketer you can do much more, such as simulate content, check spam score, test its renditions, generate variants with genAI, send a proof etc. But so far you should have an email which looks like this, where personalization token will automatically be replaced during the email sendout. 
 ![image](https://github.com/user-attachments/assets/170efcef-004e-4d8f-913e-22fc1d561efd)
 
 What we have so far is great, it covers the standard checkout process. Now AJO can do much more than that, let's spice the journey with a bit more intelligence to seamlessly reengage our cart abandoners if they stopped during the checkout process. 
