@@ -95,7 +95,9 @@ Select the  _LumaPurchaseEvent_Email_ from the _EVENTS_ menu and drag and drop i
 
 ### Personalize the subject
 Let's configure the subject line with our profile first name as personalisation token. 
-- Click the ![image](https://github.com/user-attachments/assets/3ae69ec7-673b-4af9-b131-8dd1ef049189) icon and fetch the first name attribute of the real time customer profile (available at Profile attribute > Person > Full name), then click the ![image](https://github.com/user-attachments/assets/9364edca-5e09-4d3b-a7d9-cadf12213a88) icon to add it to the subject line, and append ` , your order confirmation`
+- Click the ![image](https://github.com/user-attachments/assets/3ae69ec7-673b-4af9-b131-8dd1ef049189) icon and fetch the _first name_ attribute of the real time customer profile (available at Profile attribute > Person > Full name), then click the ![image](https://github.com/user-attachments/assets/9364edca-5e09-4d3b-a7d9-cadf12213a88) icon to add it to the subject line, and append ` , your order confirmation`
+<img width="1380" alt="image" src="https://github.com/user-attachments/assets/26d60974-301c-4ee0-a4c2-83b3a3669952" />
+
 - Click _Save_
 
 
@@ -151,9 +153,9 @@ Conditional content allows marketers to deliver highly personalized and dynamic 
 We are going to use the default variant to promote the Luma Loyalty+ Program and a second variant to incent Luma customers to install the mobile app.
 - First, let's drag and drop a new container. From the Components menu icon (![image](https://github.com/user-attachments/assets/7181868f-a2e6-4e0c-aa60-439d66ab32c7)), under _Contents_, select the _Container_ content and drag'n drop it to the canva.
 - In Asset Selector > Collection > Select the Luma Collection, and choose the _Luma Loyalty +_ banner
-- Add conditional content by clicking the ![image](https://github.com/user-attachments/assets/5de06ca6-7568-4e04-b4e9-66c4c0d0bdf5) icon and create another variant
+- Click on the image, then add conditional content by clicking the ![image](https://github.com/user-attachments/assets/5de06ca6-7568-4e04-b4e9-66c4c0d0bdf5) icon and create another variant.
 - Select the _Variant - 1_ and rename it: _Not Mobile App Users_ and click _select condition_ icon <img width="35" alt="image" src="https://github.com/user-attachments/assets/06d83bfd-1ba3-4fc1-993c-84f935306dda" /> to choose the  _Not Luma Mobile App Users_ one, then validate by clicking _Select_
-- Select the luma-mobile-app.png banner by clicking the edit image icon <img width="46" alt="image" src="https://github.com/user-attachments/assets/3efac26d-8950-4329-b3d7-3070aa43277e" /> > select an asset.
+- Select the luma-mobile-app.png banner by clicking the _edit image_ icon <img width="46" alt="image" src="https://github.com/user-attachments/assets/3efac26d-8950-4329-b3d7-3070aa43277e" /> then _select an asset_. Click on  <img width="102" alt="image" src="https://github.com/user-attachments/assets/0b9c90aa-d9dc-49a0-a50c-2647a33f68db" /> button to access the Luma collection. 
 
 ![lab-conditional-content-final](https://github.com/user-attachments/assets/64fd1ba8-f11d-4d73-bc6d-0d0e5ec9cf19)
 
@@ -187,12 +189,14 @@ Let's enhance the journey so it looks like this:
 ## Manage Event Timeout
 The first thing to do is to detect when a customer dropped in the conversion process. AJO has a very neat way of managing profiles who did not move forward in the journey after a certain time. This is done through the _Timeout_ setting of the Event. You can define how long you want to wait for the event to occur, and if nothing happens you can direct your profiles to an alternate path, called the _timeout path_
 - Click on the  _LumaPurchaseEvent_Email_, set a timeout for let's say, 1 minute (of course, it would be much longer outside of this lab) and click _Set a timeout path_
+  
   ![image](https://github.com/user-attachments/assets/6d71935c-71f2-4ffb-97d8-0a0d6530aea4)
 - Select the _Condition_ activity from the _ORCHESTRATION_ menu and drag and drop it to the canva
   - Label the activity _Preferred Channel_ and select Type _Data source condition_
-  - The first path will be for Luma users who have consented to receive Mobile Push. Click on the ![image](https://github.com/user-attachments/assets/9c9237c5-9846-42f4-b6ab-799aa62e1864) icon to edit the expression. Here let's select unders _Audiences_  _Luma - Mobile App Users_
+  - The first path will be for Luma users who have consented to receive Mobile Push. Click on the ![image](https://github.com/user-attachments/assets/9c9237c5-9846-42f4-b6ab-799aa62e1864) icon to edit the expression. Here let's select under Audiences _Luma - Mobile App Users_
   - Label this Path _Push_
-  - Select the Show path for other cases than the one(s) above and label it _Others_ for profiles who want to be targeted throuh other channels
+  - Select the Show path for other cases than the one(s) above and label it _Others_ for profiles who want to be targeted throuh other channels.
+    
     ![image](https://github.com/user-attachments/assets/76161593-67c8-47cc-8637-2eb780a60c3d)
 
 ## Be friend with Content Templates 
