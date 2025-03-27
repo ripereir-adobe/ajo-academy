@@ -276,11 +276,12 @@ The profile abandoned its cart, and AJO routes him to the abandoned cart branch:
 After a given period of inactivity, the user is considered to have abandoned the purchase process, and the email you previously configured is sent with a link to revalidate their cart. Go to your email client and click on the link in the new email received. This will take you back to the cart, where you can complete your purchase online.
 
 
-The Abandoned Cart Email:
+The Abandoned Cart Email:  
+
 ![image](https://github.com/user-attachments/assets/18b1228b-16bb-4397-ad82-efac41600236)
 
 
-The Order Confirmation Email:
+The Order Confirmation Email:  
 
 ![image](https://github.com/user-attachments/assets/00c64bde-8ddd-487b-83bb-44c5e8acc494)
 
