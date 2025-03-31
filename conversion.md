@@ -174,6 +174,8 @@ And you're done with the Order Confirmation email! Of course, as a marketer you 
 
 What we have so far is great, it covers the standard checkout process. Now AJO can do much more than that, let's spice the journey with a bit more intelligence to seamlessly reengage our cart abandoners if they stopped during the checkout process. 
 
+- Click the back arrow on the top left hand corner to leave the email editor, then click again on the back arrow to return to the canvas. 
+
 
 ---
 # Build the Abandoned Cart Branch
@@ -204,7 +206,7 @@ The first thing to do is to detect when a customer dropped in the conversion pro
 Content Template is a nice addition in AJO, it makes it easy for marketers and content managers to build highly-reusable content, outside of any campaign or journeys. It offers neat features such as the ability to lock certain area of the template to prevent unintentional edits or deletions, giving you greater control over template customization, and improving the efficiency and reliability of your email campaigns.
 
 - Select the _Push_ activity from the _ACTIONS_ menu and drag and drop it to the canva and connect it to the _Push_ transition of your condition activity
-  - Label the push _Abandoned Cart Push_. It gives a name to your email delivery and will help you track its performance in the report
+  - Label the push _Abandoned Cart Push_. It gives a name to your push notification delivery and will help you track its performance in the report
   - Under Push Configuration, select DXDemoApp
   Click _Edit content_ button
   - Let's use a predefined Push template that has been configured previously: Click _Apply content template_ from the <img width="155" alt="image" src="https://github.com/user-attachments/assets/32fe9a00-679d-4aaf-9bf2-893b1cc07ae1" /> button
@@ -301,11 +303,12 @@ Of course, there's much more you can do given as Customer Journey Analytics dash
 
 
 ## Package your journey and share it
-Our journey is complete and live, it works so well that we want to reuse it in another context. Rolling out AJO objets (journeys, campaigns, content template, audiences etc) is easy thanks to Packages. 
+Our journey is complete and live, it works so well that we want to reuse it in another context. Rolling out AJO objets (journeys, campaigns, content template, audiences etc) is easy thanks to AEP packages.   
 You can seamlessly export and import AJO configurations between AEP environments, whether it is across different sandboxes or across different organisation. With packages, you reduce the time to value for the implementation process and move successful configurations in a few clicks.
 
 A package can consist of a single object or multiple objects, for this lab, we are going to package the journey you built so you can reuse it in your own partner organisation. 
 
+- Go back to the journey browse screen by clicking the <img width="115" alt="image" src="https://github.com/user-attachments/assets/ea707d7b-fe7d-40d2-9812-3a9fd2b6cd20" /> menu entry.  
 - Click on the 3 dots besides your journey, then Add to package
 - Select Create new package, name it  _Purchase Journey Package_, please prefix it with the email address you used when creating your account on Luma website, like: `delaland+p1@adobetest.com - Purchase Journey Package`
 - Click _Add_ button
