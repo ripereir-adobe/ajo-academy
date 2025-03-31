@@ -16,7 +16,7 @@ AJO menu gives access to everything you need to power your customer experiences:
 <img width="790" alt="image" src="https://github.com/user-attachments/assets/ac78bf46-df10-4616-9d8d-94d8ec661563" />
 
 
-AJO also comes with a conversational agent called AI Assistant you can use by clicking on the icon in the top right hand corner <img width="46" alt="image" src="https://github.com/user-attachments/assets/c61c2aa7-e83f-4d6f-85b7-228f4df975eb" />. There you can ask ny questions related to the product itself (eg: What are the best practices for testing and publishing a landing page?) or to get insights about your data (eg: identify the most used journey and assess any performance indicators)
+AJO also comes with a conversational agent called AI Assistant you can use by clicking on the icon in the top right hand corner <img width="46" alt="image" src="https://github.com/user-attachments/assets/c61c2aa7-e83f-4d6f-85b7-228f4df975eb" />. There you can ask many questions related to the product itself (eg: What are the best practices for testing and publishing a landing page?) or to get insights about your data (eg: identify the most used journey and assess any performance indicators)
 <img width="481" alt="image" src="https://github.com/user-attachments/assets/ed5ea43c-a291-4d68-8722-46b56ec44112" />
 
 
@@ -56,7 +56,7 @@ We will now personalize the Luma conversion path using a journey which will be c
 ---
 # Create the Order Confirmation Branch
 
-First, we're going to focus on the standard path, from checkout to purchase, which is the one customer are going to follow when they made an online purchase. Basically it consists in: 
+First, we're going to focus on the standard path, from checkout to purchase, that is the path customers are going to follow when they make an online purchase. Basically it consists in: 
 - Listen to Checkout Event from the Luma website: This is the first page of the checkout process, where we ask Luma customer to validate their payment method and shipping details. 
 - Listen to Purchase Event from Luma website: This is the second page of the checkout process, where we ask Luma customers to confirm their order.
 - Get Information from Luma Loyalty System: This activity invokes an external API to retrieve offers based on the purchase value of the order.
@@ -66,12 +66,12 @@ Our first branch will then look like this:
 ![image](https://github.com/user-attachments/assets/5ca5a717-4caa-44ef-9f87-5ec2e970b9ba)
 
 - The first event we are going to use to start the journey is triggered from the checkout page, when the user clicks on _Continue_ button. The event has been configured by the martech team and basically carries the information from the visitors session. You'll find in this event a json object representing the cart content (product name, price, quantity etc)  as well as the customers details. 
-Select the  _LumaCheckoutEvent_Email_ from the _EVENTS_ menu and drag and drop it to the canva.
+Select the  _LumaCheckoutEvent_Email_ from the _EVENTS_ menu and drag and drop it to the canvas.
 
 - The second event is triggered by the order summary, when the user clicks on _Confirm Order_ button. The event is also pre configured and ready to use. 
-Select the  _LumaPurchaseEvent_Email_ from the _EVENTS_ menu and drag and drop it to the canva, right after the first event. 
+Select the  _LumaPurchaseEvent_Email_ from the _EVENTS_ menu and drag and drop it to the canvas, right after the first event. 
  
-- Select the _LoyaltyService_ from the _ACTIONS_ menu and drag and drop it to the canva, right after the second event. Custom action are very powerful in AJO, they let you send any data from your customer journey, wether it is context or profile related data, you can seamlessly share them to send. Of course, you also have the option to use the response from the custom action as condition criteria in your journey and you can also use it to personalize downstream communications.
+- Select the _LoyaltyService_ from the _ACTIONS_ menu and drag and drop it to the canvas, right after the second event. Custom actions are very powerful in AJO, they let you send any data from your customer journey, wether it is context or profile related data, you can seamlessly share them to send. Of course, you also have the option to use the response from the custom action as condition criteria in your journey and you can also use it to personalize downstream communications.
   
   - Let's configure the request parameters of our custom action that will retrieve a promo code based on the order value. We have to send to the LoyaltyService API the customerId as well as the order value: 
     - In the _loyaltyId_ input, select the _email_ attribute under Context > LumaPurchaseEvent_Email > _aeppartner1 > identification > core (or juste copy paste
@@ -84,9 +84,9 @@ Select the  _LumaPurchaseEvent_Email_ from the _EVENTS_ menu and drag and drop i
 
   - Click the _Save_ button
       
-- Select the _Email_ activity from the _ACTIONS_ menu and drag and drop it to the canva. Notice Tracking setting (clicks on email, email opens) is automatically enabled to enable feedback events in AEP real time customer profile 
+- Select the _Email_ activity from the _ACTIONS_ menu and drag and drop it to the canvas. Notice Tracking setting (clicks on email, email opens) is automatically enabled to enable feedback events in AEP real time customer profile 
     - Label the email _Order Confirmation Email_. It gives a name to your email delivery and will help you track its performance in the report
-    - Under Email Configuration, select the _EmailMarketing_ value. It applies deliverability settings and email metadata (from, headers fields, tracking parameters) to the delivery
+    - Under Email Configuration, select the _EmailMarketing_ value. It applies deliverability settings and email metadata (from, header fields, tracking parameters) to the delivery
 
 
 ## Build the Order Confirmation Email 
@@ -103,13 +103,13 @@ Let's configure the subject line with our profile first name as personalisation 
 
 ### Email Content 
 Let's author the email body now. In the body section: 
-- Click _Edit email body_. There are multiple options to build your communications, like using a template or create your own content. Here we are going to start from scractch
+- Click _Edit email body_. There are multiple options to build your communications, like using a template or create your own content. Here we are going to start from scratch
 - Select _Design from scratch_
 <img width="800" alt="image" src="https://github.com/user-attachments/assets/4d959630-f767-4e2d-9482-45ac9649cd35" />
 
 - The Email editor opens up, you'll notice on the left rail a menu with sections to select pre-defined components, use AJO Assets, select fragments and conditional content. There are plenty of helper you can leverage to speed up the email creation process.
 
-- From the Components menu icon (![image](https://github.com/user-attachments/assets/7181868f-a2e6-4e0c-aa60-439d66ab32c7)), under _Structures_ > Select a _1:1 column_ and drag'n drop it to the canva.
+- From the Components menu icon (![image](https://github.com/user-attachments/assets/7181868f-a2e6-4e0c-aa60-439d66ab32c7)), under _Structures_ > Select a _1:1 column_ and drag'n drop it to the canvas.
 
     
 ### Use Assets from AJO Digital Assets Manager
@@ -126,7 +126,7 @@ To play more with DAM feature, you can access it by clicking the 3 dots in the _
 ### Reuse with Fragments
 Fragments are reusable, modular content pieces that can be incorporated into personalized messages. Fragments allow marketers to create content once and then reuse or adapt it across multiple campaigns and journeys without having to rebuild it each time. Let's use some previously created fragments to display the items that have been purchased. The fragment will leverage contextual data coming from the Luma Purchase Event that we added to the journey. 
 - From the Fragment menu icon (![image](https://github.com/user-attachments/assets/7446b568-d87f-4257-a243-864181fa8402)), select the _Order Confirmation Text_ and drag'n drop it below the image. 
-- From the Components menu icon (![image](https://github.com/user-attachments/assets/7181868f-a2e6-4e0c-aa60-439d66ab32c7)), under _Contents_, select the _Text_ content and drag'n drop it to the canva
+- From the Components menu icon (![image](https://github.com/user-attachments/assets/7181868f-a2e6-4e0c-aa60-439d66ab32c7)), under _Contents_, select the _Text_ content and drag'n drop it to the canvas.
 - Double click on the default text and replace it with _Here are the details of your order_ and click _Add Personalization_ icon (![image](https://github.com/user-attachments/assets/b838765d-99af-4ed4-967e-85ca70084234)). In the _Edit Personalization_ screen, you'll be able to set placeholders like variables that will represent the purchased items. We are going to use AJO Helper functions to help you loop through the collections of purchased items. 
 - Under _Helper functions_ (![image](https://github.com/user-attachments/assets/e4357041-9b17-45a2-a208-a155be5769b2)), select _Helpers_ > _each_, then click _+_ sign
 - We are going to use a prebuilt fragment to display the item name, price and purchased quantity. In the _each_ block, select Fragments  then click on the 3 dots besides _Order Content_ and select _Paste Fragment_
@@ -136,10 +136,10 @@ Fragments are reusable, modular content pieces that can be incorporated into per
 
 
     
-### Enhance with with External Data
+### Enhance with External Data
 AJO custom actions are great to communicate with the outside world, whether it is to query external data sources and use its output to determine what do to next (like a condition in the journey to determine the next best path for our customer) or to contact an external system to push some personalized message (like creating a task to the shipping company). The capabilities are endless. In our Luma Purchase journey, we'd like to also incent our customers with an offer from our Loyalty System. It serves personalized Promo Code trough a REST API that we can query directly from the journey and use its response to personnalize further the email content based on the customer order value. The martech team prepared a content fragment that makes it very easy to consume promo code. The content fragment is preconfigured to accept 2 placeholders from the loyalty service: the offer name and the promo code. 
-- From the Fragment menu icon (![image](https://github.com/user-attachments/assets/7446b568-d87f-4257-a243-864181fa8402)), select the _Promo Code Fragment_ and drag'n drop it in the canva.
-- Click on it in the canva and under the _Settings_ tab:
+- From the Fragment menu icon (![image](https://github.com/user-attachments/assets/7446b568-d87f-4257-a243-864181fa8402)), select the _Promo Code Fragment_ and drag'n drop it in the canvas.
+- Click on it in the canvas and under the _Settings_ tab:
   - replace the LoyaltyOffer input with the response from the custom action. Select the default text, delete it and then click on <img width="50" alt="image" src="https://github.com/user-attachments/assets/c81aa4ce-7d92-4558-9efe-34adb389d08f" /> icon and under `Contextual Attributes > Journey Orchestration > Actions > Loyalty Service`, select the _LoyaltyOffer_ attribute.
   - replace the default OfferCode input with the response from the custom action. Select the default text, delete it and click on <img width="50" alt="image" src="https://github.com/user-attachments/assets/c81aa4ce-7d92-4558-9efe-34adb389d08f" /> icon and under `Contextual Attributes > Journey Orchestration > Actions > Loyalty Service`, select the _PromoCode_ attribute.
 - Click _Save_.
@@ -149,9 +149,9 @@ AJO custom actions are great to communicate with the outside world, whether it i
 
 
 ### Make it Relevant with Conditional Content
-Conditional content allows marketers to deliver highly personalized and dynamic messaging based on specific conditions or rules. Here, We want to invite customer who haven't the Luma Mobile App installed to do so. For the other, we'd like to promote the Luma+ Loyalty Program. We are going to leverage previously built platform audiences to manage this logic. With AJO conditional content, you can create as many variants as needed. 
+Conditional content allows marketers to deliver highly personalized and dynamic messaging based on specific conditions or rules. Here, We want to invite customers who haven't the Luma Mobile App installed to do so. For the other, we'd like to promote the Luma+ Loyalty Program. We are going to leverage previously built platform audiences to manage this logic. With AJO conditional content, you can create as many variants as needed. 
 We are going to use the default variant to promote the Luma Loyalty+ Program and a second variant to incent Luma customers to install the mobile app.
-- First, let's drag and drop a new container. From the Components menu icon (![image](https://github.com/user-attachments/assets/7181868f-a2e6-4e0c-aa60-439d66ab32c7)), under _Contents_, select the _Container_ content and drag'n drop it to the canva.
+- First, let's drag and drop a new container. From the Components menu icon (![image](https://github.com/user-attachments/assets/7181868f-a2e6-4e0c-aa60-439d66ab32c7)), under _Contents_, select the _Container_ content and drag'n drop it to the canvas.
 - In Asset Selector > Collection > Select the Luma Collection, and choose the _Luma Loyalty +_ banner
 - Click on the image, then add conditional content by clicking the ![image](https://github.com/user-attachments/assets/5de06ca6-7568-4e04-b4e9-66c4c0d0bdf5) icon and create another variant.
 - Select the _Variant - 1_ and rename it: _Not Mobile App Users_ and click _select condition_ icon <img width="35" alt="image" src="https://github.com/user-attachments/assets/06d83bfd-1ba3-4fc1-993c-84f935306dda" /> to choose the  _Not Luma Mobile App Users_ one, then validate by clicking _Select_
@@ -194,7 +194,7 @@ The first thing to do is to detect when a customer dropped in the conversion pro
 - Click on the  _LumaPurchaseEvent_Email_, set a timeout for let's say, 1 minute (of course, it would be much longer outside of this lab) and click _Set a timeout path_
   
   ![image](https://github.com/user-attachments/assets/6d71935c-71f2-4ffb-97d8-0a0d6530aea4)
-- Select the _Condition_ activity from the _ORCHESTRATION_ menu and drag and drop it to the canva
+- Select the _Condition_ activity from the _ORCHESTRATION_ menu and drag and drop it to the canvas.
   - Label the activity _Preferred Channel_ and select Type _Data source condition_
   - The first path will be for Luma users who have consented to receive Mobile Push. Click on the ![image](https://github.com/user-attachments/assets/9c9237c5-9846-42f4-b6ab-799aa62e1864) icon to edit the expression. Here let's select under Audiences _Luma - Mobile App Users_ then Click _Ok_.
   - Label this Path _Push_
@@ -205,7 +205,7 @@ The first thing to do is to detect when a customer dropped in the conversion pro
 ## Be friend with Content Templates 
 Content Template is a nice addition in AJO, it makes it easy for marketers and content managers to build highly-reusable content, outside of any campaign or journeys. It offers neat features such as the ability to lock certain area of the template to prevent unintentional edits or deletions, giving you greater control over template customization, and improving the efficiency and reliability of your email campaigns.
 
-- Select the _Push_ activity from the _ACTIONS_ menu and drag and drop it to the canva and connect it to the _Push_ transition of your condition activity
+- Select the _Push_ activity from the _ACTIONS_ menu and drag and drop it to the canvas and connect it to the _Push_ transition of your condition activity
   - Label the push _Abandoned Cart Push_. It gives a name to your push notification delivery and will help you track its performance in the report
   - Under Push Configuration, select DXDemoApp
   Click _Edit content_ button
@@ -217,7 +217,7 @@ Content Template is a nice addition in AJO, it makes it easy for marketers and c
 
       
 - Lets go back to the journey by clicking the back arrow next to your journey name (<img width="26" alt="image" src="https://github.com/user-attachments/assets/6fc3f0a5-3115-4f06-8676-f506f2dd4f9b" />) and save your push notification.
-- Select the _Email_ activity from the _ACTIONS_ menu and drag and drop it to the canva and connect it to the _Others_ transition of your condition activity.
+- Select the _Email_ activity from the _ACTIONS_ menu and drag and drop it to the canvas and connect it to the _Others_ transition of your condition activity.
     - Label the email _Abandoned Cart Email_. It gives a name to your email delivery and will help you track its performance in the report.
     - Under _Email Configuration_, select the _EmailMarketing_ value.
     - Click _Edit content_ button
@@ -243,7 +243,7 @@ We'd like this email to be automatically translated based on the preferred langu
 
 
 ## Apply Frequency Capping
-Email retargeting can be quickly overwhelming for customers. To avoid sursollicitating our Luma customers with too many communications, we should apply business rules that limit the number of communication to send over a specific period of time.  In our case, we want to enforce a cross channel rule that limits the number of emails and pushs to 3 retargeting message per week. The rule has already been created as follow. 
+Email retargeting can be quickly overwhelming for customers. To avoid over solicitation over our Luma customers with too many communications, we should apply business rules that limit the number of communication to send over a specific period of time.  In our case, we want to enforce a cross channel rule that limits the number of emails and pushs to 3 retargeting message per week. The rule has already been created as follow. 
 
 ![image](https://github.com/user-attachments/assets/0307c3ee-207a-4e35-915c-79a83e7006ce)
 
@@ -254,7 +254,7 @@ What you'll have to do is to apply this rule to your message. AJO will then full
 ---
 # Finalize the Journey
 We're almost done with the journey, just a couple of steps more to tie the abandoned branch back to the order confirmation branch. Once our profile receives the retargeting message, he is invited to resume its purchase. When doing so, he will generate a new Purchase Event that AJO is going to listen in order to complete the purchase process
-- Select the _LumaPurchaseEvent_Email_ from the _EVENTS_ menu and drag and drop it to the canva, right after the Abandoned Cart Push outgoing path.
+- Select the _LumaPurchaseEvent_Email_ from the _EVENTS_ menu and drag and drop it to the canvas, right after the Abandoned Cart Push outgoing path.
 - Move the Email outgoing path to the above event to connect them altogether.
 - Link the outgoing path of the _LumaPurchaseEvent_Email1_ to the LoyaltyService action
   
@@ -299,7 +299,7 @@ What's great about AJO reporting is the ability to take actions from insights. F
 <img width="1307" alt="image" src="https://github.com/user-attachments/assets/0a0cae33-9be5-48c8-a88f-0439bfbc62df" />
 
 
-Of course, there's much more you can do given as Customer Journey Analytics dashboard (another AEP module that is embedded for this reporting view) can be fully customized, we'll keep that for another lab :wink:
+Of course, there's much more you can do as Customer Journey Analytics dashboards (another AEP module that is embedded for this reporting view) can be fully customized, we'll keep that for another lab :wink:
 
 
 ## Package your journey and share it
