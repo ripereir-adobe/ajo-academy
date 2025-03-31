@@ -27,7 +27,7 @@ View the events collected in the Real Time Customer Profile panel by clicking on
 
 ![image](https://user-images.githubusercontent.com/40355195/216580677-491b28d3-fb54-4f91-8ad4-73d760f462dc.png)
 
-If you have visited three product pages in the same category (men or women), you are automatically qualified for the corresponding segment. Notice also the status of the audience evaluation, either _Realized_ or _Exited_ based on how long your in the audience. 
+If you have visited three product pages in the same category (men or women), you are automatically qualified for the corresponding segment. Notice also the status of the audience evaluation, either _Realized_ (you entered the audience) or _Exited_ (you left the audience). 
 
 <img width="366" alt="image" src="https://github.com/user-attachments/assets/51d589c0-d4f3-4fd5-ba44-b3fa8e77775c" />
 
