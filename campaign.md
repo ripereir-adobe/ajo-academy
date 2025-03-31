@@ -28,7 +28,7 @@ First let's target our high value customers who are most likely to buy from this
   <img width="800" alt="image" src="https://github.com/user-attachments/assets/f2561b93-0fda-4464-b393-d06f49f6b14a" />
   
   - If you click on _Refresh Estimate_, you should see the number of profiles that currently qualify to your audience.
-  - You can also see sample profiles that qualified by clicking the _Show Profile_ button.
+  - You can also see sample profiles that qualified by clicking the _View Profile_ button.
   - Publish the Audience by clicking the _Publish_ button.
  
 
@@ -91,7 +91,7 @@ Let's create now the second experiment with the help of generative AI to speed u
   - Body: Apply the same as above to generate an Exclusive yet Empathetic message based on your prompt (eg: _Discover our new camping gears_)
   - Media Url: In the Digital Assets, browse the  _Ajo Academy_ folder > _Fall Collection_ folder, select _fall-collection-banner-camping_
   - Under _Buttons_ section, click <img width="123" alt="image" src="https://github.com/user-attachments/assets/0f51086a-9c4d-41ef-b205-b19ddc8426e8" /> button and set _Button Title_ to _Shop Now_.
-  - In the _Target_ input type the landing page url: `https://dsn.adobe.com/web/ajo-academy/fall-collection`
+  - In the _Target_ input button, copy the landing page url: `https://dsn.adobe.com/web/ajo-academy/fall-collection`
  
 The experiment should look like this: 
 ![image](https://github.com/user-attachments/assets/e1da8764-b8d5-4a53-82d3-ffe58ba5a6de)
