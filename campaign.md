@@ -59,9 +59,6 @@ This feature enables marketers to present relevant, rich media content to users,
 - Under Content Card configuration, select the predefined setting called _ContentCards_.
 - Content card are also available for mobile where you can define additional triggering rules. As we configure it for web now, let's disable the _additional delivery rules_
 - Let's author the card by clicking the ![image](https://github.com/user-attachments/assets/486ba657-48bc-4be7-8957-5e043c986987) button
-  
-Let's edit the content now: 
-- Click the <img width="117" alt="image" src="https://github.com/user-attachments/assets/e00e80db-5637-4520-9ded-2486b4325651" /> button. 
 
 
 ## Create an Experimentation
