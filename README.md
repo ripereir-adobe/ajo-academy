@@ -20,7 +20,7 @@
 Adobe Journey Optimizer (AJO) lets you orchestrate and deliver personalised customer engagement across all channels — including email, web, app, mobile and in-person — in the moments that matter to the customer.
 AJO is an app built on top of Adobe Experience Platform (AEP), it leverages Adobe Real Time Customer Profile to power digital experiences.  With AEP and AJO,  you'll then be able to : 
 - Collect data in real time through Adobe Experience SDKs and APIs and articulate those touchpoints altogether to build powerful customer journeys.
-- Decide which customer behaviors should be heard and react accordingly to determine the newt best interaction between your contacts and your brand.
+- Decide which customer behaviors should be heard and react accordingly to determine the new best interaction between your contacts and your brand.
 - Build complex customer journeys with a graphical orchestrator and deliver  personalized, just in time messages.
 - Create campaigns to deliver personalized communications across your own inbound and outbound channels and ensure a true consistent experience to all your customers.
 
@@ -38,7 +38,7 @@ During this lab, we will use a fictitious sports equipment brand - called **Luma
 
 # Learning objectives
 - Generate behavioral data from the Luma website and appreciate how they contribute to the real-time profile and identity graph in Adobe Experience Platform
-- Prepare a customer journey built using AJO orchestration canva and craft personalized communications with all cool stuff AJO offers such as templates, fragmens, translations, pressure rule and much more.
+- Prepare a customer journey built using AJO orchestration canvas and craft personalized communications with all the neat functionalities  AJO offers such as templates, fragments, translations, pressure rule and much more.
 - Create marketing campaigns activating audiences calculated by AEP, ensuring the consistency of communications in a fully omnichannel way.
 - Track the performance of your marketing actions and your A/B tests through dashboards and delivery reports.
 
@@ -52,7 +52,7 @@ During this lab, we will use a fictitious sports equipment brand - called **Luma
 
 
 # Exercices
-We prepared 3 exercices to help you grasp all the benefits AJO offers when bringing a customer journey to life. As we have a couple of hours only, we cannot cover them all, but we'll focus on the business persona rather than the technical role. In those exercices, you'll be int the marketeer shoes and you goal will be to prepare campaign for Luma, our fictitious sport apparel brand. The lab is composed of 3 chapters : 
+We prepared 3 exercices to help you grasp all the benefits AJO offers when bringing a customer journey to life. As we have a couple of hours only, we cannot cover them all, but we'll focus on the business persona rather than the technical role. In those exercices, you'll be in the marketeer shoes and you goal will be to prepare campaign for Luma, our fictitious sport apparel brand. The lab is composed of 3 chapters : 
 
 [Acquisition](./acquisition.md): Navigate the demo website and generate data to then visualize it in Adobe Experience Platform.
 
