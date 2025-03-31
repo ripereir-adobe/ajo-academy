@@ -29,7 +29,8 @@ View the events collected in the Real Time Customer Profile panel by clicking on
 
 If you have visited three product pages in the same category (men or women), you are automatically qualified for the corresponding segment. Notice also the status of the audience evaluation, either _Realized_ or _Exited_ based on how long your in the audience. 
 
-![image](https://user-images.githubusercontent.com/40355195/216581233-eb81a4d6-c50d-4fc1-898c-f3eed9f00537.png)
+<img width="366" alt="image" src="https://github.com/user-attachments/assets/51d589c0-d4f3-4fd5-ba44-b3fa8e77775c" />
+
 
 ---
 # Create an account
@@ -37,11 +38,18 @@ If you have visited three product pages in the same category (men or women), you
 Click the  ![image](https://github.com/user-attachments/assets/d85996df-dad1-43f0-a048-3e051a7f4cb1) button in the top right corner, then click the ![image](https://github.com/user-attachments/assets/804ea637-32ab-4835-a0dc-6ea132afa126)
  link.
 
-Enter your information to create your account. Rremember the email address, you'll need it to check your emails and lookup your profile details in AEP.
+Enter your information to create your account. Remember the email address , you'll need it to access your mailbox and lookup your profile details in AEP.
+
+> [!NOTE]
+> Use a valid email address linked to a mailbox where you can check your emails.  
+> It can be the one you use to first login to the environment
+
+
 - Toggle on _I want to join loyalty program_ and 
 - Set Communication Preferences to _Email_
 - Add your preferences (shoe size / shirt size and favorite color)
 - Click the _Submit_ button.
+- Once your account is created you can login (no need to type a password, it is a demo website)
 
 A couple of minutes later, if you refresh the Real Time Customer Profile panel, the profile information are updated.
 
@@ -59,7 +67,7 @@ Scrolling down, you can also see the audience memberships AEP automatically calc
 
 Still in the Real Time Customer Profile panel, click Utilities and _View Profile in AJO_
 
-![image](https://github.com/user-attachments/assets/a13cad8d-02b9-4533-b6a5-ecf3afddd81b)
+<img width="366" alt="image" src="https://github.com/user-attachments/assets/a13cad8d-02b9-4533-b6a5-ecf3afddd81b" />
 
 
 The profile view opens in a new tab. Observe:
