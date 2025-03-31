@@ -78,7 +78,7 @@ Select the  _LumaPurchaseEvent_Email_ from the _EVENTS_ menu and drag and drop i
  `@event{LumaPurchaseEvent_Email._aeppartner1.identification.core.email}`)
     ![image](https://github.com/user-attachments/assets/0f0c31f0-da0d-48a0-a4c4-2aeaaa7db649)
 
-    - In the _orderValue_ input, click the Advanced mode button then select the _priceTotal_ attribute under Context > LumaPurchaseEvent_Email > productListItems (or juste copy paste
+    - In the _orderValue_ input, click the Advanced mode button then select the _priceTotal_ attribute under _Context > LumaPurchaseEvent_Email > productListItems_ (or juste copy paste
  `@event{LumaPurchaseEvent_Email.productListItems.at(0).priceTotal}`)
   ![image](https://github.com/user-attachments/assets/c1de796e-e943-4cf0-b7f1-35f9a87cc8bc)
 
@@ -140,8 +140,8 @@ Fragments are reusable, modular content pieces that can be incorporated into per
 AJO custom actions are great to communicate with the outside world, whether it is to query external data sources and use its output to determine what do to next (like a condition in the journey to determine the next best path for our customer) or to contact an external system to push some personalized message (like creating a task to the shipping company). The capabilities are endless. In our Luma Purchase journey, we'd like to also incent our customers with an offer from our Loyalty System. It serves personalized Promo Code trough a REST API that we can query directly from the journey and use its response to personnalize further the email content based on the customer order value. The martech team prepared a content fragment that makes it very easy to consume promo code. The content fragment is preconfigured to accept 2 placeholders from the loyalty service: the offer name and the promo code. 
 - From the Fragment menu icon (![image](https://github.com/user-attachments/assets/7446b568-d87f-4257-a243-864181fa8402)), select the _Promo Code Fragment_ and drag'n drop it in the canva.
 - Click on it in the canva and under the _Settings_ tab:
-  - replace the LoyaltyOffer input with the response from the custom action. To select it click on <img width="50" alt="image" src="https://github.com/user-attachments/assets/c81aa4ce-7d92-4558-9efe-34adb389d08f" /> icon and under `Contextual Attributes > Journey Orchestration > Actions > Loyalty Service`, select the _LoyaltyOffer_ attribute.
-  - replace the default OfferCode input with the response from the custom action. To select it click on <img width="50" alt="image" src="https://github.com/user-attachments/assets/c81aa4ce-7d92-4558-9efe-34adb389d08f" /> icon and under `Contextual Attributes > Journey Orchestration > Actions > Loyalty Service`, select the _PromoCode_ attribute.
+  - replace the LoyaltyOffer input with the response from the custom action. Select the default text, delete it and then click on <img width="50" alt="image" src="https://github.com/user-attachments/assets/c81aa4ce-7d92-4558-9efe-34adb389d08f" /> icon and under `Contextual Attributes > Journey Orchestration > Actions > Loyalty Service`, select the _LoyaltyOffer_ attribute.
+  - replace the default OfferCode input with the response from the custom action. Select the default text, delete it and click on <img width="50" alt="image" src="https://github.com/user-attachments/assets/c81aa4ce-7d92-4558-9efe-34adb389d08f" /> icon and under `Contextual Attributes > Journey Orchestration > Actions > Loyalty Service`, select the _PromoCode_ attribute.
 - Click _Save_.
 
 ![promocode](https://github.com/user-attachments/assets/c9d9a47e-a27f-4f15-80f2-d620644e8f24)
@@ -209,7 +209,7 @@ Content Template is a nice addition in AJO, it makes it easy for marketers and c
   Click _Edit content_ button
   - Let's use a predefined Push template that has been configured previously: Click _Apply content template_ from the <img width="155" alt="image" src="https://github.com/user-attachments/assets/32fe9a00-679d-4aaf-9bf2-893b1cc07ae1" /> button
     - In the _Content Template_ window, Select _Luma - Abandoned Push_ content template and click _Confirm_
-    - Notice how the iOS and Android content get automtically applied from the template. You can still edit them to match your specific purpose.
+    - Notice how the iOS and Android content get automatically applied from the template. You can still edit them to match your specific purpose.
    
   <img width="330" alt="image" src="https://github.com/user-attachments/assets/e563f406-116c-4d9d-bf88-498ab513e579" />
 
