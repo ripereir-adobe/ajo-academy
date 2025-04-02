@@ -129,10 +129,12 @@ Fragments are reusable, modular content pieces that can be incorporated into per
 - From the Components menu icon (![image](https://github.com/user-attachments/assets/7181868f-a2e6-4e0c-aa60-439d66ab32c7)), under _Contents_, select the _Text_ content and drag'n drop it to the canvas.
 - Double click on the default text and replace it with _Here are the details of your order_ and click _Add Personalization_ icon (![image](https://github.com/user-attachments/assets/b838765d-99af-4ed4-967e-85ca70084234)). In the _Edit Personalization_ screen, you'll be able to set placeholders like variables that will represent the purchased items. We are going to use AJO Helper functions to help you loop through the collections of purchased items. 
 - Under _Helper functions_ (![image](https://github.com/user-attachments/assets/e4357041-9b17-45a2-a208-a155be5769b2)), select _Helpers_ > _each_, then click _+_ sign
+- Replace _someArray_ with the productListItems collection from the  contextual attributes of your _Luma_CheckoutEvent_Email_.
+- Remove the curly brace surrounding the inserted value. 
 - We are going to use a prebuilt fragment to display the item name, price and purchased quantity. In the _each_ block, select Fragments  then click on the 3 dots besides _Order Content_ and select _Paste Fragment_
 - Click _Save_
-  
-![ajo-lab-fragment_1](https://github.com/user-attachments/assets/9acc8df5-8a3f-4031-be46-1882d9919c7f)
+
+![productListItems_1](https://github.com/user-attachments/assets/6f87bf27-3c43-4129-b96b-bb79d7ee5cc6)
 
 
     
