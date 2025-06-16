@@ -49,7 +49,7 @@ The customer journey canvas is the central point for creating a real-time custom
 
 We will now personalize the Luma conversion path using a journey which will be composed of 2 branches, each one having its own business objective: 
 
-- The Order Confirmation Branch to send a confirmation message to users who have complete their purchase. 
+- The Order Confirmation Branch to send a confirmation message to users who have completed their purchase. 
 - The Abandoned Cart Branch to retarget Luma website users who have abandoned the purchase process.
 
 
@@ -71,7 +71,7 @@ Select the  _LumaCheckoutEvent_Email_ from the _EVENTS_ menu and drag and drop i
 - The second event is triggered by the order summary, when the user clicks on _Confirm Order_ button. The event is also pre configured and ready to use. 
 Select the  _LumaPurchaseEvent_Email_ from the _EVENTS_ menu and drag and drop it to the canvas, right after the first event. 
  
-- Select the _LoyaltyService_ from the _ACTIONS_ menu and drag and drop it to the canvas, right after the second event. Custom actions are very powerful in AJO, they let you send any data from your customer journey, wether it is context or profile related data, you can seamlessly share them to send. Of course, you also have the option to use the response from the custom action as condition criteria in your journey and you can also use it to personalize downstream communications.
+- Select the _LoyaltyService_ from the _ACTIONS_ menu and drag and drop it to the canvas, right after the second event. Custom actions are very powerful in AJO, they let you send any data from your customer journey, whether it is context or profile related data, you can seamlessly share them to send. Of course, you also have the option to use the response from the custom action as condition criteria in your journey and you can also use it to personalize downstream communications.
   
   - Let's configure the request parameters of our custom action that will retrieve a promo code based on the order value. We have to send to the LoyaltyService API the customerId as well as the order value: 
     - In the _loyaltyId_ input, select the _email_ attribute under Context > LumaPurchaseEvent_Email > _aeppartner1 > identification > core (or juste copy paste
