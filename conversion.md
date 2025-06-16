@@ -249,7 +249,7 @@ Email retargeting can be quickly overwhelming for customers. To avoid over solic
 
 ![image](https://github.com/user-attachments/assets/0307c3ee-207a-4e35-915c-79a83e7006ce)
 
-What you'll have to do is to apply this rule to your message. AJO will then fully manage pressure rule based on the ruleset selected above. Under the hood, AJO uses sending logs of the real time customer profile to decide whether the communication should be delivered. When an exclusion occurs, the information is tracking in AJO reporting wich the exclusion reason. 
+What you'll have to do is to apply this rule to your message. AJO will then fully manage pressure rule based on the ruleset selected above. Under the hood, AJO uses sending logs of the real time customer profile to decide whether the communication should be delivered. When an exclusion occurs, the information is tracked in AJO reporting wich the exclusion reason. 
 - Click <img width="161" alt="image" src="https://github.com/user-attachments/assets/e421fd78-b8b0-42e7-9cd6-b3d05e8b94a9" /> button, select _Luma Marketing  - Outgoing messages_ Rue Set, then click _Save_
 
 
