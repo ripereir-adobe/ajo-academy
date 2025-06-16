@@ -94,7 +94,7 @@ Select the  _LumaPurchaseEvent_Email_ from the _EVENTS_ menu and drag and drop i
 
 
 ### Personalize the subject
-Let's configure the subject line with our profile first name as personalisation token. 
+Let's configure the subject line with our profile first name as personalization token. 
 - Click the ![image](https://github.com/user-attachments/assets/3ae69ec7-673b-4af9-b131-8dd1ef049189) icon and fetch the _first name_ attribute of the real time customer profile (available at Profile attribute > Person > Full name), then click the ![image](https://github.com/user-attachments/assets/9364edca-5e09-4d3b-a7d9-cadf12213a88) icon to add it to the subject line, and append ` , your order confirmation`
 <img width="1380" alt="image" src="https://github.com/user-attachments/assets/26d60974-301c-4ee0-a4c2-83b3a3669952" />
 
