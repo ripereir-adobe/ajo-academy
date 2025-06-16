@@ -38,7 +38,7 @@ During this lab, we will use a fictitious sports equipment brand - called **Luma
 
 # Learning objectives
 - Generate behavioral data from the Luma website and appreciate how they contribute to the real-time profile and identity graph in Adobe Experience Platform
-- Prepare a customer journey built using AJO orchestration canvas and craft personalized communications with all the neat functionalities  AJO offers such as templates, fragments, translations, pressure rule and much more.
+- Prepare a customer journey built using AJO orchestration canvas and craft personalized communications with all the functionalities  AJO offers such as templates, fragments, translations, pressure rule and much more.
 - Create marketing campaigns activating audiences calculated by AEP, ensuring the consistency of communications in a fully omnichannel way.
 - Track the performance of your marketing actions and your A/B tests through dashboards and delivery reports.
 
@@ -52,7 +52,7 @@ During this lab, we will use a fictitious sports equipment brand - called **Luma
 
 
 # Exercices
-We prepared 3 exercices to help you grasp all the benefits AJO offers when bringing a customer journey to life. As we have a couple of hours only, we cannot cover them all, but we'll focus on the business persona rather than the technical role. In those exercices, you'll be in the marketeer shoes and you goal will be to prepare campaign for Luma, our fictitious sport apparel brand. The lab is composed of 3 chapters : 
+We prepared 3 exercices to help you understand all the benefits AJO offers when bringing a customer journey to life. As we have a couple of hours only, we cannot cover them all, but we'll focus on the business persona rather than the technical role. In these exercices, you'll be in the marketeer shoes and your goal will be to prepare a campaign for Luma, our fictitious sport apparel brand. The lab is composed of 3 chapters : 
 
 [Acquisition](./acquisition.md): Navigate the demo website and generate data to then visualize it in Adobe Experience Platform.
 
