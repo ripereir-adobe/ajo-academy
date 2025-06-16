@@ -12,7 +12,7 @@ First, let's open a new tab in an **incognito mode (sometimes called private bro
 
 You may have to verify your identity if this is your first time login. If so, check your mailbox to enter the one time code you received and complete your profile (don't worry, these information won't be used outside of this lab). 
 
-This the Luma website powered by Adobe web SDK to collect in real time customer behaviors. Before that, you need to give your consent by clicking the **Allow All** button displayed in the cookie notice banner. 
+This is the Luma website powered by Adobe web SDK to collect in real time customer behaviors. Before that, you need to give your consent by clicking the **Allow All** button displayed in the cookie notice banner. 
 <img width="630" alt="image" src="https://github.com/user-attachments/assets/1f529fa1-9146-44d4-89c8-0c12b2c12094" />
 
 
