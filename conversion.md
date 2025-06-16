@@ -255,7 +255,7 @@ What you'll have to do is to apply this rule to your message. AJO will then full
 
 ---
 # Finalize the Journey
-We're almost done with the journey, just a couple of steps more to tie the abandoned branch back to the order confirmation branch. Once our profile receives the retargeting message, he is invited to resume its purchase. When doing so, he will generate a new Purchase Event that AJO is going to listen in order to complete the purchase process
+We're almost done with the journey, just a couple of steps more to tie the abandoned branch back to the order confirmation branch. Once our profile receives the retargeting message, he/she is invited to resume its purchase. When doing so, he/she will generate a new Purchase Event that AJO is going to listen in order to complete the purchase process
 - Select the _LumaPurchaseEvent_Email_ from the _EVENTS_ menu and drag and drop it to the canvas, right after the Abandoned Cart Push outgoing path.
 - Move the Email outgoing path to the above event to connect them altogether.
 - Link the outgoing path of the _LumaPurchaseEvent_Email1_ to the LoyaltyService action
