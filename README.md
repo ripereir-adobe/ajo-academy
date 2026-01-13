@@ -15,7 +15,7 @@
 </div>
 
 
-# Power real-time journeys and batch campaigns with AJO
+#  real-time journeys and batch campaigns with AJO
 
 Adobe Journey Optimizer (AJO) lets you orchestrate and deliver personalized customer engagement across all channels — including email, web, app, mobile and in-person — in the moments that matter to the customer.
 AJO is an app built on top of Adobe Experience Platform (AEP), it leverages Adobe Real Time Customer Profile to power digital experiences.  With AEP and AJO,  you'll then be able to : 
