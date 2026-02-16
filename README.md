@@ -58,8 +58,9 @@ We prepared 3 exercices to help you understand all the benefits AJO offers when 
 
 [Conversion](./conversion.md): Configure the purchasing journey and its different stages, from checkout to payment, including retargeting abandoners.
 
-[Batch Campaign](./campaign.md): Create an batch campaign to target your visitors on the website, based on their browsing interest and display a banner on the home page of Luma website to promote the fall outdoor gear  collection.
+[Batch Campaign Action](./campaign.md): Create a batch campaign to target your visitors on the website, based on their browsing interest and display a banner on the home page of Luma website to promote the fall outdoor gear  collection.
 
+[Batch Campaign Orchestration](./campaign.md): Create a batch campaign using the workflow orchestration visual capabilities starting by targeting specific Customer Luma Orders and enriching data to deliver personalized communications to the profiles.
 
 
 
