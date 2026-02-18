@@ -10,7 +10,7 @@ As Luma marketers, we'd like to build a Campaign to promote the Luma's sport's w
 
 # Create Campaign
 
-First go to the new available tab "Orchestration" in the "Campaigns" AJO menu options and click on "Create Campaign" <img width="155" alt="image" src="https://github.com/ripereir-adobe/ajo-academy/blob/main/assets/Build Create Campaign Button.png" />. Let's start creating the visual campaign orchestration through a workflow: 
+First go to the new available tab "Orchestration" in the "Campaigns" AJO menu options and click on "Create Campaign" <img width="155" alt="image" src="https://github.com/ripereir-adobe/ajo-academy/blob/main/assets/Create Campaign Button.png" />. Let's start creating the visual campaign orchestration through a workflow: 
 
 - Select Orchestration - Campaign ___and name your campaign, please prefix it with the email address you used when creating your account on Luma website
 - After the start sign __ in the workflow, add the 1st activity "Build Audience" click on the "+" __ sign and select "Build Audience" __ then select the relational schema "Orders_reports" as you targeting dimension ___in the click the <img width="155" alt="image" src="https://github.com/ripereir-adobe/ajo-academy/blob/main/assets/Build Audience start.png" /> button on the top right hand corner.
