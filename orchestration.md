@@ -5,6 +5,7 @@
 </p>
 
 In this chapter of the lab, we are going to explore Campaign Orchestration new capability within AJO designed to build, schedule, and deliver one‑to‑many marketing campaigns—primarily email, SMS, and push—using a marketer‑friendly, visual interface. It complements AJO’s event‑driven journeys by supporting traditional outbound campaigns that run on a defined schedule and target audience segments.
+
 As Luma marketers, we'd like to build a Campaign to promote the Luma's sport's wear clothing. This campaign will send an email to all profiles that made orders above 500 euros. To build this orchestrated campaign, we'd need first to build the target audience, then the email content to be delivered. We'd like to create personalize the email text, the banner image, and promotion using conditional content and AI content generation of image variations.
 
 # Create the Audience
