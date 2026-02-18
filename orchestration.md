@@ -4,10 +4,8 @@
 <img width="800" src="https://github.com/user-attachments/assets/9c94e953-ab53-4ff6-b4f2-c6e5ea244489" />
 </p>
 
-In this chapter of the lab, we are going to explore single action campaigns. Journey Optimizer campaigns delivers one-time content to a specific audience as opposed to journeys where actions are executed in sequence. The delivery of the campaign can be performed immediately, based on a specified schedule or triggered through an API call. 
-
-As a Luma marketers, we'd like to build a Campaign to promote the new Luma Fall Collection. This campaign will display a banner on the website to invite visitors to look at the Fall Collection landing page. To build a campaign, we'd need first to determine the target audience, then the web content to display. We'd like to create 2 variants of our content and test out which one works best to then communicate the most effective experimentation to our audience.
-
+In this chapter of the lab, we are going to explore Campaign Orchestration new capability within AJO designed to build, schedule, and deliver one‑to‑many marketing campaigns—primarily email, SMS, and push—using a marketer‑friendly, visual interface. It complements AJO’s event‑driven journeys by supporting traditional outbound campaigns that run on a defined schedule and target audience segments.
+As Luma marketers, we'd like to build a Campaign to promote the Luma's sport's wear clothing. This campaign will send an email to all profiles that made orders above 500 euros. To build this orchestrated campaign, we'd need first to build the target audience, then the email content to be delivered. We'd like to create personalize the email text, the banner image, and promotion using conditional content and AI content generation of image variations.
 
 # Create the Audience
 First let's target our high value customers who are most likely to buy from this collection: 
