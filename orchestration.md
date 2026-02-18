@@ -6,12 +6,13 @@
 
 In this chapter of the lab, we are going to explore Campaign Orchestration new capability within AJO designed to build, schedule, and deliver one‑to‑many marketing campaigns—primarily email, SMS, and push—using a marketer‑friendly, visual interface. It complements AJO’s event‑driven journeys by supporting traditional outbound campaigns that run on a defined schedule and target audience segments.
 
-As Luma marketers, we'd like to build a Campaign to promote the Luma's sport's wear clothing. This campaign will send an email to all profiles that made orders above 500 euros. To build this orchestrated campaign, we'd need first to build the target audience, then the email content to be delivered. We'd like to create personalize the email text, the banner image, and promotion using conditional content and AI content generation of image variations.
+As Luma marketers, we'd like to build a Campaign to promote the Luma's sport's wear clothing. This campaign will send special promotions email to all profiles that made orders above 500 euros. To build this orchestrated campaign, we'd need first to build the target audience, then the email content to be delivered. We'd like to create personalize the email text, the banner image, and promotion using conditional content and AI content generation of image variations.
 
-# Create the Audience
-First let's target our high value customers who are most likely to buy from this collection: 
+# Create Campaign
 
-- Under _Customer_ menu entry, select _Audiences_, then click the <img width="155" alt="image" src="https://github.com/user-attachments/assets/7c065322-7e52-437b-983b-66207e98b85f" /> button on the top right hand corner.
+First go to the new available tab "Orchestration" in the "Campaigns" AJO menu options and click on "Create Campaign". Let's start creating the visual campaign orchestration through a workflow: 
+
+- After the start sign __ in the workflow, add the 1st activity "Build Audience" click on the "+" __ sign and select "Build Audience" __.Under _Customer_ menu entry, select _Audiences_, then click the <img width="155" alt="image" src="https://github.com/user-attachments/assets/7c065322-7e52-437b-983b-66207e98b85f" /> button on the top right hand corner.
 - Select the _Build Rule_ option, then _Create_
 - Name your audience _High Propensity Equipment Buyers_, please prefix it with the email address you used when creating your account on Luma website, like: `delaland+p1@adobetest.com - High Propensity Equipment Buyers`
 - Let's define the elligibility criteria of our audience:
