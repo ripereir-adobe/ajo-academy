@@ -13,7 +13,7 @@ As Luma marketers, we'd like to build a Campaign to promote the Luma's sport's w
 First go to the new available tab "Orchestration" in the "Campaigns" AJO menu options and click on "Create Campaign". Let's start creating the visual campaign orchestration through a workflow: 
 
 - Select Orchestration - Campaign ___and name your campaign, please prefix it with the email address you used when creating your account on Luma website
-- After the start sign __ in the workflow, add the 1st activity "Build Audience" click on the "+" __ sign and select "Build Audience" __ then select the relational schema "Orders_reports" as you targeting dimension ___in the click the <img width="155" alt="image" src="https://github.com/user-attachments/assets/" /> button on the top right hand corner.
+- After the start sign __ in the workflow, add the 1st activity "Build Audience" click on the "+" __ sign and select "Build Audience" __ then select the relational schema "Orders_reports" as you targeting dimension ___in the click the <img width="155" alt="image" src="https://github.com/user-attachments/assets/8c476e5bfbae8c6f1d96686f1bec86ef6c6d2701834353a62bbefbc94ede47a5" /> button on the top right hand corner.
 - Select the _Build Rule_ option, then _Create_
 - Name your audience _High Propensity Equipment Buyers_, please prefix it with the email address you used when creating your account on Luma website, like: `delaland+p1@adobetest.com - High Propensity Equipment Buyers`
 - Let's define the elligibility criteria of our audience:
