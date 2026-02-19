@@ -14,7 +14,7 @@ First go to the new available tab "Orchestration" in the "Campaigns" AJO menu op
 
 - Select Orchestration - Marketing, and name your campaign, please prefix it with the email address you used when creating your account on Luma website
   
-  <img width="200" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Campaign creation options.png" />
+  <img width="300" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Campaign creation options.png" />
   
 - After the start sign __ in the workflow, add the 1st activity "Build Audience" click on the "+" __ sign and select "Build Audience" __ then select the relational schema "Orders_reports" as you targeting dimension ___in the click the <img width="155" alt="image" src="https://github.com/ripereir-adobe/ajo-academy/blob/main/assets/Build Audience start.png" /> button on the top right hand corner.
 - Select the _Build Rule_ option, then _Create_
