@@ -17,7 +17,7 @@ First go to the new available tab "Orchestration" in the "Campaigns" AJO menu op
   <img width="300" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Campaign creation options.png" />
   
 - In the workflow, after the start activity add the 1st activity "Build Audience" click on the "+" sign <img width="60" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/+Sign image.png" /> and select "Build Audience" <img width="155" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Build Audience start.png" /> then select the relational schema "Orders_reports" as you targeting dimension <img width="155" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Select Targeting Dimension.png" />
-- Now that the targeting dimension is selected, let's click on "Create Audience" <img width="60" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Create Audience Button.png" />
+- Now that the targeting dimension is selected, let's click on "Create Audience" <img width="90" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Create Audience Button.png" />
 - Name your audience _High Propensity Equipment Buyers_, please prefix it with the email address you used when creating your account on Luma website, like: `delaland+p1@adobetest.com - High Propensity Equipment Buyers`
 - Let's define the elligibility criteria of our audience:
   - Under Fields section > _Attributes_, 
