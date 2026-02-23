@@ -16,7 +16,12 @@ First go to the new available tab "Orchestration" in the "Campaigns" AJO menu op
   
   <img width="300" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Campaign creation options.png" />
   
-- In the workflow, after the start activity add the 1st activity "Build Audience" click on the "+" sign <img width="60" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/+Sign image.png" /> and select "Build Audience" <img width="155" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Build Audience start.png" /> then select the relational schema "Luma_Orders_record" as your targeting dimension <img width="155" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Select Targeting Dimension.png" />
+- In the workflow, after the start activity add the 1st activity "Build Audience" click on the "+" sign <img width="60" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/+Sign image.png" /> and select "Build Audience"
+  <img width="155" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Build Audience start.png" />
+
+  then select the relational schema "Luma_Orders_record" as your targeting dimension
+  <img width="155" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Select Targeting Dimension.png" />
+
 - Now that the targeting dimension is selected, let's click on "Create Audience" <img width="90" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Create Audience Button.png" />
 - Let's define the elligibility criteria of our audience by adding conditions:
   - Select the attribute "Order_Amount", it should be equal or higher than 500 euros
