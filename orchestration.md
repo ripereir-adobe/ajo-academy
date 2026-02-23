@@ -37,7 +37,9 @@ First go to the new available tab "Orchestration" in the "Campaigns" AJO menu op
 
 
   
-  - Under Fields section > _Attributes_, 
+  - Now let's enrich our data with the enrichment activity that exists to bring additional data into the workflow at run‑time, so that your audience selection and personalization logic can operate with richer context than what is available in the entry dataset alone. Click on the "+" after the "build audience" activity you just created and select "Enrichment"
+ 
+  - 
     - Look for _propensity_, drag and drop the _propensityScore_ attribute and add condition _is greater_ than  0.7
     - Look for _category_, and click the <img width="34" alt="image" src="https://github.com/user-attachments/assets/73072fda-3b1f-465f-a5ed-b7ad3b6469fa" /> icon to display the value breakdown
       
