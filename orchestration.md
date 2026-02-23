@@ -25,12 +25,12 @@ First go to the new available tab "Orchestration" in the "Campaigns" AJO menu op
 - Now that the targeting dimension is selected, let's click on "Create Audience" <img width="90" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Create Audience Button.png" />
 - Let's define the elligibility criteria of our audience by adding conditions:
   - Select the attribute "Order_Amount", it should be equal or higher than 500 euros
- <img width="155" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Condition 500.png" />
+ <img width="200" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Condition 500.png" />
   - Select the attribute "Order_date" and select all order dates in the last year
- <img width="155" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Condition Date.png" /> 
+ <img width="200" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Condition Date.png" /> 
 
 - You should have the below Audience eligibility criteria definition:
- <img width="155" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Final Audience Target NB.png" />
+ <img width="200" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Final Audience Target NB.png" />
 
 
 
