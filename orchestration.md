@@ -8,7 +8,7 @@ In this chapter of the lab, we are going to explore Campaign Orchestration new c
 
 As Luma marketers, we'd like to build a Campaign to promote the Luma's sport's wear clothing. This campaign will send special promotions email to all profiles that made orders above 500 euros. To build this orchestrated campaign, we'd need first to build the target audience, then the email content to be delivered. We'd like to create personalize the email text, the banner image, and promotion using conditional content and AI content generation of image variations.
 
-# Create Campaign
+# Create Campaign Segmentation
 
 First go to the new available tab "Orchestration" in the "Campaigns" AJO menu options and click on "Create Campaign" <img width="100" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Create Campaign Button.png" />. Let's start creating the visual campaign orchestration through a workflow: 
 
@@ -56,7 +56,7 @@ First go to the new available tab "Orchestration" in the "Campaigns" AJO menu op
  
 
 
-# Create the Campaign
+# Create the Campaign Email content
 Let's build a campaign that will display a personalized banner on the website to this specific audience
 - Under _Journey Management_, click _Campaigns_ menu entry, select click ![image](https://github.com/user-attachments/assets/0c0cccdc-c45f-432e-8b3a-18005da2fc8e)  button on the top right hand corner.
 - Campaign can be triggered immediately, scheduled or through an API call, select _Scheduled_ and click _Create_
