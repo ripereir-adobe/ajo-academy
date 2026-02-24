@@ -8,14 +8,17 @@ In this chapter of the lab, we are going to explore Campaign Orchestration new c
 
 As Luma marketers, we'd like to build a Campaign to promote the Luma's sport's wear clothing. This campaign will send special promotions email to all profiles that made orders above 500 euros. To build this orchestrated campaign, we'd need first to build the target audience, then the email content to be delivered. We'd like to create personalize the email text, the banner image, and promotion using conditional content and AI content generation of image variations.
 
-# Create Campaign Segmentation
+# Create Campaign Segmentation - Targeting Activities
 
 First go to the new available tab "Orchestration" in the "Campaigns" AJO menu options and click on "Create Campaign" <img width="100" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Create Campaign Button.png" />. Let's start creating the visual campaign orchestration through a workflow: 
 
 - Select Orchestration - Marketing, and name your campaign, please prefix it with the email address you used when creating your account on Luma website
   
   <img width="400" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Campaign creation options.png" />
-  
+
+
+BUILD AUDIENCE
+
 - In the workflow, after the start activity add the 1st activity "Build Audience" click on the "+" sign <img width="60" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/+Sign image.png" /> and select "Build Audience"
   <img width="155" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Build Audience start.png" />
 - then select the relational schema "Luma_Orders_record" as your targeting dimension
@@ -35,7 +38,7 @@ First go to the new available tab "Orchestration" in the "Campaigns" AJO menu op
 
 
 
-
+DATA ENRICHMENT
   
   - Now let's enrich our data with the enrichment activity that exists to bring additional data into the workflow at run‑time, so that your audience selection and personalization logic can operate with richer context than what is available in the entry dataset alone. Click on the "+" after the "build audience" activity created, and select "Enrichment"
 
@@ -61,7 +64,18 @@ First go to the new available tab "Orchestration" in the "Campaigns" AJO menu op
 
   <img width="500" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Enrichment_FinalView.png" />
 
-  
+
+CHANGE DIMENSION
+
+In AJO Campaign Orchestration, we can start building on-demande audiences targeting different dimensions (multi-entity segmention), in this exercice, we started targeting "Orders" and now we need to deliver the promotions email to our final Recipients/Profiles. AJO Campaign Orchestration offers the "Change Dimension" activity, so we can change the targeting dimension from Orders to "Recipients" (for deliverability purposes).
+
+- In the campaign workflow, click again in the "+" sign after the Enrichment activity just created. When you click you'll have different options based on the logical of your campaign orchestration step:
+
+
+
+- 
+
+
     
 
     - Look for _category_, and click the <img width="34" alt="image" src="https://github.com/user-attachments/assets/73072fda-3b1f-465f-a5ed-b7ad3b6469fa" /> icon to display the value breakdown
