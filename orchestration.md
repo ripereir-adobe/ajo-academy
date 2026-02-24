@@ -42,7 +42,7 @@ DATA ENRICHMENT
   
   - Now let's enrich our data with the enrichment activity that exists to bring additional data into the workflow at run‑time, so that your audience selection and personalization logic can operate with richer context than what is available in the entry dataset alone. Click on the "+" after the "build audience" activity created, and select "Enrichment"
 
-     <img width="200" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Add_Enrichment.png" />
+     <img width="250" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Add_Enrichment.png" />
 - In the enrichment activity you need to select some fields/attributes that you would like to pass to personalize the email content like:
   - "Order Amount" - Click Add data enrichment from the current Order Table "Luma_Orders_Record", as per the screenshot below
 
@@ -71,23 +71,23 @@ In AJO Campaign Orchestration, we can start building on-demande audiences target
 
 - In the campaign workflow, click again in the "+" sign after the Enrichment activity just created. When you click, select "Change Dimension" activity:
 
-  <img width="200" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Change Dimension.png" />
+  <img width="250" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Change Dimension.png" />
 
 - Click on Targeting Dimension and select the table "Recipient_Orders"
   
-  <img width="500" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Change_Dimension_Recipients.png" />
+  <img width="600" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Change_Dimension_Recipients.png" />
 
 - With this step, we complete our Campaign Segmentation, your workflow should look like the below screenshot:
 
-  <img width="500" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Final_Segmentation_View.png" />
+  <img width="600" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Final_Segmentation_View.png" />
 
 - You can play the Campaign segmentation workflow built so far (do not publish, just play). Click on the above right menu of your campaign orchestration workflow in "Start"   <img width="50" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Start_Workflow.png" />  You can also STOP, ReStart the workflow, always in a safe test mode (before publishing).
 
-  <img width="500" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Final_Segmentation_Play.png" />
+  <img width="600" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Final_Segmentation_Play.png" />
 
 - Clicking in "Preview Results" a list of orders per recipient and respective 3 column Order items (as per the data collection defined in the enrichment) is displayed and you'll get the below view:
 
-  <img width="500" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Segmentation_Preview_Results.png" />
+  <img width="600" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Segmentation_Preview_Results.png" />
   
   
   
