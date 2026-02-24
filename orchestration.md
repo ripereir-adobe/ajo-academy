@@ -14,7 +14,7 @@ First go to the new available tab "Orchestration" in the "Campaigns" AJO menu op
 
 - Select Orchestration - Marketing, and name your campaign, please prefix it with the email address you used when creating your account on Luma website
   
-  <img width="300" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Campaign creation options.png" />
+  <img width="400" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Campaign creation options.png" />
   
 - In the workflow, after the start activity add the 1st activity "Build Audience" click on the "+" sign <img width="60" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/+Sign image.png" /> and select "Build Audience"
   <img width="155" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Build Audience start.png" />
