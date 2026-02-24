@@ -89,31 +89,18 @@ In AJO Campaign Orchestration, we can start building on-demande audiences target
 
   <img width="600" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Segmentation_Preview_Results.png" />
   
-  
-  
-
-
-    
-
-    - Look for _category_, and click the <img width="34" alt="image" src="https://github.com/user-attachments/assets/73072fda-3b1f-465f-a5ed-b7ad3b6469fa" /> icon to display the value breakdown
-      
-      <img width="354" alt="image" src="https://github.com/user-attachments/assets/ac92c5b8-7b0f-425f-9a98-24f22d64dd83" />
-     -  drag and drop the _category_ attribute and add select the _equipment_ value
-   - Look for _Direct_ and select _General Marketing Direct Preferences_, drag and drop the  _Choice Value_ attribute and add condition _equals to_ Y (opt-in)
-   - You should have the following conditions in your segmentation builder
-     
-  <img width="800" alt="image" src="https://github.com/user-attachments/assets/f2561b93-0fda-4464-b393-d06f49f6b14a" />
-  
-  - If you click on _Refresh Estimate_, you should see the number of profiles that currently qualify to your audience.
-  - You can also see sample profiles that qualified by clicking the _View Profile_ button.
-  - Publish the Audience by clicking the _Publish_ button.
  
 
-
 # Create the Campaign Email content
-Let's build a campaign that will display a personalized banner on the website to this specific audience
-- Under _Journey Management_, click _Campaigns_ menu entry, select click ![image](https://github.com/user-attachments/assets/0c0cccdc-c45f-432e-8b3a-18005da2fc8e)  button on the top right hand corner.
-- Campaign can be triggered immediately, scheduled or through an API call, select _Scheduled_ and click _Create_
+
+Let's build a personalized email content for the Recipients/Profiles we are targeting in the above on-demand audience generated. For this exercice, please use the existing "Luma New Offers" email content template.
+
+- In the campaign workflow, after the "Change Dimension" activity, add "+" a new email activity from the menu options
+  
+ <img width="250" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Change Dimension.png" />
+
+ - 
+  
 
 <img width="452" alt="image" src="https://github.com/user-attachments/assets/820b7bd0-f57e-4bbe-81c9-99ea0a7c0106" />
 
