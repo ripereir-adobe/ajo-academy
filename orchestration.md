@@ -38,10 +38,12 @@ First go to the new available tab "Orchestration" in the "Campaigns" AJO menu op
 
   
   - Now let's enrich our data with the enrichment activity that exists to bring additional data into the workflow at run‑time, so that your audience selection and personalization logic can operate with richer context than what is available in the entry dataset alone. Click on the "+" after the "build audience" activity created, and select "Enrichment"
-    <img width="200" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Add_Enrichment.png" />
+
+     <img width="200" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Add_Enrichment.png" />
 - In the enrichment activity you need to select some fields/attributes that you would like to pass to personalize the email content like:
   - "Order Amount" - Click Add data enrichment from the current Order Table "Luma_Orders_Record", as per the screenshot below
-    <img width="400" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Order_Amount_Attribute.png" />
+
+     <img width="400" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Order_Amount_Attribute.png" />
 
   - "Average Order value" and "email" of the recipient - Add data enrichment from the Recipients table "Recipient_Orders" (relationship), as per the screenshot below
 
