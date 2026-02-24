@@ -38,9 +38,27 @@ First go to the new available tab "Orchestration" in the "Campaigns" AJO menu op
 
   
   - Now let's enrich our data with the enrichment activity that exists to bring additional data into the workflow at run‑time, so that your audience selection and personalization logic can operate with richer context than what is available in the entry dataset alone. Click on the "+" after the "build audience" activity you just created and select "Enrichment"
+    <img width="400" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Add_Enrichment.png" />
+- In the enrichment activity you need to select some fields/attributes that you would like to pass to the content personalization like:
+  - "Order Amount" - Click Add data enrichment from the Order Table "Luma_Orders_Record", as per the screenshot below
+    <img width="400" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Order_Amount_Attribute.png" />
+
+  - "Average Order value" and "email" of the recipient - Add data enrichment from the Recipients table "Recipient_Orders" (relationship), as per the screenshot below
+    <img width="400" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Order_Amount_Attribute.png" />
+  
+  - "Product Name" and "Product Price" attributes - Add data enrichment from table "Order_Items" which is related to "Products_Item" table
+    <img width="400" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Order Items_attributes.png" />
+
+  - The final "Order_items" related product attributes can be in a data collection mode if you would like to preview the 3 related items of your order. The screenshot below shows the final enrichment data for these attributes
+    <img width="400" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/OrderItems_Final.png" />
  
-  - 
-    - Look for _propensity_, drag and drop the _propensityScore_ attribute and add condition _is greater_ than  0.7
+- The final view of your Enrichment data activity should look like:
+
+  <img width="400" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Enrichment_FinalView.png" />
+
+  
+    
+
     - Look for _category_, and click the <img width="34" alt="image" src="https://github.com/user-attachments/assets/73072fda-3b1f-465f-a5ed-b7ad3b6469fa" /> icon to display the value breakdown
       
       <img width="354" alt="image" src="https://github.com/user-attachments/assets/ac92c5b8-7b0f-425f-9a98-24f22d64dd83" />
