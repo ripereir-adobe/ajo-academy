@@ -147,7 +147,7 @@ Let's build a personalized email content for the Recipients/Profiles targeted in
        <img width="250" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Change Dimension.png" />
 
 
-     - We'll keep the default variant and let's add a new variant of the content as per the screenshot below. 
+     - We'll keep the default variant and let's configure the 2nd variant of the content as per the screenshot below. 
 
       <img width="250" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Change Dimension.png" />
   
