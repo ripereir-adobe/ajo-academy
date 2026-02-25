@@ -93,13 +93,29 @@ In AJO Campaign Orchestration, we can start building on-demande audiences target
 
 # Create the Campaign Email content
 
-Let's build a personalized email content for the Recipients/Profiles we are targeting in the above on-demand audience generated. For this exercice, please use the existing "Luma New Offers" email content template.
+Let's build a personalized email content for the Recipients/Profiles targeted in the above on-demand audience. For this exercice, please use the existing "Luma New Offers" email content template.
 
 - In the campaign workflow, after the "Change Dimension" activity, add "+" a new email activity from the menu options
-  
+- Edit the email and in the tab "Action", select the configured email for this exercice
+
  <img width="250" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Change Dimension.png" />
 
- - 
+- Click on "Edit Content" and then click on "Edit Email". At this point you will select an existing Email content called "Luma New Offers" in the "saved templates" tab
+
+ <img width="250" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Change Dimension.png" />
+
+ - On the top right of your screen, click on "Use this template" and save your email before doing any changes
+
+ <img width="250" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Change Dimension.png" />
+
+ - Let's personalize the content of this email, some dynamic content is already available with the banner image, let's create some more personalization:
+
+
+
+
+    - 
+
+ 
   
 
 <img width="452" alt="image" src="https://github.com/user-attachments/assets/820b7bd0-f57e-4bbe-81c9-99ea0a7c0106" />
