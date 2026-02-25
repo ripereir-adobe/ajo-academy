@@ -104,25 +104,25 @@ Let's build a personalized email content for the Recipients/Profiles targeted in
 
  <img width="250" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Change Dimension.png" />
 
- - On the top right of your screen, click on "Use this template" and save your email before doing any changes
+ - On the top right of your screen, click on "Use this template" and **Save** your email before doing any changes
 
  <img width="250" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Change Dimension.png" />
 
  - Let's personalize the content of this email, some dynamic content is already available in the image banner, let's create some more personalization:
 
      - Personalize the text with recipient's/profile "first name" field, you need to edit personalization and select "target Attributes" on the left menu. This is a new personalization option for fields we are passing with
-       the enrichment activity of this campaign orchestration workflow. Refer to the 2 screenshots below
+       the enrichment activity of this campaign orchestration workflow. Refer to the screenshot below. After this please **Save** your email
   
        <img width="250" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Change Dimension.png" />
        
-       <img width="250" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Change Dimension.png" />
 
      - We added in our enrichment activity, a group of Order_Items attributes, Product Name and Price, and we configured a collection of 3 lines of data, let's personalize the email with the last 3 products the Customer
-       ordered. Before the persoanlization let's add the text "_Thanks to your below product orders, we would like to propose you our new sports gear collection in exclusivity!_" in the text block as per the screenshot below
+       ordered. Before the personalization let's add the text "_Thanks to your below product orders, we would like to propose you our new sports gear collection in exclusivity!_" in the text block as per the screenshot
+       below. Don't forget to **Save** your email
 
        <img width="250" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Change Dimension.png" />
 
-     - Below the text, let's add a fragment already available called "Luma Last Orders Items". Go to fragments in here <img width="250" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Change Dimension.png" /> and drag and drop the fragment to the position as per the screenshots below
+     - Below the text, let's add a fragment already available called "Luma Last Orders Items". Go to fragments in here <img width="250" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Change Dimension.png" /> and drag and drop the fragment to the position as per the screenshots below. **Save** your changes
   
        <img width="250" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Change Dimension.png" />
 
@@ -131,15 +131,15 @@ Let's build a personalized email content for the Recipients/Profiles targeted in
      - This fragment helps us saving some time creating a grid of products and respective prices but now we need to personalize the content with the data enrichment from the workflow. Before we personalize the text in the
        fragment block, we need to "break the inheritance so we can edit the fragment content, click in here <img width="250" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Change Dimension.png" />
 
-     - Now double click over each text block inside the grid and add a "{" at the beginning of the text, and a "}" at the end of the text, this will activate the attribute validation from the personalization menu "Target
+     - Now, double click over each text block inside the grid and add a "{" at the beginning of the text, and a "}" at the end of the text, this will activate the attribute validation from the personalization menu "Target
        Attributes". When the fragment was created, we couldn't call the "Target Attributes" yet, as these are only available and passing in the campaign workflow, through the enrichment activity. Please check the screenshot
-       below
+       below. **Save** your changes
        
        <img width="250" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Change Dimension.png" />
 
        
-     - After the above action to personalize with product attributes, you want to test your personalization so hard...we understand, but for that, please don't forget to go back to the workflow and be sure you re-start in
-       test mode your workflow, to be sure the email activity inherited the enrichment data. Otherwise let's keep personalizing our email with some dynamic content.
+     - After the above action to personalize with product attributes, you want to test your personalization so hard...we understand, but for that, please don't forget, **after saving your email**, to go back to the workflow
+       and be sure you re-start it in test mode, to be sure the email activity inherited the enrichment data. Otherwise let's keep personalizing our email with some dynamic content.
 
      - Select the "New Radiant Tee - Shop Now" image and click on <img width="250" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Change Dimension.png" /> to start creating variants of the content you
        want to show
@@ -147,7 +147,7 @@ Let's build a personalized email content for the Recipients/Profiles targeted in
        <img width="250" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Change Dimension.png" />
 
 
-     - We'll keep the default variant and let's add a new variant of the content as per the screenshot below
+     - We'll keep the default variant and let's add a new variant of the content as per the screenshot below. 
 
       <img width="250" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Change Dimension.png" />
   
