@@ -98,27 +98,27 @@ Let's build a personalized email content for the Recipients/Profiles targeted in
 - In the campaign workflow, after the "Change Dimension" activity, click "+" and add an email activity from the menu options
 - Edit the email and in the tab "Actions", select the email configuration for this exercice: "**EmailMarketing_CO**"
 
- <img width="250" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Email_configselection.png" />
+ <img width="500" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Email_configselection.png" />
 
 - Click on "Edit Content" and then click on "Edit Email". At this point you will select an existing Email content called "_Luma New Offers_" in the "saved templates" tab
 
- <img width="250" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Email_Templateselection.png" />
+ <img width="500" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Email_Templateselection.png" />
 
  - On the top right of your screen, click on "Use this template" and **Save** your email before doing any changes
 
- <img width="250" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Email_UseTemplate.png" />
+ <img width="500" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Email_UseTemplate.png" />
 
  - Let's personalize the content of this email, some dynamic content is already available in the image banner, let's create some more personalization:
 
-     - Personalize the text with recipient's/profile "_first name_" field, you need to edit personalization and select "target Attributes" on the left menu. This is a new personalization option for fields we are passing with
-       the enrichment activity of this campaign orchestration workflow. Refer to the screenshot below. After this please **Save** your email
+     - Personalize the text box containing "It All starts with you..." with recipient's/profile "_first name_" field just after the word "you", click edit personalization <img width="250" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Personalization_Icon.png" /> and select "target Attributes" on the left menu. This is a new personalization option for fields we are passing with the enrichment activity of this campaign
+       orchestration workflow. Refer to the screenshot below. After this please **Save** your email
   
-       <img width="250" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Change Dimension.png" />
+       <img width="500" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Personalization_RecipientFirstName.png" />
        
 
-     - We added in our enrichment activity, a group of Order_Items attributes, Product Name and Price, and we configured a collection of 3 lines of data, let's personalize the email with the last 3 products the Customer
-       ordered. Before the personalization let's add the text "_Thanks to your below product orders, we would like to propose you our new sports gear collection in exclusivity!_" in the text block as per the screenshot
-       below. Don't forget to **Save** your email
+     - We added in our enrichment activity, a group of Order_Items related attributes, Product Name and Price, and we configured a collection of 3 lines of data, let's personalize the email with the last 3 products that
+       Customer ordered. Before the personalization let's add the text "_Thanks to your below product items ordered recently, we would like to propose you our new sports gear collection in exclusivity!_" in the text block
+       as per the screenshot below. Don't forget to **Save** your email
 
        <img width="250" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Change Dimension.png" />
 
