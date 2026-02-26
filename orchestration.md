@@ -81,7 +81,7 @@ In AJO Campaign Orchestration, we can start building on-demande audiences target
 
   <img width="600" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Final_Segmentation_View.png" />
 
-- You can play the Campaign segmentation workflow built so far (do not publish, just play). Click on the above right menu of your campaign orchestration workflow in "Start"   <img width="50" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Start_Workflow.png" />  You can also STOP, ReStart the workflow, always in a safe test mode (before publishing).
+- You can play the Campaign segmentation workflow in test mode (**do not publish**). Click in "Start" on the above right menu of your campaign orchestration workflow <img width="50" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Start_Workflow.png" />  You can also STOP, ReStart the workflow, always in a safe test mode (before publishing).
 
   <img width="600" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Final_Segmentation_Play.png" />
 
