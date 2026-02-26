@@ -93,24 +93,24 @@ In AJO Campaign Orchestration, we can start building on-demande audiences target
 
 # Create the Campaign Email content
 
-Let's build a personalized email content for the Recipients/Profiles targeted in the above on-demand audience. For this exercice, please use the existing "Luma New Offers" email content template.
+Let's build a personalized email content for the Recipients/Profiles targeted in the above on-demand audience. For this exercice, please use the existing "_Luma New Offers_" email content template.
 
-- In the campaign workflow, after the "Change Dimension" activity, add "+" a new email activity from the menu options
-- Edit the email and in the tab "Action", select the configured email for this exercice
+- In the campaign workflow, after the "Change Dimension" activity, click "+" and add an email activity from the menu options
+- Edit the email and in the tab "Actions", select the email configuration for this exercice: "**EmailMarketing_CO**"
 
- <img width="250" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Change Dimension.png" />
+ <img width="250" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Email_configselection.png" />
 
-- Click on "Edit Content" and then click on "Edit Email". At this point you will select an existing Email content called "Luma New Offers" in the "saved templates" tab
+- Click on "Edit Content" and then click on "Edit Email". At this point you will select an existing Email content called "_Luma New Offers_" in the "saved templates" tab
 
- <img width="250" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Change Dimension.png" />
+ <img width="250" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Email_Templateselection.png" />
 
  - On the top right of your screen, click on "Use this template" and **Save** your email before doing any changes
 
- <img width="250" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Change Dimension.png" />
+ <img width="250" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Email_UseTemplate.png" />
 
  - Let's personalize the content of this email, some dynamic content is already available in the image banner, let's create some more personalization:
 
-     - Personalize the text with recipient's/profile "first name" field, you need to edit personalization and select "target Attributes" on the left menu. This is a new personalization option for fields we are passing with
+     - Personalize the text with recipient's/profile "_first name_" field, you need to edit personalization and select "target Attributes" on the left menu. This is a new personalization option for fields we are passing with
        the enrichment activity of this campaign orchestration workflow. Refer to the screenshot below. After this please **Save** your email
   
        <img width="250" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Change Dimension.png" />
