@@ -136,10 +136,10 @@ Let's build a personalized email content for the Recipients/Profiles targeted in
        <img width="500" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Personalization_FragmentAttributes.png" />
 
        
-     - After the above action to personalize with product attributes, you want to test your personalization so hard...we understand, but for that, please don't forget, **after saving your email**, to go back to the workflow
-       and be sure you re-start it in test mode, to be sure the email activity inherited the enrichment data. Otherwise let's keep personalizing our email with some dynamic content.
+     - After the above action to personalize with product attributes, you want to test your personalization so hard...we understand, but first don't forget to **asave your email**, then, go back to the workflow
+       and be sure you re-start it in test mode, this way we are sure the email activity inherited the enrichment data. Otherwise let's keep personalizing our email with some dynamic content.
 
-     - Select the "New Radiant Tee - Shop Now" image and click on <img width="250" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Change Dimension.png" /> to start creating variants of the content you
+     - Select the "_New Radiant Tee - Shop Now_" image and click on <img width="50" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Change Dimension.png" /> to start creating variants of the content you
        want to show
 
        <img width="250" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Change Dimension.png" />
