@@ -162,6 +162,14 @@ Let's build a personalized email content for the Recipients/Profiles targeted in
           generate
 
            <img width="500" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Personalization_DC_Variant_SelectCondition.png" />
+  
+           <img width="500" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Personalization_DC_Variant_SelectCondition.png" />
+
+        - In the Ai Assistant panel, let's write the following text to the prompt _Generate an image of a sportive man with text "New Running T-Shirts" and a button with text "Shop Now"_
+      
+           <img width="500" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Personalization_DC_Variant_SelectCondition.png" />
+
+        - 
           
 
 
