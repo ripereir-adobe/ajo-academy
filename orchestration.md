@@ -165,9 +165,11 @@ Let's build a personalized email content for the Recipients/Profiles targeted in
       
           <img width="350" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Ai Assistant_TextPrompt.png" />
 
-        - After the text prompt, in the **Image settings**, change **content type** to "_Photo_" as per the screenshot below
+        - Ai Assistante right panel: after the text prompt, in the **Image settings**, change **content type** to "_Photo_" as per the screenshot below
       
           <img width="300" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Ai Assistant_ImageSettings.png" />
+
+        - We can now click on Generate in the Ai Assistant right panel <img width="50" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Ai Assistant_GenerateIcon.png" />
 
           
 
