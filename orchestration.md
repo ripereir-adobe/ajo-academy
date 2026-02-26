@@ -122,9 +122,11 @@ Let's build a personalized email content for the Recipients/Profiles targeted in
 
        <img width="500" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Personalization_AddText.png" />
 
-     - Below the text, let's add a fragment block already available called "Luma Last Orders Items". Go to fragments in here <img width="30" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Personalizarion_FragmentIcon.png" /> and drag and drop the fragment to the position as per the screenshots below. **Save** your changes
+     - Below the text, let's add a fragment block already available called "Luma Last Orders Items". Go to fragments in here <img width="30" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Personalization_FragmentIcon.png" /> and drag and drop the fragment to the position as per the screenshots below. **Save** your changes
   
        <img width="500" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Personalization_FragmentDragDrop.png" />
+  
+       
 
        <img width="500" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Personalization_Final_Fragment.png" />
 
