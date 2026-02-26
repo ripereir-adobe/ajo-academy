@@ -136,20 +136,29 @@ Let's build a personalized email content for the Recipients/Profiles targeted in
        <img width="500" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Personalization_FragmentAttributes.png" />
 
        
-     - After the above action to personalize with product attributes, you want to test your personalization so hard...we understand, but first don't forget to **asave your email**, then, go back to the workflow
-       and be sure you re-start it in test mode, this way we are sure the email activity inherited the enrichment data. Otherwise let's keep personalizing our email with some dynamic content.
+     - After the above action to personalize with product attributes, you want to test your content personalization so hard...we understand, but first don't forget to **asave your email**, then, go back to the workflow
+       and be sure you re-start it in test mode, this way we are sure the email activity inherited the enrichment data. Otherwise, let's keep personalizing our email with some dynamic content.
 
-     - Select the "_New Radiant Tee - Shop Now_" image and click on <img width="50" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Change Dimension.png" /> to start creating variants of the content you
-       want to show
+     - Select the "_New Radiant Tee - Shop Now_" image and click on <img width="50" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Personalization_DynamicContent.png" /> to start creating variants of
+       the content you want to show
 
-       <img width="250" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Change Dimension.png" />
-
-
-     - We'll keep the default variant and let's configure the 2nd variant of the content as per the screenshot below. 
-
-      <img width="250" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Change Dimension.png" />
+     - We'll keep the default variant with the above image "_New Radiant Tee - Shop Now_", and let's configure the 2nd variant of the content:
   
-     - 
+       - Let's rename the 2nd variant to "_Men Gear_"
+
+        <img width="500" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Personalization_DynCont_VariantName.png" />
+  
+       - Then we need to select or create a condition for the content variant we want to display for men (simple condition for this exercice, more complex conditions can be created based on profiles or existing audiences).
+         Let's select the men's condition already defined as per the screenshots below
+         
+        <img width="500" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Personalization_DynCont_VariantCondition.png" />
+        
+        <img width="500" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Personalization_DC_Variant_SelectCondition.png" />
+
+
+
+
+        
        
 
 
