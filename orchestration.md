@@ -161,13 +161,13 @@ Let's build a personalized email content for the Recipients/Profiles targeted in
           variant, click on the Content Gen Ai icon <img width="50" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Ai Assistant_icon.png" /> and let's start defining what do we want to
           generate
 
-        - In the Ai Assistant panel, let's write the following text to the prompt _Generate an image of a sportive man with text "New Running T-Shirts" and a button with text "Shop Now"_
+        - In the Ai Assistant right panel, let's write the following text in the prompt: _Generate an image of a sportive man with text "New Running T-Shirts" and a button with text "Shop Now"_
       
-           <img width="350" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Ai Assistant_Menu_General.png" />  <img width="350" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Ai Assistant_TextPrompt.png" />
+          <img width="500" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Ai Assistant_TextPrompt.png" />
 
         - After the text prompt, in the **Image settings**, change **content type** to "_Photo_" as per the screenshot below
       
-           <img width="300" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Ai Assistant_ImageSettings.png" />
+          <img width="400" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Ai Assistant_ImageSettings.png" />
 
           
 
