@@ -173,7 +173,7 @@ Let's build a personalized email content for the Recipients/Profiles targeted in
 
         - After some seconds you'll be able to check the different images' variations generated and you can preview all before applying the final image. You can check the percentage of the content match with the brand LUMA
       
-          <img width="350" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Ai Assistant_ImageVariations.png" />  <img width="500" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Ai Assistant_ImageVariations_Preview.png" />
+          <img width="350" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Ai Assistant_ImageVariations.png" />  <img width="700" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Ai Assistant_ImageVariations_Preview.png" />
 
           
 
