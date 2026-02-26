@@ -120,15 +120,11 @@ Let's build a personalized email content for the Recipients/Profiles targeted in
        Customer ordered. Before the personalization let's add the text "_Thanks to your below product items ordered recently, we would like to propose you our new sports gear collection in exclusivity!_" in the text block
        as per the screenshot below. Don't forget to **Save** your email
 
-       <img width="500" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Personalization_AddText.png" />
+       <img width="600" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Personalization_AddText.png" />
 
-     - Below the text, let's add a fragment block already available called "Luma Last Orders Items". Go to fragments in here <img width="30" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Personalization_FragmentIcon.png" /> and drag and drop the fragment to the position as per the screenshots below. **Save** your changes
+     - Below the text, let's add a fragment block already available called "Luma Last Orders Items". Go to fragments in here <img width="50" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Personalization_FragmentIcon.png" /> and drag and drop the fragment to the position as per the screenshots below. **Save** your changes
   
-       <img width="500" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Personalization_FragmentDragDrop.png" />
-  
-       
-
-       <img width="500" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Personalization_Final_Fragment.png" />
+       <img width="500" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Personalization_FragmentDragDrop.png" />  <img width="500" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Personalization_Final_Fragment.png" />
 
      - This fragment helps us saving some time creating a grid of products and respective prices but now we need to personalize the content with the data enrichment from the workflow. Before we personalize the text in the
        fragment block, we need to "break the inheritance so we can edit the fragment content, click in here <img width="250" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Change Dimension.png" />
