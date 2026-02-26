@@ -56,7 +56,7 @@ DATA ENRICHMENT
 
     <img width="400" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Order Items_attributes.png" />
 
-  - The final "Order_items" related product attributes can be in a data collection mode if you would like to collect 3 related items of your order (you can change the number of items to be collected). The screenshot below shows the final enrichment data for these attributes
+  - The final "Order_items" related product attributes can be in a data collection mode if you would like to collect 3 related product items of your order (you can change the number of items to be collected). The screenshot below shows the final enrichment data for these attributes
 
     <img width="400" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/OrderItems_Final.png" />
  
