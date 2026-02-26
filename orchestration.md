@@ -185,6 +185,8 @@ Let's build a personalized email content for the Recipients/Profiles targeted in
 
      
         <img width="500" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/SubjectLine_Start_Perso.png" />
+
+        
           
 
           
