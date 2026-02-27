@@ -190,7 +190,7 @@ Let's build a personalized email content for the Recipients/Profiles targeted in
    
    - In the right panel, click on Brand Alignment check <img width="100" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Brand_Icon.png" /> and let's evaluate our email content. Refer to the screenshots below
 
-     <img width="500" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Brand_Check_1.png" />  <img width="350" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Brand_Check_2.png" />
+     <img width="480" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Brand_Check_1.png" />  <img width="350" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Brand_Check_2.png" />
 
         
           
