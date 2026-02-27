@@ -7,7 +7,7 @@
 
 <div>
 <br /><br />
-<h1 align="center">Guide URL: https://bit.ly/ajo-lab</h1>
+<h1 align="center">Guide URL: https://ripereir-adobe.github.io/ajo-academy/ </h1>
 <br /><br />
 <p align="center">
 <img width="400" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Doc QRCODE.png" />
