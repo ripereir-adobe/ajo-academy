@@ -108,6 +108,10 @@ Let's build a personalized email content for the Recipients/Profiles targeted in
 
  <img width="500" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Email_UseTemplate.png" />
 
+
+_TEXT PERSONALIZATION_
+
+
  - Let's personalize the content of this email, some dynamic content is already available in the image banner, let's create some more personalization:
 
      - Personalize the text box containing "It All starts with you..." with recipient's/profile "_first name_" field just after the word "you", click edit personalization <img width="30" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Personalization_Icon.png" /> and select "target Attributes" on the left menu. This is a new personalization option for fields we are passing with the enrichment activity of this campaign
@@ -121,6 +125,10 @@ Let's build a personalized email content for the Recipients/Profiles targeted in
        as per the screenshot below. Don't forget to **Save** your email
 
        <img width="600" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Personalization_AddText.png" />
+
+
+_ADDING A CONTENT FRAGMENT_
+
 
      - Below the text, let's add a fragment block already available called "Luma Last Orders Items". Go to fragments in here <img width="50" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Personalization_FragmentIcon.png" /> and drag and drop the fragment to the position as per the screenshots below. **Save** your changes
   
@@ -138,6 +146,10 @@ Let's build a personalized email content for the Recipients/Profiles targeted in
        
      - After the above action to personalize with product attributes, you want to test your content personalization so hard...we understand, but first don't forget to **asave your email**, then, go back to the workflow
        and be sure you re-start it in test mode, this way we are sure the email activity inherited the enrichment data. Otherwise, let's keep personalizing our email with some dynamic content.
+
+
+_PERSONALIZATION: DYNAMIC CONTENT AND AI CONTENT ASSISTANT_
+
 
      - Select the "_New Radiant Tee - Shop Now_" image and click on <img width="50" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Personalization_DynamicContent.png" /> to start creating variants of
        the content you want to show
@@ -181,16 +193,34 @@ Let's build a personalized email content for the Recipients/Profiles targeted in
 
           <img width="600" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Ai Assistant_Image_AssetsImport.png" />
 
+
+_PERSONALIZATION: SUBJECT LINE_
+
+
       - A last action for the email content to be completed is, to define the text and personalization of the email's Subject Line. You can copy paste the following text "_Hi hear about the Luma new gear offers_" to your email's subject line. Also, you can personalize the subject line with the Customer First Name - "**Recipient First Name**" from Target Attributes as per the above text personalization.
 
      
         <img width="500" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/SubjectLine_Start_Perso.png" />
+
+
+
+_BRAND ALIGNMENT CHECK_
+
 
   - Our email content is ready, let's use AJO's Brand Alignment feature to help you create, review, and manage content that adheres to your brand guidelines. It ensures consistency in tone, messaging, and visual identity across your email campaigns, while also serving as a quality check before your content goes live.
    
    - In the right panel, click on Brand Alignment check <img width="100" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Brand_Icon.png" /> and let's evaluate our email content. Refer to the screenshots below
 
      <img width="490" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Brand_Check_1.png" />  <img width="350" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Brand_Check_2.png" />
+
+
+
+_EMAIL CONTENT SIMULATION_
+
+
+
+
+
 
         
           
