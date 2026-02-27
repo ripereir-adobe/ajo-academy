@@ -10,7 +10,7 @@
 <h1 align="center">Guide URL: https://ripereir-adobe.github.io/ajo-academy/ </h1>
 <br /><br />
 <p align="center">
-<img width="400" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Doc QRCODE.png" />
+<img width="200" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Doc QRCODE.png" />
 </p>
 </div>
 
