@@ -129,6 +129,7 @@ TEXT PERSONALIZATION
 
 
 
+
 ADDING A CONTENT FRAGMENT
 
 
@@ -149,6 +150,8 @@ ADDING A CONTENT FRAGMENT
        
  - After the above action to personalize with product attributes, you want to test your content personalization so hard...we understand, but first don't forget to **asave your email**, then, go back to the workflow
        and be sure you re-start it in test mode, this way we are sure the email activity inherited the enrichment data. Otherwise, let's keep personalizing our email with some dynamic content.
+
+
 
 
 PERSONALIZATION: DYNAMIC CONTENT AND AI CONTENT ASSISTANT
@@ -197,6 +200,8 @@ PERSONALIZATION: DYNAMIC CONTENT AND AI CONTENT ASSISTANT
 
 
 
+
+
 PERSONALIZATION: SUBJECT LINE
 
 
@@ -204,6 +209,8 @@ PERSONALIZATION: SUBJECT LINE
 
      
   <img width="500" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/SubjectLine_Start_Perso.png" />
+
+
 
 
 
@@ -215,6 +222,8 @@ BRAND ALIGNMENT CHECK
  - In the right panel, click on Brand Alignment check <img width="100" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Brand_Icon.png" /> and let's evaluate our email content. Refer to the screenshots below
 
    <img width="490" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Brand_Check_1.png" />  <img width="350" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Brand_Check_2.png" />
+
+
 
 
 
