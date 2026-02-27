@@ -109,7 +109,8 @@ Let's build a personalized email content for the Recipients/Profiles targeted in
  <img width="500" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Email_UseTemplate.png" />
 
 
-_TEXT PERSONALIZATION_
+
+TEXT PERSONALIZATION
 
 
  - Let's personalize the content of this email, some dynamic content is already available in the image banner, let's create some more personalization:
@@ -127,95 +128,97 @@ _TEXT PERSONALIZATION_
        <img width="600" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Personalization_AddText.png" />
 
 
-_ADDING A CONTENT FRAGMENT_
+
+ADDING A CONTENT FRAGMENT
 
 
-     - Below the text, let's add a fragment block already available called "Luma Last Orders Items". Go to fragments in here <img width="50" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Personalization_FragmentIcon.png" /> and drag and drop the fragment to the position as per the screenshots below. **Save** your changes
+
+ - Below the text, let's add a fragment block already available called "Luma Last Orders Items". Go to fragments in here <img width="50" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Personalization_FragmentIcon.png" /> and drag and drop the fragment to the position as per the screenshots below. **Save** your changes
   
-       <img width="500" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Personalization_FragmentDragDrop.png" />  <img width="500" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Personalization_Final_Fragment.png" />
+   <img width="500" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Personalization_FragmentDragDrop.png" />  <img width="500" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Personalization_Final_Fragment.png" />
 
-     - This fragment helps us saving some time creating a grid of products and respective prices but now we need to personalize the content with the data enrichment from the workflow. Before we personalize the text in the
+ - This fragment helps us saving some time creating a grid of products and respective prices but now we need to personalize the content with the data enrichment from the workflow. Before we personalize the text in the
        fragment block, we need to "break the inheritance so we can edit the fragment content, click in here <img width="50" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Fragment_BreakInheritanceIcon.png" />
 
-     - Now, double click over each text block inside the grid and add a "**{**" at the beginning of the text, and a "**}**" at the end of the text, this will activate the attribute validation from the personalization menu
+ - Now, double click over each text block inside the grid and add a "**{**" at the beginning of the text, and a "**}**" at the end of the text, this will activate the attribute validation from the personalization menu
        "Target Attributes". When the fragment was created, we couldn't call the "Target Attributes" yet, as these are only available and passing in the campaign workflow, through the enrichment activity. Please check the
        screenshot below. **Save** your changes
        
-       <img width="500" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Personalization_FragmentAttributes.png" />
+   <img width="500" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Personalization_FragmentAttributes.png" />
 
        
-     - After the above action to personalize with product attributes, you want to test your content personalization so hard...we understand, but first don't forget to **asave your email**, then, go back to the workflow
+ - After the above action to personalize with product attributes, you want to test your content personalization so hard...we understand, but first don't forget to **asave your email**, then, go back to the workflow
        and be sure you re-start it in test mode, this way we are sure the email activity inherited the enrichment data. Otherwise, let's keep personalizing our email with some dynamic content.
 
 
-_PERSONALIZATION: DYNAMIC CONTENT AND AI CONTENT ASSISTANT_
+PERSONALIZATION: DYNAMIC CONTENT AND AI CONTENT ASSISTANT
 
 
-     - Select the "_New Radiant Tee - Shop Now_" image and click on <img width="50" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Personalization_DynamicContent.png" /> to start creating variants of
+ - Select the "_New Radiant Tee - Shop Now_" image and click on <img width="50" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Personalization_DynamicContent.png" /> to start creating variants of
        the content you want to show
 
-     - We'll keep the default variant with the above image "_New Radiant Tee - Shop Now_", and let's configure the 2nd variant of the content:
+ - We'll keep the default variant with the above image "_New Radiant Tee - Shop Now_", and let's configure the 2nd variant of the content:
   
-       - Let's rename the 2nd variant to "_Men Gear_"
+  - Let's rename the 2nd variant to "_Men Gear_"
 
-        <img width="500" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Personalization_DynCont_VariantName.png" />
+    <img width="500" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Personalization_DynCont_VariantName.png" />
   
-       - Then we need to select or create a condition for the content variant we want to display for men (simple condition for this exercise, more complex conditions can be created based on profiles or existing audiences).
+  - Then we need to select or create a condition for the content variant we want to display for men (simple condition for this exercise, more complex conditions can be created based on profiles or existing audiences).
          Let's select the men's condition already defined as per the screenshots below
          
-        <img width="500" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Personalization_DynCont_VariantCondition.png" />
+    <img width="500" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Personalization_DynCont_VariantCondition.png" />
         
-        <img width="500" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Personalization_DC_Variant_SelectCondition.png" />
+    <img width="500" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Personalization_DC_Variant_SelectCondition.png" />
 
-       - Now we need to add a new content for the condition "Men" we just defined. Let's use Adobe Ai content Assistant to help us create relevant content:
+  - Now we need to add a new content for the condition "Men" we just defined. Let's use Adobe Ai content Assistant to help us create relevant content:
          
-        - Be sure you are selecting the 2nd variant "Men", you'll see that by default the content is the same as the default variant. Let's add a cool image generated by Adobe's Ai content Assistant. Selecting the "Men"
-          variant, click on the Content Gen Ai icon <img width="50" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Ai Assistant_icon.png" /> and let's start defining what do we want to
-          generate
+    - Be sure you are selecting the 2nd variant "Men", you'll see that by default the content is the same as the default variant. Let's add a cool image generated by Adobe's Ai content Assistant. Selecting the "Men"
+      variant, click on the Content Gen Ai icon <img width="50" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Ai Assistant_icon.png" /> and let's start defining what do we want to generate
 
-        - In the Ai Assistant right panel, let's write the following text in the prompt: _Generate an image of a sportive man with text "New Running T-Shirts" and a button with text "Shop Now"_
+     - In the Ai Assistant right panel, let's write the following text in the prompt: _Generate an image of a sportive man with text "New Running T-Shirts" and a button with text "Shop Now"_
       
-          <img width="350" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Ai Assistant_TextPrompt.png" />
+       <img width="350" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Ai Assistant_TextPrompt.png" />
 
-        - Ai Assistante right panel: after the text prompt, in the **Image settings**, change **content type** to "_Photo_" as per the screenshot below
+     - Ai Assistante right panel: after the text prompt, in the **Image settings**, change **content type** to "_Photo_" as per the screenshot below
       
-          <img width="300" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Ai Assistant_ImageSettings.png" />
+       <img width="300" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Ai Assistant_ImageSettings.png" />
 
-        - We can now click on Generate in the Ai Assistant right panel <img width="200" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Ai Assistant_GenerateIcon.png" />
+     - We can now click on Generate in the Ai Assistant right panel <img width="200" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Ai Assistant_GenerateIcon.png" />
 
-        - After some seconds you'll be able to check the different images' variations generated by Adobe Ai Assistant and you can preview all before applying the final image. You can check the percentage of the content match with the brand LUMA. As in the previous Campaign Action excercise, you can enable experimentation of the generated different variations.
+     - After some seconds you'll be able to check the different images' variations generated by Adobe Ai Assistant and you can preview all before applying the final image. You can check the percentage of the content match with the brand LUMA. As in the previous Campaign Action excercise, you can enable experimentation of the generated different variations.
       
-          <img width="350" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Ai Assistant_ImageVariations.png" />
+       <img width="350" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Ai Assistant_ImageVariations.png" />
 
-          <img width="700" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Ai Assistant_ImageVariations_Preview.png" />
+       <img width="700" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Ai Assistant_ImageVariations_Preview.png" />
 
-         - Finally you can apply your preferred image and you'll be asked to import the image to AJO Assets
+      - Finally you can apply your preferred image and you'll be asked to import the image to AJO Assets
 
-          <img width="600" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Ai Assistant_Image_AssetsImport.png" />
-
-
-_PERSONALIZATION: SUBJECT LINE_
+        <img width="600" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Ai Assistant_Image_AssetsImport.png" />
 
 
-      - A last action for the email content to be completed is, to define the text and personalization of the email's Subject Line. You can copy paste the following text "_Hi hear about the Luma new gear offers_" to your email's subject line. Also, you can personalize the subject line with the Customer First Name - "**Recipient First Name**" from Target Attributes as per the above text personalization.
+
+PERSONALIZATION: SUBJECT LINE
+
+
+- A last action for the email content to be completed is, to define the text and personalization of the email's Subject Line. You can copy paste the following text "_Hi hear about the Luma new gear offers_" to your email's subject line. Also, you can personalize the subject line with the Customer First Name - "**Recipient First Name**" from Target Attributes as per the above text personalization.
 
      
-        <img width="500" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/SubjectLine_Start_Perso.png" />
+  <img width="500" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/SubjectLine_Start_Perso.png" />
 
 
 
-_BRAND ALIGNMENT CHECK_
+BRAND ALIGNMENT CHECK
 
 
-  - Our email content is ready, let's use AJO's Brand Alignment feature to help you create, review, and manage content that adheres to your brand guidelines. It ensures consistency in tone, messaging, and visual identity across your email campaigns, while also serving as a quality check before your content goes live.
+ - Our email content is ready, let's use AJO's Brand Alignment feature to help you create, review, and manage content that adheres to your brand guidelines. It ensures consistency in tone, messaging, and visual identity across your email campaigns, while also serving as a quality check before your content goes live.
    
-   - In the right panel, click on Brand Alignment check <img width="100" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Brand_Icon.png" /> and let's evaluate our email content. Refer to the screenshots below
+ - In the right panel, click on Brand Alignment check <img width="100" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Brand_Icon.png" /> and let's evaluate our email content. Refer to the screenshots below
 
-     <img width="490" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Brand_Check_1.png" />  <img width="350" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Brand_Check_2.png" />
+   <img width="490" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Brand_Check_1.png" />  <img width="350" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Brand_Check_2.png" />
 
 
 
-_EMAIL CONTENT SIMULATION_
+EMAIL CONTENT SIMULATION
 
 
 
