@@ -230,7 +230,9 @@ BRAND ALIGNMENT CHECK
 EMAIL CONTENT SIMULATION
 
 
-
+- The final step is to simulate the email content and all the personalization you just defined above. For that, please be sure you already run (Start) your workflow before so that all data targeting has been passed to the email workflow step.
+- To simulate the content let's do the following steps:
+ - 
 
 
 
