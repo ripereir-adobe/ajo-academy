@@ -261,7 +261,7 @@ EMAIL CONTENT SIMULATION
 
 EMAIL PRE-SENDING STATS
 
-- You can run a stats report for your email before sending, it will display the targeted number of profiles and also the real number of emails that will be sent after all types of exclusions. To run a report go back to the workflow and select the email activity, in the right panel you can click on "Run Test" <img width="150" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Email_RunTest1.png" />
+- You can run a stats report for your email before sending, it will display the targeted number of profiles, the exclusion causes, and also the errors. To run a report go back to the workflow and select the email activity, in the right panel you can click on "Run Test" <img width="150" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Email_RunTest1.png" />
 
 - After a couple of minutes, you'll be able to check the email report statistics, just click on "View Report" <img width="100" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Email_ViewTestReport.png" />
 
