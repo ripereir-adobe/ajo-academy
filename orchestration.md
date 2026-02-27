@@ -243,21 +243,34 @@ EMAIL CONTENT SIMULATION
   
   <img width="490" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Simulate_Content_AddTestProfiles.png" />
   
- - 
+ - When you go back to the simulation, you'll be able to see different content for Lucia and Skyler:
+
+  <img width="490" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Simulate_Content_Man_1.png" />
+
+  <img width="490" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Simulate_Content_Man_2.png" />
+
+  <img width="490" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Simulate_Content_Man_3.png" />
+
+  <img width="490" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Simulate_Content_Woman_1.png" />
+
+  <img width="490" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Simulate_Content_Woman_2.png" />
+
+  <img width="490" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Simulate_Content_Woman_3.png" />
 
 
 
-        
-          
+EMAIL PRE-SENDING STATS
 
-          
+- You can run a stats report for your email before sending, it will display the targeted number of profiles and also the real number of emmails that will be sent after all types of exclusions. To run a report go back to the workflow and select the email activity, in the right panel you can click on "Run Test" <img width="100" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Email_RunTest1.png" />
 
+- After a couple of minutes, you'll be able to check the email report statistics, just click on "View Report" <img width="100" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Email_ViewTestReport.png" />
 
+- In your report you'll be able to check the below stats:
 
+ <img width="490" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Email_ReportStats.png" />
+ 
 
-        
-  
-
+- In the end you can always publish your Campaign workflow however in this exercise, please do not Publish as we use fake generated email addresses.
 
 
 
@@ -268,8 +281,8 @@ Congratulations! You've completed the lab 👍 ✨ 🎉 🚀 🤘 Together, we w
 - Improve our customer knowledge by collecting visitor data on our website.
 - Build a customer profile with behavioral and personal data.
 - Improve revenue by retargeting abandoners through personalized customer journeys and relevant contextual messages.
-- Target our high value customers to incent them to visit the new Luma Fall Collection using A/B testing on inbound channels. 
+- Target our high value customers to incent them to visit the new Luma Fall Collection using A/B testing on inbound channels.
+- Learn how can we create brand initiated campaigns with AJO Campaign Orchestration
   
-All this in 2 hours 👏 👏 👏 It deserves a gift for all this effort 😛
 
 [Home](README.md)
