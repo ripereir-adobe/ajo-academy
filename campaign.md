@@ -97,4 +97,7 @@ That's it, you can review the campaign now, just click the <img width="151" alt=
 if you go back to the Luma website home page, you shoud see an example of a live campaign promoting Luma Fall Collection activated. 
 
 
-[Home](README.md)
+
+---
+
+Congratulations! You have completed the third chapter of the lab 👍 ✨ 🎉, go to the [next step](orchestration.md) or return to the [home](README.md)
