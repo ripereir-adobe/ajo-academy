@@ -186,6 +186,14 @@ Let's build a personalized email content for the Recipients/Profiles targeted in
      
         <img width="500" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/SubjectLine_Start_Perso.png" />
 
+  - Our email content is ready, let's use AJO's Brand Alignment feature to help you create, review, and manage content that adheres to your brand guidelines. It ensures consistency in tone, messaging, and visual identity across your email campaigns, while also serving as a quality check before your content goes live.
+   
+   - In the right panel, click on Brand Alignment check__ and let's evaluate our email content. Refer to the screenshots below
+
+     <img width="500" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Brand_Check_1.png" />
+
+     <img width="500" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Brand_Check_2.png" />
+
         
           
 
