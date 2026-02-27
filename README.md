@@ -10,7 +10,7 @@
 <h1 align="center">Guide URL: https://bit.ly/ajo-lab</h1>
 <br /><br />
 <p align="center">
-<img src="https://github.com/user-attachments/assets/5fbb027b-cc3c-43ce-9a09-afad64a23da7" />
+<img width="400" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Doc QRCODE.png" />
 </p>
 </div>
 
