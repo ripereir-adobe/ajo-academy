@@ -230,8 +230,19 @@ BRAND ALIGNMENT CHECK
 EMAIL CONTENT SIMULATION
 
 
-- The final step is to simulate the email content and all the personalization you just defined above. For that, please be sure you already run (Start) your workflow before so that all data targeting has been passed to the email workflow step.
+- The final step is to simulate the email content and all the personalization you just defined above. For that, please be sure you already run (Start) your workflow before, so that all data targeting has been passed to the email workflow step.
 - To simulate the content let's do the following steps:
+ - Click on "Simulate Content" <img width="100" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Simulate_Content_General.png" /> you will end up in a screen where you need to manage the test profiles
+   
+ - To manage your test profiles click in here <img width="100" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Simulate_Content_ManageTestProfiles.png" /> , then you need to define "Entity Namespace" and insert respective value, in this case "Entity Namespace" will be "**Email**" and the email values will be the 2 following profiles' email:
+   
+   - skyler.martín+3@luma.example.com
+   - lucía.kowalski+52@luma.example.com
+     
+  <img width="490" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Simulate_Content_IdentityName.png" />
+  
+  <img width="490" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Simulate_Content_AddTestProfiles.png" />
+  
  - 
 
 
@@ -248,51 +259,6 @@ EMAIL CONTENT SIMULATION
   
 
 
-## Create a Content Card
-Adobe Content Cards help Luma effectively showcase the Fall'25 Collection in a way that is personalized, visually appealing, and user-friendly, leading to higher engagement and increased sales. Unlike traditional push notifications, Content cards integrate seamlessly into the user interface, offering persistent, non-intrusive updates that enhance user interaction and experience.
-This feature enables marketers to present relevant, rich media content to users, driving higher engagement and ensuring important messages are seen without disrupting the user journey.
-
-- Under _Actions_ section, click <img width="126" alt="image" src="https://github.com/user-attachments/assets/52bef494-de1d-4666-bbab-f04172cf57a7" /> button, then select _Content Card_.
-- Label the action name _Luma Fall Collection_.
-- Under Content Card configuration, select the predefined setting called _ContentCards_.
-- Content card are also available for mobile where you can define additional triggering rules. As we configure it for web now, let's disable the _additional delivery rules_
-- Let's author the card by clicking the ![image](https://github.com/user-attachments/assets/486ba657-48bc-4be7-8957-5e043c986987) button
-
-
-## Create an Experimentation
-Experiments allow you to optimize content for the action in your Campaigns. They are a set of randomized trials, which in the context of online testing, means that some randomly selected users are exposed to a given variation of a message and another randomly selected set of users to another treatment. After sending the message, you can then measure the outcome metrics like opens of emails or clicks on banner.
-
-- Click ![image](https://github.com/user-attachments/assets/475e2ef5-963c-4c48-af94-1a11dd846115) button.
-- Use Unique Clicks as success metrics.
-- Use a 10% Holdout group
-- Create a second treatment, A and B distributed evently
-- Click _Create_ button
-
-![image](https://github.com/user-attachments/assets/47879ee2-6183-4281-9e54-fe782ef5fc15)
-
-Under Treatment A > Content Card, let's apply the following message
-  - Title: _Fall Collection: Limited Stock, Buy Now!_
-  - Body: _It's cozy and chic_
-  - Media Url: click the <img width="47" alt="image" src="https://github.com/user-attachments/assets/52422be5-fe3d-4d92-bf5a-a5bf514638ec" /> button, browse the  _Ajo Academy_ folder > _Fall Collection_ folder, select _fall-collection-banner-hiking_, then click _Select_ button
-  - Under _Buttons_ section, click <img width="123" alt="image" src="https://github.com/user-attachments/assets/0f51086a-9c4d-41ef-b205-b19ddc8426e8" /> button and set _Button Title_ to _Shop Now_.
-  - In the _Target_ input type the landing page url: `https://dsn.adobe.com/web/ajo-academy/fall-collection`
- 
-The experiment should look like this: 
-![image](https://github.com/user-attachments/assets/e4bff3dd-c34c-457d-ba01-e37756ea4ad9)
-
-Let's create now the second experiment with the help of generative AI to speed up the content creation process
-- Under Treatment B > Content Card, let's apply the following message
-  - Title: click the ![image](https://github.com/user-attachments/assets/aa503e9b-e8e7-4cdc-b106-4ea933043f21) button, add your prompt (eg: _Luma Outdoor appareil fall collection_), fine tune the communication strategy and tone using the Text settings, then click _Generate_ and select the variation you like the most.
-  - Body: Apply the same as above to generate an Exclusive yet Empathetic message based on your prompt (eg: _Discover our new camping gears_)
-  - Media Url: In the Digital Assets, browse the  _Ajo Academy_ folder > _Fall Collection_ folder, select _fall-collection-banner-camping_
-  - Under _Buttons_ section, click <img width="123" alt="image" src="https://github.com/user-attachments/assets/0f51086a-9c4d-41ef-b205-b19ddc8426e8" /> button and set _Button Title_ to _Shop Now_.
-  - In the _Target_ input button, copy the landing page url: `https://dsn.adobe.com/web/ajo-academy/fall-collection`
- 
-The experiment should look like this: 
-![image](https://github.com/user-attachments/assets/e1da8764-b8d5-4a53-82d3-ffe58ba5a6de)
-
-That's it, you can review the campaign now, just click the <img width="151" alt="image" src="https://github.com/user-attachments/assets/ebcdfb82-dc34-432e-9036-0ad67d732b53" /> button! 
-if you go back to the Luma website home page, you shoud see an example of a live campaign promoting Luma Fall Collection activated. 
 
 
 
