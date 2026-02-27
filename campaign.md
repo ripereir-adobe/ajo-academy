@@ -97,15 +97,4 @@ That's it, you can review the campaign now, just click the <img width="151" alt=
 if you go back to the Luma website home page, you shoud see an example of a live campaign promoting Luma Fall Collection activated. 
 
 
-
-# You made it !
-
-Congratulations! You've completed the lab 👍 ✨ 🎉 🚀 🤘 Together, we were able to:
-- Improve our customer knowledge by collecting visitor data on our website.
-- Build a customer profile with behavioral and personal data.
-- Improve revenue by retargeting abandoners through personalized customer journeys and relevant contextual messages.
-- Target our high value customers to incent them to visit the new Luma Fall Collection using A/B testing on inbound channels. 
-  
-All this in 2 hours 👏 👏 👏 It deserves a gift for all this effort 😛
-
 [Home](README.md)
