@@ -62,7 +62,7 @@ We prepared 3 exercices to help you understand all the benefits AJO offers when 
 
 [Batch Campaign Orchestration](./orchestration.md): Create a batch campaign using the workflow orchestration visual capabilities starting by targeting specific Customer Luma Orders and enriching data to deliver personalized Luma sports wear promotions to the profiles.
 
-
+[EXTRA: AGENTIC](./agentic.md): Play a simple use case using Audience and Journey Agents in AJO.
 
 
 
