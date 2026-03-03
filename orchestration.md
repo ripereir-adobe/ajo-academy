@@ -179,7 +179,7 @@ PERSONALIZATION: DYNAMIC CONTENT AND AI CONTENT ASSISTANT
 
     <img width="800" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Personalization_DynCont_VariantName.png" />
   
-  - Then we need to select or create a condition for the content variant we want to display for men (simple condition for this exercise, more complex conditions can be created based on profiles or existing audiences). Let's select the men's condition already defined as per the screenshots below
+  - Then we need to select or create a condition for the content variant we want to display for men (simple condition for this exercise, more complex conditions can be created based on profiles or existing audiences). Let's select the men's condition already defined as per the screenshots below. Don't forget to **save your email**
          
     <img width="800" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Personalization_DynCont_VariantCondition.png" />
         
@@ -206,7 +206,7 @@ PERSONALIZATION: DYNAMIC CONTENT AND AI CONTENT ASSISTANT
 
        <img width="700" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Ai Assistant_ImageVariations_Preview.png" />
 
-      - Finally you can apply your preferred image and you'll be asked to import the image to AJO Assets
+      - Finally you can apply your preferred image and you'll be asked to import the image to AJO Assets. Don't forget to **save your email**
 
         <img width="700" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Ai Assistant_Image_AssetsImport.png" />
 
@@ -217,7 +217,7 @@ PERSONALIZATION: DYNAMIC CONTENT AND AI CONTENT ASSISTANT
 PERSONALIZATION: SUBJECT LINE
 
 
-- A last action for the email content to be completed is, to define the text and personalization of the email's Subject Line. You can copy paste the following text "_Hi hear about the Luma new gear offers_" to your email's subject line. Also, you can personalize the subject line with the Customer First Name - "**Recipient First Name**" from Target Attributes as per the above text personalization.
+- A last action for the email content to be completed is, to define the text and personalization of the email's Subject Line. You can copy paste the following text "_Hi hear about the Luma new gear offers_" to your email's subject line. Also, you can personalize the subject line with the Customer First Name - "**Recipient First Name**" from _Target Attributes_ as we did previously in the above text personalization section. Don't forget to **save your email**
 
      
   <img width="400" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/SubjectLine_Start_Perso.png" />
@@ -231,7 +231,7 @@ BRAND ALIGNMENT CHECK
 
  - Our email content is ready, let's use AJO's Brand Alignment feature to help you create, review, and manage content that adheres to your brand guidelines. It ensures consistency in tone, messaging, and visual identity across your email campaigns, while also serving as a quality check before your content goes live.
    
- - In the right panel, click on Brand Alignment check <img width="100" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Brand_Icon.png" /> and let's evaluate our email content. Refer to the screenshots below
+ - In the right panel, click on Brand Alignment Check <img width="100" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Brand_Icon.png" /> and let's evaluate our email content. Refer to the screenshots below. Don't forget to **save your email**
 
    <img width="490" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Brand_Check_1.png" />  <img width="350" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Brand_Check_2.png" />
 
@@ -242,7 +242,7 @@ BRAND ALIGNMENT CHECK
 EMAIL CONTENT SIMULATION
 
 
-- The final step is to simulate the email content and all the personalization you just defined above. For that, please be sure you already run (Start) your workflow before, so that all data targeting has been passed to the email workflow step.
+- The final step is to simulate the email content and all the personalization you just defined above. For that, please be sure you already run (**Start**) your workflow before, so that all data targeting has been passed to the email workflow step.
 - To simulate the content let's do the following steps:
  - Click on "Simulate Content" <img width="150" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Simulate_Content_General.png" /> you will end up in a screen where you need to manage the test profiles
    
