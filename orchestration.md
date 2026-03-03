@@ -221,7 +221,7 @@ PERSONALIZATION: SUBJECT LINE
 - A last action for the email content to be completed is, to define the text and personalization of the email's Subject Line. You can copy paste the following text "_Hi hear about the Luma new gear offers_" to your email's subject line. Also, you can personalize the subject line with the Customer First Name - "**Recipient First Name**" from Target Attributes as per the above text personalization.
 
      
-  <img width="800" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/SubjectLine_Start_Perso.png" />
+  <img width="400" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/SubjectLine_Start_Perso.png" />
 
 
 
@@ -245,30 +245,30 @@ EMAIL CONTENT SIMULATION
 
 - The final step is to simulate the email content and all the personalization you just defined above. For that, please be sure you already run (Start) your workflow before, so that all data targeting has been passed to the email workflow step.
 - To simulate the content let's do the following steps:
- - Click on "Simulate Content" <img width="100" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Simulate_Content_General.png" /> you will end up in a screen where you need to manage the test profiles
+ - Click on "Simulate Content" <img width="150" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Simulate_Content_General.png" /> you will end up in a screen where you need to manage the test profiles
    
  - To manage your test profiles click in here <img width="100" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Simulate_Content_ManageTestProfiles.png" /> , then you need to define "Entity Namespace" and insert respective value, in this case "Entity Namespace" will be "**Email**" and the email values will be the 2 following profiles' email:
    
    - skyler.martín+3@luma.example.com
    - lucía.kowalski+52@luma.example.com
      
-  <img width="800" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Simulate_Content_IdentityName.png" />
+  <img width="1000" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Simulate_Content_IdentityName.png" />
   
-  <img width="800" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Simulate_Content_AddTestProfiles.png" />
+  <img width="1000" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Simulate_Content_AddTestProfiles.png" />
   
  - When you go back to the simulation, you'll be able to see different content for Lucia and Skyler:
 
-  <img width="800" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Simulate_Content_Man_1.png" />
+  <img width="1000" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Simulate_Content_Man_1.png" />
 
-  <img width="800" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Simulate_Content_Man_2.png" />
+  <img width="1000" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Simulate_Content_Man_2.png" />
 
-  <img width="800" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Simulate_Content_Man_3.png" />
+  <img width="1000" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Simulate_Content_Man_3.png" />
 
-  <img width="800" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Simulate_Content_Woman_1.png" />
+  <img width="1000" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Simulate_Content_Woman_1.png" />
 
-  <img width="800" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Simulate_Content_Woman_2.png" />
+  <img width="1000" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Simulate_Content_Woman_2.png" />
 
-  <img width="800" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Simulate_Content_Woman_3.png" />
+  <img width="1000" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Simulate_Content_Woman_3.png" />
 
 
 
