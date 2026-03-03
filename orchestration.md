@@ -144,10 +144,13 @@ ADDING A CONTENT FRAGMENT
 
  - Below the text, let's add a fragment block already available called "Luma Last Orders Items". Go to fragments in here <img width="100" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Personalization_FragmentIcon.png" /> and drag and drop the fragment to the position as per the screenshots below. **Save** your changes
   
-   <img width="800" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Personalization_FragmentDragDrop.png" />  <img width="500" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Personalization_Final_Fragment.png" />
+   <img width="800" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Personalization_FragmentDragDrop.png" />
+   <img width="800" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Personalization_Final_Fragment.png" />
 
  - This fragment helps us saving some time creating a grid of products and respective prices but now we need to personalize the content with the data enrichment from the workflow. Before we personalize the text in the
-       fragment block, we need to "break the inheritance so we can edit the fragment content, click in here <img width="100" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Fragment_BreakInheritanceIcon.png" />
+       fragment block, we need to "break the inheritance" so we can edit the fragment content, as per the screenshot below:
+
+   <img width="600" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Fragment_BreakInheritanceIcon.png" />
 
  - Now, double click over each text block inside the grid and add a "**{**" at the beginning of the text, and a "**}**" at the end of the text, this will activate the attribute validation from the personalization menu
        "Target Attributes". When the fragment was created, we couldn't call the "Target Attributes" yet, as these are only available and passing in the campaign workflow, through the enrichment activity. Please check the
