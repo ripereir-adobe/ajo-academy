@@ -33,15 +33,15 @@ BUILD AUDIENCE
 - Let's define the elligibility criteria of our audience by adding conditions:
   - Select the attribute "Order_Amount", it should be equal or higher than 500 euros
     
- <img width="600" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Condition 500.png" />
+ <img width="800" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Condition 500.png" />
  
   - Select the attribute "Order_date" and select all order dates in the last year
     
- <img width="600" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Condition Date.png" /> 
+ <img width="800" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Condition Date.png" /> 
 
 - You should have the below Audience eligibility criteria definition:
   
- <img width="600" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Final Audience Target NB.png" />
+ <img width="800" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Final Audience Target NB.png" />
 
 
 
@@ -50,27 +50,27 @@ DATA ENRICHMENT
   
   - Now let's enrich our data with the enrichment activity that exists to bring additional data into the workflow at run‑time, so that your audience selection and personalization logic can operate with richer context than what is available in the entry dataset alone. Click on the "+" after the "build audience" activity created, and select "Enrichment"
 
-     <img width="250" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Add_Enrichment.png" />
+     <img width="300" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Add_Enrichment.png" />
 - In the enrichment activity you need to select some fields/attributes that you would like to pass to personalize the email content like:
   - "Order Amount" - Click Add data enrichment from the current Order Table "Luma_Orders_Record", as per the screenshot below
 
-     <img width="400" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Order_Amount_Attribute.png" />
+     <img width="700" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Order_Amount_Attribute.png" />
 
   - "Average Order value" and "email" of the recipient - Add data enrichment from the Recipients table "Recipient_Orders" (relationship), as per the screenshot below
 
-    <img width="400" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Order_Amount_Attribute.png" />
+    <img width="700" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Order_Amount_Attribute.png" />
   
   - "Product Name" and "Product Price" attributes - Add data enrichment from table "Order_Items" which is related to "Products_Item" table
 
-    <img width="400" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Order Items_attributes.png" />
+    <img width="700" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Order Items_attributes.png" />
 
   - The final "Order_items" related product attributes can be in a data collection mode if you would like to collect 3 related product items of your order (you can change the number of items to be collected). The screenshot below shows the final enrichment data for these attributes
 
-    <img width="400" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/OrderItems_Final.png" />
+    <img width="700" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/OrderItems_Final.png" />
  
 - The final view of your Enrichment data activity should look like:
 
-  <img width="500" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Enrichment_FinalView.png" />
+  <img width="800" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Enrichment_FinalView.png" />
 
 
 CHANGE DIMENSION
