@@ -1,6 +1,6 @@
 [home](README.md)
 
-**CAMPAIGN ORCHESTRATION EXERCISE**
+**AGENTIC EXERCISE**
 
 <p align="center">
 <img width="800" src="https://github.com/user-attachments/assets/9c94e953-ab53-4ff6-b4f2-c6e5ea244489" />
