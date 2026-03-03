@@ -41,7 +41,7 @@ BUILD AUDIENCE
     
  <img width="800" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Condition Date.png" /> 
 
-- You should have the below Audience eligibility criteria definition:
+- You should have the below Audience eligibility criteria definition and if you click "**Calculate**", you'll be able to see how many profiles we are targeting:
   
  <img width="800" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Final Audience Target NB.png" />
 
