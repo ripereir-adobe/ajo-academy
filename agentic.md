@@ -30,7 +30,7 @@ To access all agents we'll need to play this use case, you have to access "**Ai 
 
 
 
-- 
+- The 1st step of my use case is to create an audience, for that, let's use Ai Assistant prompt and use the following text/request to AEP Agent Orchestrator: "I want to create an audience with profiles which propensity score is higher than 50"
   
 
 
