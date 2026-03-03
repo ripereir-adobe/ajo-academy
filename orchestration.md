@@ -106,15 +106,15 @@ Let's build a personalized email content for the Recipients/Profiles targeted in
 - In the campaign workflow, after the "Change Dimension" activity, click "+" and add an email activity from the menu options
 - Edit the email and in the tab "Actions", select the email configuration for this exercise: "**EmailMarketing_CO**"
 
- <img width="800" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Email_configselection.png" />
+ <img width="600" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Email_configselection.png" />
 
 - Click on "Edit Content" and then click on "Edit Email". At this point you will select an existing Email content called "_Luma New Offers_" in the "saved templates" tab
 
- <img width="800" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Email_Templateselection.png" />
+ <img width="1000" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Email_Templateselection.png" />
 
  - On the top right of your screen, click on "Use this template" and **Save** your email before doing any changes
 
- <img width="800" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Email_UseTemplate.png" />
+ <img width="1000" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Email_UseTemplate.png" />
 
 
 
