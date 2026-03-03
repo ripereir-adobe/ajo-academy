@@ -171,7 +171,7 @@ ADDING A CONTENT FRAGMENT
 PERSONALIZATION: DYNAMIC CONTENT AND AI CONTENT ASSISTANT
 
 
- - Select the "_New Radiant Tee - Shop Now_" image and click on <img width="50" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Personalization_DynamicContent.png" /> to start creating variants of the content you want to show
+ - Select the "_New Radiant Tee - Shop Now_" image and click on enable **Dynamic Content** <img width="50" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Dynamic_Content_Icon.png" /> to start creating variants of the content you want to show
 
  - We'll keep the default variant with the above image "_New Radiant Tee - Shop Now_", and let's configure the 2nd variant of the content:
   
