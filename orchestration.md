@@ -182,9 +182,9 @@ PERSONALIZATION: DYNAMIC CONTENT AND AI CONTENT ASSISTANT
   - Then we need to select or create a condition for the content variant we want to display for men (simple condition for this exercise, more complex conditions can be created based on profiles or existing audiences).
          Let's select the men's condition already defined as per the screenshots below
          
-    <img width="500" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Personalization_DynCont_VariantCondition.png" />
+    <img width="800" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Personalization_DynCont_VariantCondition.png" />
         
-    <img width="500" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Personalization_DC_Variant_SelectCondition.png" />
+    <img width="800" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Personalization_DC_Variant_SelectCondition.png" />
 
   - Now we need to add a new content for the condition "Men" we just defined. Let's use Adobe Ai content Assistant to help us create relevant content:
          
