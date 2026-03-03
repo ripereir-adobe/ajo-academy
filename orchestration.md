@@ -105,9 +105,10 @@ In AJO Campaign Orchestration, we can start building on-demande audiences target
 
 # Create the Campaign Email content
 
-Let's build a personalized email content for the Recipients/Profiles targeted in the above on-demand audience. For this exercise, please use the existing "_Luma New Offers_" email content template.
+Let's build a personalized email content for the Recipients/Profiles targeted in the above multi-entity segmentation. For this exercise, please use the existing "_Luma New Offers_" email content template.
 
-- In the campaign workflow, after the "Change Dimension" activity, click "+" and add an email activity from the menu options
+- In the campaign workflow, after the "Change Dimension" activity, click "+" and add an **email** activity from the menu options
+  
 - Edit the email and in the tab "Actions", select the email configuration for this exercise: "**EmailMarketing_CO**"
 
  <img width="600" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Email_configselection.png" />
@@ -127,15 +128,12 @@ TEXT PERSONALIZATION
 
  - Let's personalize the content of this email, some dynamic content is already available in the image banner, let's create some more personalization:
 
-     - Personalize the text box containing "It All starts with you..." with recipient's/profile "_first name_" field just after the word "you", click edit personalization <img width="30" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Personalization_Icon.png" /> and select "target Attributes" on the left menu. This is a new personalization option for fields we are passing with the enrichment activity of this campaign
-       orchestration workflow. Refer to the screenshot below. After this please **Save** your email
+     - Personalize the text box containing "It All starts with you..." with recipient's/profile "_first name_" field just after the word "you", click edit personalization <img width="30" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Personalization_Icon.png" /> and select "target Attributes" on the left menu. This is a new personalization option for fields we are passing with the enrichment activity of this campaign orchestration workflow. Refer to the screenshot below. After this please **Save** your email
   
        <img width="1000" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Personalization_RecipientFirstName.png" />
        
 
-     - We added in our enrichment activity, a group of Order_Items related attributes, Product Name and Price, and we configured a collection of 3 lines of data, let's personalize the email with the last 3 products that
-       Customer ordered. Before the personalization let's add the text "_Thanks to your below product items ordered recently, we would like to propose you our new sports gear collection in exclusivity!_" in the text block
-       as per the screenshot below. Don't forget to **Save** your email
+     - We added in our enrichment activity, a group of Order_Items related attributes, **Product Name** and **Price**, and we configured a collection of 3 lines of data, let's personalize the email with the last 3 products that the Customer ordered. Before the personalization let's add the text "_Thanks to your below product items ordered recently, we would like to propose you our new sports gear collection in exclusivity!_" in the text block as per the screenshot below. Don't forget to **Save** your email
 
        <img width="800" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Personalization_AddText.png" />
 
@@ -146,7 +144,7 @@ ADDING A CONTENT FRAGMENT
 
 
 
- - Below the text, let's add a fragment block already available called "Luma Last Orders Items". Go to fragments in here <img width="100" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Personalization_FragmentIcon.png" /> and drag and drop the fragment to the position as per the screenshots below. **Save** your changes
+ - Below the text, let's add a fragment content block already available called "Luma Last Orders Items". Go to fragments in here <img width="100" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Personalization_FragmentIcon.png" /> and drag and drop the fragment to the position as per the screenshots below. **Save** your changes
   
    <img width="800" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Personalization_FragmentDragDrop.png" />
    <img width="800" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Personalization_Final_Fragment.png" />
@@ -158,13 +156,12 @@ ADDING A CONTENT FRAGMENT
 
  - Now, double click over each text block inside the grid and add a "**{**" at the beginning of the text, and a "**}**" at the end of the text, this will activate the attribute validation from the personalization menu
        "Target Attributes". When the fragment was created, we couldn't call the "Target Attributes" yet, as these are only available and passing in the campaign workflow, through the enrichment activity. Please check the
-       screenshot below. **Save** your changes
+       screenshot below, and **Save** your changes
        
    <img width="800" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Personalization_FragmentAttributes.png" />
 
        
- - After the above action to personalize with product attributes, you want to test your content personalization so hard...we understand, but first don't forget to **asave your email**, then, go back to the workflow
-       and be sure you re-start it in test mode, this way we are sure the email activity inherited the enrichment data. Otherwise, let's keep personalizing our email with some dynamic content.
+ - After the above action to personalize with product attributes, you want to test your content personalization so hard...we understand, but first don't forget to **save your email**, then go back to the workflow and be sure you re-start it in test mode, this way we are sure the email activity inherited the enrichment data. Otherwise, let's keep personalizing our email with some dynamic content.
 
    
 
