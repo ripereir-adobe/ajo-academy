@@ -251,7 +251,9 @@ EMAIL CONTENT SIMULATION
  - To manage your test profiles click in here <img width="100" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Simulate_Content_ManageTestProfiles.png" /> , then you need to define "Entity Namespace" and insert respective value, in this case "Entity Namespace" will be "**Email**" and the email values will be the 2 following profiles' email:
    
    - skyler.martín+3@luma.example.com
+
    - lucía.kowalski+52@luma.example.com
+     
      
   <img width="1000" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Simulate_Content_IdentityName.png" />
   
