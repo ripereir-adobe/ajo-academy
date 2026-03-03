@@ -26,7 +26,7 @@ AJO is an app built on top of Adobe Experience Platform (AEP), it leverages Adob
 
 ---
 
-During this lab, we will use a fictitious sports equipment brand - called **Luma** - to illustrate these capabilities through 3 chapters:
+During this lab, we will use a fictitious sports equipment brand - called **Luma** - to illustrate these capabilities through 5 chapters + Extra simple Agentic Use Case:
 
 - **Acquisition of new customer data** from the Luma website. Thanks to real-time collection, we will collect visitors interactions, even anonymous ones. When a user creates its account, its anonymous activity will be automatically linked to its known profile and will complete the 360° view of the contact in Adobe Experience Platform.
 
