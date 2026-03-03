@@ -75,12 +75,12 @@ The profile view opens in a new tab. Observe:
 - the profile attributes collected in the _Attributes_ tab
 - the segments associated with our contact in the _Segment Membership_ tab
 
-![image](https://github.com/user-attachments/assets/c5c81d2f-f876-4661-87df-21e75a16f045)
+<img width="1165" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Profile_Details.png" /> 
 
 
 Click on Show Identity Graph to view Identities collected and assigned to the real-time profile over time
 
-<img width="1165" alt="image" src="https://github.com/user-attachments/assets/7b4c8508-8664-4fae-a34c-d60d16898564" />
+<img width="1165" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Profiles_IdentityGraph.png" /> 
 
 
 ---
