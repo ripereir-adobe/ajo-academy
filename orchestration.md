@@ -162,6 +162,8 @@ ADDING A CONTENT FRAGMENT
  - After the above action to personalize with product attributes, you want to test your content personalization so hard...we understand, but first don't forget to **asave your email**, then, go back to the workflow
        and be sure you re-start it in test mode, this way we are sure the email activity inherited the enrichment data. Otherwise, let's keep personalizing our email with some dynamic content.
 
+   
+
 
 
 
