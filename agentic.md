@@ -29,17 +29,20 @@ To start playing this use case, you have to access "**Ai Assistant**", this is p
   
   <img width="600" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Ai Assistant_AJO.png" />  <img width="300" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Ai Assistant_AJO_Prompt.png" />
 
+- Before starting interacting with Ai Assistant, please be sure you set your context as per the screenshot below:
+
+  <img width="800" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Ai Assistant_SetContext.png" />
 
 
 - Let's start building our journey with the creation of an audience, for that, let's use Ai Assistant prompt and use the following text/request to AEP Agent Orchestrator: "_I want to create an audience with profiles which propensity score is higher than 50_" (you can obviouly use your own text and language if you prefer). Through the Ai Assistant, the agent orchestrator is calling the Audience Agent.
 
-  <img width="400" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Campaign creation options.png" />
+  <img width="400" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Ai Assistant_AudienceAgent.png" />
 
 - You will then follow the next steps by answering "Yes" to the agent. You might need to review and approve/create.
 
 - Then we'll create the Journey. Just use the following text in the prompt or create your own text: "_Can you help me building a Customer Journey starting with a an Audience Qualification and sending an email and a push notification?_". Once again, through the Ai Assistant, the agent orchestrator is calling the Journey Agent.
 
-  <img width="400" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Campaign creation options.png" />
+  <img width="400" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Ai Assistant_JourneyAgent.png" />
 
 - You will then follow the next steps by answering "Yes" to the agent. You might need to review and approve/create.
   
