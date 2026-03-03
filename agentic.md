@@ -18,15 +18,20 @@ All these agents are coordinated by Adobe’s Agent Orchestrator, which provides
 
 In this exercise, let's use AJO agents to create a journey that starts with an Audience Qualification and delivers 2 promotional communications, one email and one push notification depending on the preffered channel or Customer consenting.
 
-As Luma marketers, we'd like to build a Campaign to promote the Luma's sport's wear clothing. This campaign will send special promotions email to all profiles that made orders above 500 euros. To build this orchestrated campaign, we'd need first to build the target audience, then the email content to be delivered. We'd like to create personalize the email text, the banner image, and promotion using conditional content and AI content generation of image variations.
 
-# Create Campaign Segmentation - Targeting Activities
 
-First go to the new available tab "Orchestration" in the "Campaigns" AJO menu options and click on "Create Campaign" <img width="100" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Create Campaign Button.png" />. Let's start creating the visual campaign orchestration through a workflow: 
+# Agentic Use Case
 
-- Select Orchestration - Marketing, and name your campaign, please prefix it with the email address you used when creating your account on Luma website
+To access all agents we'll need to play this use case, you have to access "**Ai Assistant**", this is possible either through AJO or from the AEP Sandbox home page:
+
   
   <img width="400" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Campaign creation options.png" />
+  <img width="400" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Campaign creation options.png" />
+
+
+
+- 
+  
 
 
 BUILD AUDIENCE
