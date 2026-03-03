@@ -25,9 +25,9 @@ In this exercise, let's use AJO agents to create a journey that starts with an A
 To start playing this use case, you have to access "**Ai Assistant**", this is possible either through AJO or from the AEP Sandbox home page. The "Ai Assistant" is your interface UI, your prompt, where all interaction with Agent Orchestrator starts. Then Agent Orchestrator will decide which agents to call based on your text prompt requests.
 
   
-  <img width="600" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Ai Assistant_Home.png" />
+  <img width="800" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Ai Assistant_Home.png" />
   
-  <img width="500" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Ai Assistant_AJO.png" />  <img width="200" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Ai Assistant_AJO_Prompt.png" />
+  <img width="600" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Ai Assistant_AJO.png" />  <img width="300" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Ai Assistant_AJO_Prompt.png" />
 
 
 
