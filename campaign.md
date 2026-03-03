@@ -38,7 +38,7 @@ Let's build a campaign that will display a personalized banner on the website to
 - Under _Journey Management_, click _Campaigns_ menu entry, select click ![image](https://github.com/user-attachments/assets/0c0cccdc-c45f-432e-8b3a-18005da2fc8e)  button on the top right hand corner.
 - Campaign can be triggered immediately, scheduled or through an API call, select _Scheduled_ and click _Create_
 Scheduled
-<img width="400" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Campaign_Scheduled.png"/>
+<img width="600" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Campaign_Scheduled.png"/>
 
 - Name your campaign _Fall Collection_, please prefix it with the email address you used when creating your account on Luma website, like: `delaland+p1@adobetest.com - Fall Collection`
 
