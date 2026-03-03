@@ -34,6 +34,7 @@ During this lab, we will use a fictitious sports equipment brand - called **Luma
 
 - **Promotional Campaign**. We’d also like to build a campaign to promote the new Luma Fall Collection. This campaign will display a banner on the website to invite visitors to look at the Fall Collection landing page.
 
+- **Personalized Campaign using Campaign Orchestration**. We’d also like to build a campaign to promote the new Luma Fall Collection. This campaign will display a banner on the website to invite visitors to look at the Fall Collection landing page.
 
 
 # Learning objectives
