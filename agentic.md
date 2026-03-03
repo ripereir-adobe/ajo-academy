@@ -1,1 +1,291 @@
+[home](README.md)
+
+**CAMPAIGN ORCHESTRATION EXERCISE**
+
+<p align="center">
+<img width="800" src="https://github.com/user-attachments/assets/9c94e953-ab53-4ff6-b4f2-c6e5ea244489" />
+</p>
+
+In this chapter of the lab, we are going to explore Campaign Orchestration new capability within AJO designed to build, schedule, and deliver one‑to‑many marketing campaigns—primarily email, SMS, and push—using a marketer‑friendly, visual interface. It complements AJO’s event‑driven journeys by supporting traditional outbound campaigns that run on a defined schedule and target audience segments.
+
+As Luma marketers, we'd like to build a Campaign to promote the Luma's sport's wear clothing. This campaign will send special promotions email to all profiles that made orders above 500 euros. To build this orchestrated campaign, we'd need first to build the target audience, then the email content to be delivered. We'd like to create personalize the email text, the banner image, and promotion using conditional content and AI content generation of image variations.
+
+# Create Campaign Segmentation - Targeting Activities
+
+First go to the new available tab "Orchestration" in the "Campaigns" AJO menu options and click on "Create Campaign" <img width="100" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Create Campaign Button.png" />. Let's start creating the visual campaign orchestration through a workflow: 
+
+- Select Orchestration - Marketing, and name your campaign, please prefix it with the email address you used when creating your account on Luma website
+  
+  <img width="400" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Campaign creation options.png" />
+
+
+BUILD AUDIENCE
+
+- In the workflow, after the start activity add the 1st activity "Build Audience" click on the "+" sign <img width="60" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/+Sign image.png" /> and select "Build Audience"
+  <img width="155" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Build Audience start.png" />
+- then select the relational schema "Luma_Orders_record" as your targeting dimension
+
+  <img width="155" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Select Targeting Dimension.png" />
+
+- Now that the targeting dimension is selected, let's click on "Create Audience" <img width="90" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Create Audience Button.png" />
+- Let's define the elligibility criteria of our audience by adding conditions:
+  - Select the attribute "Order_Amount", it should be equal or higher than 500 euros
+ <img width="400" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Condition 500.png" />
+  - Select the attribute "Order_date" and select all order dates in the last year
+ <img width="400" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Condition Date.png" /> 
+
+- You should have the below Audience eligibility criteria definition:
+ <img width="400" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Final Audience Target NB.png" />
+
+
+
+
+DATA ENRICHMENT
+  
+  - Now let's enrich our data with the enrichment activity that exists to bring additional data into the workflow at run‑time, so that your audience selection and personalization logic can operate with richer context than what is available in the entry dataset alone. Click on the "+" after the "build audience" activity created, and select "Enrichment"
+
+     <img width="250" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Add_Enrichment.png" />
+- In the enrichment activity you need to select some fields/attributes that you would like to pass to personalize the email content like:
+  - "Order Amount" - Click Add data enrichment from the current Order Table "Luma_Orders_Record", as per the screenshot below
+
+     <img width="400" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Order_Amount_Attribute.png" />
+
+  - "Average Order value" and "email" of the recipient - Add data enrichment from the Recipients table "Recipient_Orders" (relationship), as per the screenshot below
+
+    <img width="400" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Order_Amount_Attribute.png" />
+  
+  - "Product Name" and "Product Price" attributes - Add data enrichment from table "Order_Items" which is related to "Products_Item" table
+
+    <img width="400" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Order Items_attributes.png" />
+
+  - The final "Order_items" related product attributes can be in a data collection mode if you would like to collect 3 related product items of your order (you can change the number of items to be collected). The screenshot below shows the final enrichment data for these attributes
+
+    <img width="400" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/OrderItems_Final.png" />
+ 
+- The final view of your Enrichment data activity should look like:
+
+  <img width="500" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Enrichment_FinalView.png" />
+
+
+CHANGE DIMENSION
+
+In AJO Campaign Orchestration, we can start building on-demande audiences targeting different dimensions (multi-entity segmention), in this exercise, we started targeting "Orders" and now we need to deliver the promotions email to our final Recipients/Profiles. AJO Campaign Orchestration offers the "Change Dimension" activity, so we can change the targeting dimension from Orders to "Recipients" (for deliverability purposes).
+
+- In the campaign workflow, click again in the "+" sign after the Enrichment activity just created. When you click, select "Change Dimension" activity:
+
+  <img width="250" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Change Dimension.png" />
+
+- Click on Targeting Dimension and select the table "Recipient_Orders"
+  
+  <img width="600" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Change_Dimension_Recipients.png" />
+
+- With this step, we complete our Campaign Segmentation, your workflow should look like the below screenshot:
+
+  <img width="600" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Final_Segmentation_View.png" />
+
+- You can play the Campaign segmentation workflow in test mode (**do not publish**). Click in "Start" on the above right menu of your campaign orchestration workflow <img width="50" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Start_Workflow.png" />  You can also STOP, ReStart the workflow, always in a safe test mode (before publishing).
+
+  <img width="600" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Final_Segmentation_Play.png" />
+
+- Clicking in "Preview Results" a list of orders per recipient and respective 3 column Order items (as per the data collection defined in the enrichment) is displayed and you'll get the below view:
+
+  <img width="600" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Segmentation_Preview_Results.png" />
+  
+ 
+
+# Create the Campaign Email content
+
+Let's build a personalized email content for the Recipients/Profiles targeted in the above on-demand audience. For this exercise, please use the existing "_Luma New Offers_" email content template.
+
+- In the campaign workflow, after the "Change Dimension" activity, click "+" and add an email activity from the menu options
+- Edit the email and in the tab "Actions", select the email configuration for this exercise: "**EmailMarketing_CO**"
+
+ <img width="500" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Email_configselection.png" />
+
+- Click on "Edit Content" and then click on "Edit Email". At this point you will select an existing Email content called "_Luma New Offers_" in the "saved templates" tab
+
+ <img width="500" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Email_Templateselection.png" />
+
+ - On the top right of your screen, click on "Use this template" and **Save** your email before doing any changes
+
+ <img width="500" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Email_UseTemplate.png" />
+
+
+
+TEXT PERSONALIZATION
+
+
+ - Let's personalize the content of this email, some dynamic content is already available in the image banner, let's create some more personalization:
+
+     - Personalize the text box containing "It All starts with you..." with recipient's/profile "_first name_" field just after the word "you", click edit personalization <img width="30" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Personalization_Icon.png" /> and select "target Attributes" on the left menu. This is a new personalization option for fields we are passing with the enrichment activity of this campaign
+       orchestration workflow. Refer to the screenshot below. After this please **Save** your email
+  
+       <img width="500" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Personalization_RecipientFirstName.png" />
+       
+
+     - We added in our enrichment activity, a group of Order_Items related attributes, Product Name and Price, and we configured a collection of 3 lines of data, let's personalize the email with the last 3 products that
+       Customer ordered. Before the personalization let's add the text "_Thanks to your below product items ordered recently, we would like to propose you our new sports gear collection in exclusivity!_" in the text block
+       as per the screenshot below. Don't forget to **Save** your email
+
+       <img width="600" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Personalization_AddText.png" />
+
+
+
+
+ADDING A CONTENT FRAGMENT
+
+
+
+ - Below the text, let's add a fragment block already available called "Luma Last Orders Items". Go to fragments in here <img width="50" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Personalization_FragmentIcon.png" /> and drag and drop the fragment to the position as per the screenshots below. **Save** your changes
+  
+   <img width="500" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Personalization_FragmentDragDrop.png" />  <img width="500" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Personalization_Final_Fragment.png" />
+
+ - This fragment helps us saving some time creating a grid of products and respective prices but now we need to personalize the content with the data enrichment from the workflow. Before we personalize the text in the
+       fragment block, we need to "break the inheritance so we can edit the fragment content, click in here <img width="50" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Fragment_BreakInheritanceIcon.png" />
+
+ - Now, double click over each text block inside the grid and add a "**{**" at the beginning of the text, and a "**}**" at the end of the text, this will activate the attribute validation from the personalization menu
+       "Target Attributes". When the fragment was created, we couldn't call the "Target Attributes" yet, as these are only available and passing in the campaign workflow, through the enrichment activity. Please check the
+       screenshot below. **Save** your changes
+       
+   <img width="500" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Personalization_FragmentAttributes.png" />
+
+       
+ - After the above action to personalize with product attributes, you want to test your content personalization so hard...we understand, but first don't forget to **asave your email**, then, go back to the workflow
+       and be sure you re-start it in test mode, this way we are sure the email activity inherited the enrichment data. Otherwise, let's keep personalizing our email with some dynamic content.
+
+
+
+
+PERSONALIZATION: DYNAMIC CONTENT AND AI CONTENT ASSISTANT
+
+
+ - Select the "_New Radiant Tee - Shop Now_" image and click on <img width="50" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Personalization_DynamicContent.png" /> to start creating variants of
+       the content you want to show
+
+ - We'll keep the default variant with the above image "_New Radiant Tee - Shop Now_", and let's configure the 2nd variant of the content:
+  
+  - Let's rename the 2nd variant to "_Men Gear_"
+
+    <img width="500" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Personalization_DynCont_VariantName.png" />
+  
+  - Then we need to select or create a condition for the content variant we want to display for men (simple condition for this exercise, more complex conditions can be created based on profiles or existing audiences).
+         Let's select the men's condition already defined as per the screenshots below
+         
+    <img width="500" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Personalization_DynCont_VariantCondition.png" />
+        
+    <img width="500" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Personalization_DC_Variant_SelectCondition.png" />
+
+  - Now we need to add a new content for the condition "Men" we just defined. Let's use Adobe Ai content Assistant to help us create relevant content:
+         
+    - Be sure you are selecting the 2nd variant "Men", you'll see that by default the content is the same as the default variant. Let's add a cool image generated by Adobe's Ai content Assistant. Selecting the "Men"
+      variant, click on the Content Gen Ai icon <img width="50" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Ai Assistant_icon.png" /> and let's start defining what do we want to generate
+
+     - In the Ai Assistant right panel, let's write the following text in the prompt: _Generate an image of a sportive man with text "New Running T-Shirts" and a button with text "Shop Now"_
+      
+       <img width="350" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Ai Assistant_TextPrompt.png" />
+
+     - Ai Assistante right panel: after the text prompt, in the **Image settings**, change **content type** to "_Photo_" as per the screenshot below
+      
+       <img width="300" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Ai Assistant_ImageSettings.png" />
+
+     - We can now click on Generate in the Ai Assistant right panel <img width="200" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Ai Assistant_GenerateIcon.png" />
+
+     - After some seconds you'll be able to check the different images' variations generated by Adobe Ai Assistant and you can preview all before applying the final image. You can check the percentage of the content match with the brand LUMA. As in the previous Campaign Action excercise, you can enable experimentation of the generated different variations.
+      
+       <img width="350" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Ai Assistant_ImageVariations.png" />
+
+       <img width="700" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Ai Assistant_ImageVariations_Preview.png" />
+
+      - Finally you can apply your preferred image and you'll be asked to import the image to AJO Assets
+
+        <img width="600" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Ai Assistant_Image_AssetsImport.png" />
+
+
+
+
+
+PERSONALIZATION: SUBJECT LINE
+
+
+- A last action for the email content to be completed is, to define the text and personalization of the email's Subject Line. You can copy paste the following text "_Hi hear about the Luma new gear offers_" to your email's subject line. Also, you can personalize the subject line with the Customer First Name - "**Recipient First Name**" from Target Attributes as per the above text personalization.
+
+     
+  <img width="500" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/SubjectLine_Start_Perso.png" />
+
+
+
+
+
+BRAND ALIGNMENT CHECK
+
+
+ - Our email content is ready, let's use AJO's Brand Alignment feature to help you create, review, and manage content that adheres to your brand guidelines. It ensures consistency in tone, messaging, and visual identity across your email campaigns, while also serving as a quality check before your content goes live.
+   
+ - In the right panel, click on Brand Alignment check <img width="100" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Brand_Icon.png" /> and let's evaluate our email content. Refer to the screenshots below
+
+   <img width="490" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Brand_Check_1.png" />  <img width="350" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Brand_Check_2.png" />
+
+
+
+
+
+EMAIL CONTENT SIMULATION
+
+
+- The final step is to simulate the email content and all the personalization you just defined above. For that, please be sure you already run (Start) your workflow before, so that all data targeting has been passed to the email workflow step.
+- To simulate the content let's do the following steps:
+ - Click on "Simulate Content" <img width="100" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Simulate_Content_General.png" /> you will end up in a screen where you need to manage the test profiles
+   
+ - To manage your test profiles click in here <img width="100" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Simulate_Content_ManageTestProfiles.png" /> , then you need to define "Entity Namespace" and insert respective value, in this case "Entity Namespace" will be "**Email**" and the email values will be the 2 following profiles' email:
+   
+   - skyler.martín+3@luma.example.com
+   - lucía.kowalski+52@luma.example.com
+     
+  <img width="490" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Simulate_Content_IdentityName.png" />
+  
+  <img width="490" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Simulate_Content_AddTestProfiles.png" />
+  
+ - When you go back to the simulation, you'll be able to see different content for Lucia and Skyler:
+
+  <img width="490" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Simulate_Content_Man_1.png" />
+
+  <img width="490" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Simulate_Content_Man_2.png" />
+
+  <img width="490" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Simulate_Content_Man_3.png" />
+
+  <img width="490" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Simulate_Content_Woman_1.png" />
+
+  <img width="490" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Simulate_Content_Woman_2.png" />
+
+  <img width="490" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Simulate_Content_Woman_3.png" />
+
+
+
+EMAIL PRE-SENDING STATS
+
+- You can run a stats report for your email before sending, it will display the targeted number of profiles, the exclusion causes, and also the errors. To run a report go back to the workflow and select the email activity, in the right panel you can click on "Run Test" <img width="150" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Email_RunTest1.png" />
+
+- After a couple of minutes, you'll be able to check the email report statistics, just click on "View Report" <img width="100" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Email_ViewTestReport.png" />
+
+- In your report you'll be able to check the below stats:
+
+ <img width="700" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Email_TestStats.png" />
+ 
+
+- In the end you can always publish your Campaign workflow however in this exercise, please do not Publish as we use fake generated email addresses.
+
+
+
+
+# You made it !
+
+Congratulations! You've completed the lab 👍 ✨ 🎉 🚀 🤘 Together, we were able to:
+- Improve our customer knowledge by collecting visitor data on our website.
+- Build a customer profile with behavioral and personal data.
+- Improve revenue by retargeting abandoners through personalized customer journeys and relevant contextual messages.
+- Target our high value customers to incent them to visit the new Luma Fall Collection using A/B testing on inbound channels.
+- Learn how can we create brand initiated campaigns with AJO Campaign Orchestration
+  
+
+[Home](README.md)
 
