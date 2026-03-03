@@ -34,7 +34,7 @@ During this lab, we will use a fictitious sports equipment brand - called **Luma
 
 - **Promotional Campaign**. We’d also like to build a campaign to promote the new Luma Fall Collection. This campaign will display a banner on the website to invite visitors to look at the Fall Collection landing page.
 
-- **Personalized Campaign using Campaign Orchestration**. We’d also like to build a campaign to promote the new Luma Fall Collection. This campaign will display a banner on the website to invite visitors to look at the Fall Collection landing page.
+- **Personalized Campaign using Campaign Orchestration**. Let's use AJO Campaign Orchestration to deliver a personalized campaign to promote the Luma's sport's wear clothing.
 
 
 # Learning objectives
@@ -42,6 +42,8 @@ During this lab, we will use a fictitious sports equipment brand - called **Luma
 - Prepare a customer journey built using AJO orchestration canvas and craft personalized communications with all the functionalities  AJO offers such as templates, fragments, translations, pressure rule and much more.
 - Create marketing campaigns activating audiences calculated by AEP, ensuring the consistency of communications in a fully omnichannel way.
 - Track the performance of your marketing actions and your A/B tests through dashboards and delivery reports.
+- Learn how to deliver multi-entity segmentation campaigns with personalized Ai generated content.
+- Understand the basics of AJO Agentic capabilities.
 
 
 
@@ -53,7 +55,7 @@ During this lab, we will use a fictitious sports equipment brand - called **Luma
 
 
 # Exercices
-We prepared 3 exercices to help you understand all the benefits AJO offers when bringing a customer journey to life. As we have a couple of hours only, we cannot cover them all, but we'll focus on the business persona rather than the technical role. In these exercices, you'll be in the marketeer shoes and your goal will be to prepare a campaign for Luma, our fictitious sport apparel brand. The lab is composed of 3 chapters : 
+We prepared 5 exercises to help you understand all the benefits AJO offers when bringing a customer journey to life. As we have a couple of hours only, we cannot cover them all, but we'll focus on the business persona rather than the technical role. In these exercices, you'll be in the marketeer shoes and your goal will be to prepare a campaign for Luma, our fictitious sport apparel brand. The lab is composed of 4 chapters + Extra: 
 
 [Acquisition](./acquisition.md): Navigate the demo website and generate data to then visualize it in Adobe Experience Platform.
 
