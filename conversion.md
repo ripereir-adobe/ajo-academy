@@ -41,9 +41,9 @@ The customer journey canvas is the central point for creating a real-time custom
 <img width="240" alt="image" src="https://github.com/user-attachments/assets/89fc62b8-c1d6-49be-a97f-26011da7e035" />
 
 
-**Actions**: These are the different activities you can leverage to react and send communication to your customer. AJO comes with native activities to send personalized communications through inbound channels (website, in-app, kiosk, connected tvs) as well as outbound channels (email, sms, push notif). Of course you can build your own action if you have specific needs, like interacting with a proprietary channel (like exotic channels, ATM, call center, CRM systems etc).
+**Actions**: These are the different activities you can leverage to react and send communication to your customer. AJO comes with native activities to send personalized communications through inbound channels (website, in-app, kiosk, connected tvs) as well as outbound channels (email, sms, push notif, WhatsApp, Line, etc.). Of course you can build your own action if you have specific needs, like interacting with a proprietary channel (like exotic channels, ATM, call center, CRM systems etc).
 
-<img width="239" alt="image" src="https://github.com/user-attachments/assets/ab456f4b-a054-4da3-9877-54595858a219" />  
+ <img width="400" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Journey_Channels.png" />
 
 <br /><br />
 
