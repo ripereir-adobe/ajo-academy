@@ -6,7 +6,17 @@
 <img width="800" src="https://github.com/user-attachments/assets/9c94e953-ab53-4ff6-b4f2-c6e5ea244489" />
 </p>
 
-In this chapter of the lab, we are going to explore Campaign Orchestration new capability within AJO designed to build, schedule, and deliver one‑to‑many marketing campaigns—primarily email, SMS, and push—using a marketer‑friendly, visual interface. It complements AJO’s event‑driven journeys by supporting traditional outbound campaigns that run on a defined schedule and target audience segments.
+In this chapter of the lab, we are going to play with a simple Agentic use case. AI agents, powered by the Adobe Experience Platform Agent Orchestrator, are available to automate, optimize, and accelerate work inside Adobe Journey Optimizer (AJO). These agents can design journeys, analyze performance, optimize campaigns, manage audiences, and coordinate multi-step marketing actions—all through intelligent, autonomous behavior rather than manual configuration.
+
+This includes agents such as:
+
+- Journey Agent – Helps design and optimize customer journeys in AJO using natural language and autonomous decision-making
+- Audience Agent – Builds and improves audience segments used in AJO
+- Experimentation Agent – Suggests journey optimizations and experiments.
+
+All these agents are coordinated by Adobe’s Agent Orchestrator, which provides the reasoning engine that allows them to act autonomously, make decisions, and work across Adobe Experience Cloud applications—including AJO
+
+In this exercise, let's use AJO agents to create a journey that starts with an Audience Qualification and delivers 2 promotional communications, one email and one push notification depending on the preffered channel or Customer consenting.
 
 As Luma marketers, we'd like to build a Campaign to promote the Luma's sport's wear clothing. This campaign will send special promotions email to all profiles that made orders above 500 euros. To build this orchestrated campaign, we'd need first to build the target audience, then the email content to be delivered. We'd like to create personalize the email text, the banner image, and promotion using conditional content and AI content generation of image variations.
 
