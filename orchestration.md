@@ -8,13 +8,13 @@
 
 In this chapter of the lab, we are going to explore Campaign Orchestration new capability within AJO designed to build, schedule, and deliver one‑to‑many marketing campaigns—primarily email, SMS, and push—using a marketer‑friendly, visual interface. It complements AJO’s event‑driven journeys by supporting traditional outbound campaigns that run on a defined schedule and target audience segments.
 
-As Luma marketers, we'd like to build a Campaign to promote the Luma's sport's wear clothing. This campaign will send special promotions email to all profiles that made orders above 500 euros. To build this orchestrated campaign, we'd need first to build the target audience, then the email content to be delivered. We'd like to create personalize the email text, the banner image, and promotion using conditional content and AI content generation of image variations.
+As Luma marketers, we'd like to build a Campaign to promote the Luma's sports wear clothing. This campaign will send a personalized email to all profiles that made orders above 500 euros. To build this orchestrated campaign, we need first to build the target audience, and then the email content to be delivered. We'll personalize the email text, the banner image, and promotion using conditional content and AI content generation with image variations.
 
 # Create Campaign Segmentation - Targeting Activities
 
 First go to the new available tab "Orchestration" in the "Campaigns" AJO menu options and click on "Create Campaign" <img width="100" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Create Campaign Button.png" />. Let's start creating the visual campaign orchestration through a workflow: 
 
-- Select Orchestration - Marketing, and name your campaign, please prefix it with the email address you used when creating your account on Luma website
+- Select Orchestration - Marketing, and name your campaign, please prefix it with the email address you used when creating your account on Luma website, _example: ricardo.pereira_Orchestration_Campaign_
   
   <img width="600" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Campaign creation options.png" />
 
@@ -25,12 +25,14 @@ BUILD AUDIENCE
   
   <img width="300" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Build Audience start.png" />
   
-- then select the relational schema "Luma_Orders_record" as your targeting dimension
+- then select the relational schema "Luma_Orders_record" as your targeting entity dimension
 
   <img width="300" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Select Targeting Dimension.png" />
 
 - Now that the targeting dimension is selected, let's click on "Create Audience" <img width="90" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Create Audience Button.png" />
+
 - Let's define the elligibility criteria of our audience by adding conditions:
+  
   - Select the attribute "Order_Amount", it should be equal or higher than 500 euros
     
  <img width="800" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Condition 500.png" />
@@ -48,10 +50,12 @@ BUILD AUDIENCE
 
 DATA ENRICHMENT
   
-  - Now let's enrich our data with the enrichment activity that exists to bring additional data into the workflow at run‑time, so that your audience selection and personalization logic can operate with richer context than what is available in the entry dataset alone. Click on the "+" after the "build audience" activity created, and select "Enrichment"
+  - Now let's enrich our data with the enrichment activity to bring additional data into the workflow at run‑time, so that your audience selection and personalization logic can operate with richer context than what is available in the entry dataset alone. Click on the "+" after the "build audience" activity created, and select "Enrichment"
 
      <img width="300" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Add_Enrichment.png" />
+     
 - In the enrichment activity you need to select some fields/attributes that you would like to pass to personalize the email content like:
+  
   - "Order Amount" - Click Add data enrichment from the current Order Table "Luma_Orders_Record", as per the screenshot below
 
      <img width="700" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Order_Amount_Attribute.png" />
@@ -75,9 +79,9 @@ DATA ENRICHMENT
 
 CHANGE DIMENSION
 
-In AJO Campaign Orchestration, we can start building on-demande audiences targeting different dimensions (multi-entity segmention), in this exercise, we started targeting "Orders" and now we need to deliver the promotions email to our final Recipients/Profiles. AJO Campaign Orchestration offers the "Change Dimension" activity, so we can change the targeting dimension from Orders to "Recipients" (for deliverability purposes).
+In AJO Campaign Orchestration, we can start building on-demande audiences targeting different dimensions (multi-entity segmention), in this exercise, we started targeting "Orders" and now we need to deliver the promotion email to our final Recipients/Profiles. AJO Campaign Orchestration offers the "Change Dimension" activity, so we can change the targeting dimension from Orders to "Recipients" (for deliverability purposes).
 
-- In the campaign workflow, click again in the "+" sign after the Enrichment activity just created. When you click, select "Change Dimension" activity:
+- In the campaign workflow, click again in the "+" sign after the Enrichment activity just created. When you click, select "**Change Dimension**" activity:
 
   <img width="300" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Change Dimension.png" />
 
@@ -89,7 +93,7 @@ In AJO Campaign Orchestration, we can start building on-demande audiences target
 
   <img width="900" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Final_Segmentation_View.png" />
 
-- You can play the Campaign segmentation workflow in test mode (**do not publish**). Click in "Start" on the above right menu of your campaign orchestration workflow <img width="50" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Start_Workflow.png" />  You can also STOP, ReStart the workflow, always in a safe test mode (before publishing).
+- You can play the Campaign segmentation workflow in test mode (**do not publish**). Click in "**Start**" on the above right menu of your campaign orchestration workflow <img width="50" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Start_Workflow.png" />  You can also STOP, ReStart the workflow, always in a safe test mode (before publishing).
 
   <img width="900" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Final_Segmentation_Play.png" />
 
