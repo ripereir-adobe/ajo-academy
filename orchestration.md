@@ -136,6 +136,7 @@ TEXT PERSONALIZATION
      - We added in our enrichment activity, a group of Order_Items related attributes, **Product Name** and **Price**, and we configured a collection of 3 lines of data, let's personalize the email with the last 3 products that the Customer ordered. Before the personalization let's add the text "_Thanks to your below product items ordered recently, we would like to propose you our new sports gear collection in exclusivity!_" in the text block as per the screenshot below. Don't forget to **Save** your email
 
        <img width="800" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Personalization_AddText.png" />
+       
 
 
 
@@ -162,6 +163,7 @@ ADDING A CONTENT FRAGMENT
 
        
  - After the above action to personalize with product attributes, you want to test your content personalization so hard...we understand, but first don't forget to **save your email**, then go back to the workflow and be sure you re-start it in test mode, this way we are sure the email activity inherited the enrichment data. Otherwise, let's keep personalizing our email with some dynamic content.
+
 
    
 
