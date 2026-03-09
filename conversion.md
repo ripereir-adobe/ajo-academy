@@ -207,7 +207,7 @@ The first thing to do is to detect when a customer dropped in the conversion pro
 ## Be friend with Content Templates 
 Content Template is a nice addition in AJO, it makes it easy for marketers and content managers to build highly-reusable content, outside of any campaign or journeys. It offers neat features such as the ability to lock certain area of the template to prevent unintentional edits or deletions, giving you greater control over template customization, and improving the efficiency and reliability of your email campaigns.
 
-- Select the _Push_ activity from the _ACTIONS_ menu and drag and drop it to the canvas and connect it to the _Push_ transition of your condition activity
+- Select the _Actions_ activity from the menu and drag and drop it to the canvas, then select the _Push_ channel and connect it to the _Push_ transition of your condition activity
   - Label the push _Abandoned Cart Push_. It gives a name to your push notification delivery and will help you track its performance in the report
   - Under Push Configuration, select DXDemoApp
   Click _Edit content_ button
@@ -219,7 +219,7 @@ Content Template is a nice addition in AJO, it makes it easy for marketers and c
 
       
 - Lets go back to the journey by clicking the back arrow next to your journey name (<img width="26" alt="image" src="https://github.com/user-attachments/assets/6fc3f0a5-3115-4f06-8676-f506f2dd4f9b" />) and save your push notification.
-- Select the _Email_ activity from the _ACTIONS_ menu and drag and drop it to the canvas and connect it to the _Others_ transition of your condition activity.
+- Select the _Actions_ activity from the menu and drag and drop it to the canvas, then select the _Email_ channel, and connect it to the _Others_ transition of your condition activity.
     - Label the email _Abandoned Cart Email_. It gives a name to your email delivery and will help you track its performance in the report.
     - Under _Email Configuration_, select the _EmailMarketing_ value.
     - Click _Edit content_ button
