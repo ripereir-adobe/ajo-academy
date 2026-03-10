@@ -56,15 +56,15 @@ DATA ENRICHMENT
      
 - In the enrichment activity you need to select some fields/attributes that you would like to pass to personalize the email content like:
   
-  - "Order Amount" - Click Add data enrichment from the current Order Table "Luma_Orders_Record", as per the screenshot below
+  - "Order Amount" - Click Add data enrichment from the current Order Table "_Luma_Orders_Record_", as per the screenshot below
 
      <img width="700" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Order_Amount_Attribute.png" />
 
-  - "Average Order value" and "email" of the recipient - Add data enrichment from the Recipients table "Recipient_Orders" (relationship), as per the screenshot below
+  - "Average Order value" and "email" of the recipient - Add data enrichment from the Recipients table "_Recipient_Orders_" (relationship), as per the screenshot below
 
-    <img width="700" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Order_Amount_Attribute.png" />
+    <img width="700" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Recipients_Attributes.png" />
   
-  - "Product Name" and "Product Price" attributes - Add data enrichment from table "Order_Items" which is related to "Products_Item" table
+  - "Product Name" and "Product Price" attributes - Add data enrichment from table "rtharapathi.reddy@tcs.com" which is related to "_Products_Item_" table
 
     <img width="700" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Order Items_attributes.png" />
 
