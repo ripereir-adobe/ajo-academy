@@ -27,7 +27,7 @@ To start playing this use case, you have to access "**Ai Assistant**", this is p
   
   <img width="800" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Ai_Assistant_HomePage2.png" />
   
-  <img width="800" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Ai Assistant_AJO.png" />  <img width="300" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Ai Assistant_AJO_Prompt.png" />
+  <img width="700" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Ai Assistant_AJO.png" />  <img width="300" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Ai Assistant_AJO_Prompt.png" />
 
 - Before starting interacting with Ai Assistant, please be sure you set your context as per the screenshot below:
 
