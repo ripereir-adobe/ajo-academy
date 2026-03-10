@@ -97,7 +97,7 @@ In AJO Campaign Orchestration, we can start building on-demand audiences targeti
 
   <img width="900" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Final_Segmentation_Play.png" />
 
-- Clicking in "Preview Results" a list of orders per recipient and respective 3 column Order items (as per the data collection defined in the enrichment) is displayed and you'll get the below view:
+- Select the last data branch of the workflow (after "Change Dimension" activity) and click in "Preview Results", a list of orders per recipient and respective 3 column Order items (as per the data collection defined in the enrichment) is displayed and you'll get the below view:
 
   <img width="900" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Segmentation_Preview_Results.png" />
   
