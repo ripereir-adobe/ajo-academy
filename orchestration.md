@@ -128,7 +128,7 @@ TEXT PERSONALIZATION
 
  - Let's personalize the content of this email, some dynamic content is already available in the image banner, let's create some more personalization:
 
-     - Personalize the text box containing "It All starts with you..." with recipient's/profile "_first name_" field just after the word "you", click edit personalization <img width="30" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Personalization_Icon.png" /> and select "target Attributes" on the left menu. This is a new personalization option for fields we are passing with the enrichment activity of this campaign orchestration workflow. Refer to the screenshot below. After this please **Save** your email
+     - Personalize the text box containing "It All starts with you..." with recipient's/profile "_first name_" field just after the word "you", click edit personalization <img width="30" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Personalization_Icon.png" /> and select "**target Attributes**" on the left menu. This is a new personalization option for fields we are passing with the enrichment activity of this campaign orchestration workflow. Refer to the screenshot below. After this please **Save** your email
   
        <img width="1000" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Personalization_RecipientFirstName.png" />
        
