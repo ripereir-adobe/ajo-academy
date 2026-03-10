@@ -25,7 +25,7 @@ BUILD AUDIENCE
   
   <img width="300" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Build Audience start.png" />
   
-- then select the relational schema "Luma_Orders_record" as your targeting entity dimension
+- then select the relational schema "_Luma_Orders_record_" as your targeting entity dimension
 
   <img width="300" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Select Targeting Dimension.png" />
 
@@ -68,7 +68,7 @@ DATA ENRICHMENT
 
     <img width="700" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Order Items_attributes.png" />
 
-  - The final "Order_items" related product attributes can be in a data collection mode if you would like to collect 3 related product items of your order (you can change the number of items to be collected). The screenshot below shows the final enrichment data for these attributes
+  - The final "_Order_items_" related product attributes can be in a data collection mode if you would like to collect 3 related product items of your order (you can change the number of items to be collected). The screenshot below shows the final enrichment data for these attributes
 
     <img width="700" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/OrderItems_Final.png" />
  
@@ -85,7 +85,7 @@ In AJO Campaign Orchestration, we can start building on-demand audiences targeti
 
   <img width="300" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Change Dimension.png" />
 
-- Click on Targeting Dimension and select the table "Recipient_Orders"
+- Click on Targeting Dimension and select the table "_Recipient_Orders_"
   
   <img width="900" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Change_Dimension_Recipients.png" />
 
