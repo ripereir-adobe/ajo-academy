@@ -8,7 +8,7 @@
 
 In this chapter of the lab, we are going to explore Campaign Orchestration new capability within AJO designed to build, schedule, and deliver one‑to‑many marketing campaigns—primarily email, SMS, and push—using a marketer‑friendly, visual interface. It complements AJO’s event‑driven journeys by supporting traditional outbound campaigns that run on a defined schedule and target audience segments.
 
-As Luma marketers, we'd like to build a Campaign to promote the Luma's sports wear clothing. This campaign will send a personalized email to all profiles that made orders above 500 euros. To build this orchestrated campaign, we need first to build the target audience, and then the email content to be delivered. We'll personalize the email text, the banner image, and promotion using conditional content and AI content generation with image variations.
+As Luma marketers, we'd like to build a Campaign to promote the Luma's sports wear clothing. This campaign will send a personalized email to all profiles that made orders above 500 euros in the last year. To build this orchestrated campaign, we need first to build the target audience, and then, the email content to be delivered. We'll personalize the email text, the banner image, and promotion using conditional content and AI content generation with image variations.
 
 # Create Campaign Segmentation - Targeting Activities
 
@@ -41,7 +41,7 @@ BUILD AUDIENCE
     
  <img width="800" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Condition Date.png" /> 
 
-- You should have the below Audience eligibility criteria definition and if you click "**Calculate**", you'll be able to see how many profiles we are targeting:
+- You should now have the below Audience eligibility criteria definition and if you click "**Calculate**", you'll be able to see how many profiles we are targeting:
   
  <img width="800" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Final Audience Target NB.png" />
 
@@ -50,7 +50,7 @@ BUILD AUDIENCE
 
 DATA ENRICHMENT
   
-  - Now let's enrich our data with the enrichment activity to bring additional data into the workflow at run‑time, so that your audience selection and personalization logic can operate with richer context than what is available in the entry dataset alone. Click on the "+" after the "build audience" activity created, and select "Enrichment"
+  - Now let's enrich our data with the enrichment activity to bring additional data into the workflow at run‑time, so that your audience selection and personalization logic can operate with richer context than what is available in the entry dataset alone. Click on the "+" after the "build audience" activity created, and select "**Enrichment**"
 
      <img width="300" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Add_Enrichment.png" />
      
