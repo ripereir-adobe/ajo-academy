@@ -155,7 +155,7 @@ ADDING A CONTENT FRAGMENT
 
    <img width="400" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Fragment_BreakInheritanceIcon.png" />
 
- - Now, double click over each text block inside the grid and add a "**{**" at the beginning of the text, and a "**}**" at the end of the text, this will activate the attribute validation from the personalization menu
+ - Now, double click over each text block inside the grid and add a curly Bracket "**{**" at the beginning of the text, and one "**}**" at the end of the text, this will activate the attribute validation from the personalization menu
        "Target Attributes". When the fragment was created, we couldn't call the "Target Attributes" yet, as these are only available and passing in the campaign workflow, through the enrichment activity. Please check the
        screenshot below, and **Save** your changes
        
