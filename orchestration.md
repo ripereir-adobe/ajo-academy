@@ -162,7 +162,7 @@ ADDING A CONTENT FRAGMENT
    <img width="800" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Personalization_FragmentAttributes.png" />
 
        
- - After the above action to personalize with product attributes, you want to test your content personalization so hard...we understand, but first don't forget to **save your email**, then go back to the workflow and be sure you re-start it in test mode, this way we are sure the email activity inherited the enrichment data. Otherwise, let's keep personalizing our email with some dynamic content.
+ - After the above action to personalize with product attributes, you want to test your content personalization so hard...we understand, but first don't forget to **save your email**, then go back to the workflow and be sure you re-start it in test mode, this way we are sure the email activity has inherited the enrichment data. Otherwise, let's keep personalizing our email with some dynamic content.
 
 
    
