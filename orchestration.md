@@ -259,7 +259,7 @@ EMAIL CONTENT SIMULATION
   
   <img width="1000" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Simulate_Content_AddTestProfiles.png" />
   
- - When you go back to the simulation, you'll be able to see different content for Lucia and Skyler:
+ - When you go back to the simulation, you'll be able to see different content for Skyler and Lucia:
 
   <img width="1000" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Simulate_Content_Man_1.png" />
 
