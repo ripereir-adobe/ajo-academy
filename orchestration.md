@@ -133,7 +133,7 @@ TEXT PERSONALIZATION
        <img width="1000" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Personalization_RecipientFirstName.png" />
        
 
-     - We added in our enrichment activity, a group of Order_Items related attributes, **Product Name** and **Price**, and we configured a collection of 3 lines of data, let's personalize the email with the last 3 products that the Customer ordered. Before the personalization let's add the text "_Thanks to your below product items ordered recently, we would like to propose you our new sports gear collection in exclusivity!_" in the text block as per the screenshot below. Don't forget to **Save** your email
+     - We added in our enrichment activity, a group of _Order_Items_ related attributes, **Product Name** and **Price**, and we configured a data collection of 3 lines, let's personalize the email with the last 3 products that the Customer ordered. Before the personalization let's add the text "_Thanks to your below product items ordered recently, we would like to propose you our new sports gear collection in exclusivity!_" in the text block as per the screenshot below. Don't forget to **Save** your email
 
        <img width="800" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Personalization_AddText.png" />
        
