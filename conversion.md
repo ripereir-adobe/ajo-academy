@@ -84,7 +84,7 @@ Select the  _LumaPurchaseEvent_Email_ from the _EVENTS_ menu and drag and drop i
 
   - Click the _Save_ button
       
-- Select the _Email_ activity from the _ACTIONS_ menu and drag and drop it to the canvas. Notice Tracking setting (clicks on email, email opens) is automatically enabled to enable feedback events in AEP real time customer profile 
+- Drag and drop _Action_ to the canvas and Select the _Email_ activity . Notice Tracking setting (clicks on email, email opens) is automatically enabled to enable feedback events in AEP real time customer profile 
     - Label the email _Order Confirmation Email_. It gives a name to your email delivery and will help you track its performance in the report
     - Under Email Configuration, select the _EmailMarketing_ value. It applies deliverability settings and email metadata (from, header fields, tracking parameters) to the delivery
 
