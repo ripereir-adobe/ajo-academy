@@ -145,7 +145,7 @@ ADDING A CONTENT FRAGMENT
 
 
 
- - Below the text, let's add a fragment content block already available called "Luma Last Orders Items". Go to fragments in here <img width="100" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Personalization_FragmentIcon.png" /> and drag and drop the fragment to the position as per the screenshots below. **Save** your changes
+ - Below the text, let's add a fragment content block already available called "**Luma Last Orders Items**". Go to fragments in here <img width="100" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Personalization_FragmentIcon.png" /> and drag and drop the fragment to the position as per the screenshots below. **Save** your changes
   
    <img width="800" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Personalization_FragmentDragDrop.png" />
    <img width="800" alt="image" src="https://ripereir-adobe.github.io/ajo-academy/assets/Personalization_Final_Fragment.png" />
