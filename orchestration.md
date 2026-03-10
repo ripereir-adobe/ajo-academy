@@ -79,7 +79,7 @@ DATA ENRICHMENT
 
 CHANGE DIMENSION
 
-In AJO Campaign Orchestration, we can start building on-demande audiences targeting different dimensions (multi-entity segmention), in this exercise, we started targeting "Orders" and now we need to deliver the promotion email to our final Recipients/Profiles. AJO Campaign Orchestration offers the "Change Dimension" activity, so we can change the targeting dimension from Orders to "Recipients" (for deliverability purposes).
+In AJO Campaign Orchestration, we can start building on-demand audiences targeting different dimensions (multi-entity segmention), in this exercise, we started targeting "Orders" and now we need to deliver the promotion email to our final Recipients/Profiles. AJO Campaign Orchestration offers the "Change Dimension" activity, so we can change the targeting dimension from Orders to "Recipients" (for deliverability purposes).
 
 - In the campaign workflow, click again in the "+" sign after the Enrichment activity just created. When you click, select "**Change Dimension**" activity:
 
