@@ -14,9 +14,9 @@ This includes agents such as:
 - Audience Agent – Builds and improves audience segments used in AJO
 - Experimentation Agent – Suggests journey optimizations and experiments.
 
-All these agents are coordinated by Adobe’s Agent Orchestrator, which provides the reasoning engine that allows them to act autonomously, make decisions, and work across Adobe Experience Cloud applications—including AJO
+All these agents are coordinated by Adobe’s Agent Orchestrator, which provides the reasoning engine that allows them to act autonomously, make decisions, and work across Adobe Experience Cloud applications—including AJO.
 
-In this exercise, let's use AJO agents to create a journey that starts with an Audience Qualification and delivers 2 promotional communications, one email and one push notification depending on the preffered channel or Customer consenting.
+In this exercise, let's use AJO agents to create a journey that starts with an Audience Qualification and delivers 2 promotional communications, one email and one push notification depending on the preferred channel or Customer consenting.
 
 
 
